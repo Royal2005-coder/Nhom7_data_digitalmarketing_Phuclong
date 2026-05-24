@@ -1,0 +1,8 @@
+﻿# === Requirements - Social Listening Phuc Long ===
+yt-dlp>=2026.3.0
+curl-cffi>=0.7.0
+apify-client>=1.7.0
+beautifulsoup4>=4.12.0
+pandas>=2.2.0
+# Optional (CloakBrowser - need separate install)
+# playwright>=1.40.0
