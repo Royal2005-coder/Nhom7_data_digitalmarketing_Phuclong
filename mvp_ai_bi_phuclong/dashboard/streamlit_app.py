@@ -22,6 +22,19 @@ API_KEY = os.getenv("TOKENROUTER_API_KEY", "")
 MODEL = os.getenv("TOKENROUTER_MODEL", "MiniMax-M3")
 
 
+import sys
+ROOT_DIR = BASE_DIR.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from mvp_ai_bi_phuclong.mcp_server.phuclong_data_tools import (
+    generate_decision_context,
+    get_platform_performance,
+    get_content_pillar_performance,
+    get_sentiment_risk,
+    get_top_posts,
+)
+
 st.set_page_config(
     page_title="Phúc Long AI-BI Decision Cockpit",
     page_icon="🍵",
@@ -212,6 +225,20 @@ def build_ai_context(benchmark, platform_perf, pillar_perf, risk_monitor, post_r
     context.append(safe_markdown_table(ai_recs, 20))
 
     return "\n".join(context)
+
+
+def build_mcp_ai_context(brand_filter: str, platform_filter: str) -> str:
+    """Build context via MCP-style local tool layer."""
+    brand = "All" if brand_filter == "All" else brand_filter
+    platform = "All" if platform_filter == "All" else platform_filter
+
+    try:
+        ctx = generate_decision_context(brand=brand, platform=platform)
+        return ctx.get("context_markdown", "")
+    except Exception as exc:
+        return f"MCP context generation failed: {type(exc).__name__}: {exc}"
+
+
 
 
 def get_system_prompt():
@@ -570,16 +597,7 @@ with tab6:
         "Phúc Long là trọng tâm; Highlands và Katinat chỉ dùng làm benchmark."
     )
 
-    ai_context = build_ai_context(
-        benchmark,
-        platform_perf,
-        pillar_perf,
-        risk_monitor,
-        post_ranking,
-        ai_recs,
-        brand_filter,
-        platform_filter,
-    )
+    ai_context = build_mcp_ai_context(brand_filter, platform_filter)
 
     system_prompt = get_system_prompt()
 
@@ -641,6 +659,54 @@ Cần chia theo mức ưu tiên cao/trung bình/thấp và bộ phận phụ tr�
                 {"role": "user", "content": ai_context + "\n\nCâu hỏi: " + question},
             ])
         render_ai_answer(answer, 'phuclong')
+
+    st.divider()
+    st.markdown("### MCP Tool Inspector")
+    st.caption("Khu vực này mô phỏng MCP tool call: Streamlit gọi tool layer để truy vấn sâu Gold SQLite và semantic context.")
+
+    tool_col1, tool_col2 = st.columns([1, 2])
+
+    with tool_col1:
+        selected_tool = st.selectbox(
+            "Chọn MCP-style tool",
+            [
+                "get_platform_performance",
+                "get_content_pillar_performance",
+                "get_sentiment_risk",
+                "get_top_posts",
+            ],
+        )
+        tool_top_n = st.slider("Số dòng", min_value=5, max_value=50, value=15)
+
+    with tool_col2:
+        if st.button("Run selected MCP tool", use_container_width=True):
+            try:
+                if selected_tool == "get_platform_performance":
+                    tool_result = get_platform_performance(
+                        brand=None if brand_filter == "All" else brand_filter,
+                        platform=None if platform_filter == "All" else platform_filter,
+                    )
+                elif selected_tool == "get_content_pillar_performance":
+                    tool_result = get_content_pillar_performance(
+                        brand=None if brand_filter == "All" else brand_filter,
+                        platform=None if platform_filter == "All" else platform_filter,
+                    )
+                elif selected_tool == "get_sentiment_risk":
+                    tool_result = get_sentiment_risk(
+                        brand=None if brand_filter == "All" else brand_filter,
+                        platform=None if platform_filter == "All" else platform_filter,
+                        top_n=tool_top_n,
+                    )
+                else:
+                    tool_result = get_top_posts(
+                        brand=None if brand_filter == "All" else brand_filter,
+                        platform=None if platform_filter == "All" else platform_filter,
+                        top_n=tool_top_n,
+                    )
+
+                st.markdown(tool_result.get("markdown", "No output"))
+            except Exception as exc:
+                st.error(f"MCP tool failed: {type(exc).__name__}: {exc}")
 
     st.divider()
     st.markdown("### A2A-ready Multi-Agent Decision Review")
