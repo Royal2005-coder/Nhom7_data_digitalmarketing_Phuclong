@@ -1,13 +1,30 @@
+from pathlib import Path
+import sys
+
+CURRENT_FILE = Path(__file__).resolve()
+PROJECT_DIR = CURRENT_FILE.parents[1]
+REPO_DIR = PROJECT_DIR.parent
+if str(REPO_DIR) not in sys.path:
+    sys.path.insert(0, str(REPO_DIR))
+
 import os
 import re
 import sqlite3
 from pathlib import Path
+import sys
+from pathlib import Path
+
 
 import numpy as np
 import pandas as pd
 import plotly.express as px
 import requests
 import streamlit as st
+from mvp_ai_bi_phuclong.ai_agent.agent_runtime import (
+    run_semantic_agent,
+    run_multi_agent_a2a,
+    export_agent_result_markdown,
+)
 from dotenv import load_dotenv
 
 
@@ -21,11 +38,6 @@ API_BASE = os.getenv("TOKENROUTER_API_BASE", "https://api.tokenrouter.com/v1").r
 API_KEY = os.getenv("TOKENROUTER_API_KEY", "")
 MODEL = os.getenv("TOKENROUTER_MODEL", "MiniMax-M3")
 
-
-import sys
-ROOT_DIR = BASE_DIR.parent
-if str(ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(ROOT_DIR))
 
 from mvp_ai_bi_phuclong.mcp_server.phuclong_data_tools import (
     generate_decision_context,
@@ -590,145 +602,155 @@ with tab5:
         show_df(posts[cols].head(80))
 
 with tab6:
-    st.subheader("AI Copilot: Data Scientist Insight Generator")
+    st.subheader("AI Copilot: Semantic MCP Agent")
 
     st.markdown(
-        "AI Copilot đọc các bảng Gold đã được tổng hợp, sau đó tạo insight, bằng chứng và khuyến nghị hành động. "
+        "Người dùng chỉ cần nhập câu hỏi tự nhiên. "
+        "Hệ thống tự phân tích intent, chọn MCP semantic tools, truy vấn Gold SQLite, "
+        "sau đó AI Agent trả lời bằng insight, bằng chứng và hành động đề xuất. "
         "Phúc Long là trọng tâm; Highlands và Katinat chỉ dùng làm benchmark."
     )
 
-    ai_context = build_mcp_ai_context(brand_filter, platform_filter)
+    default_question = (
+        "Dựa trên MCP context và semantic layer, vì sao Phúc Long TikTok có engagement rate tốt "
+        "nhưng median views thấp? Đề xuất kế hoạch 7 ngày cho TikTok và Facebook."
+    )
 
-    system_prompt = get_system_prompt()
+    question = st.text_area(
+        "Hỏi AI về dữ liệu",
+        value=default_question,
+        height=130,
+        help="Nhập câu hỏi tự nhiên. Không cần chọn bảng, không cần viết SQL, không cần chọn MCP tool.",
+    )
+
+    brand_for_agent = brand_filter if brand_filter != "All" else "phuc_long"
+    platform_for_agent = platform_filter
+
+    st.caption(
+        f"Agent scope: brand={brand_for_agent}, platform={platform_for_agent}. "
+        "Backend: Semantic Router → MCP-style tools → Gold SQLite → MiniMax-M3."
+    )
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        if st.button("Generate Executive Brief", use_container_width=True):
-            user_prompt = """
-Hãy tạo executive brief cho dashboard hiện tại.
-Tập trung vào Phúc Long.
-So sánh Highlands và Katinat chỉ như benchmark.
-Đề xuất hành động truyền thông số trong 7 ngày tới dựa trên dữ liệu.
-"""
-            with st.spinner("AI đang phân tích dashboard..."):
-                answer = call_ai([
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": ai_context + "\n\n" + user_prompt},
-                ])
-            render_ai_answer(answer, 'phuclong')
+        if st.button("Generate Executive Brief", width="stretch"):
+            with st.spinner("Executive Brief Agent đang truy vấn MCP semantic context và tổng hợp quyết định..."):
+                result = run_semantic_agent(
+                    user_question=question,
+                    agent_type="executive_brief",
+                    brand=brand_for_agent,
+                    platform=platform_for_agent,
+                )
+
+            st.caption(
+                "Intent="
+                + str(result.get("intent"))
+                + " | Tools="
+                + ", ".join(result.get("tools_used", []))
+            )
+            render_ai_answer(result.get("answer", ""), "executive_brief")
 
     with col2:
-        if st.button("Generate 7-day Action Plan", use_container_width=True):
-            user_prompt = """
-Tạo kế hoạch hành động 7 ngày cho Phúc Long.
-Mỗi ngày cần có: nền tảng ưu tiên, chủ đề nội dung, mục tiêu KPI, lý do từ dữ liệu, rủi ro cần theo dõi.
-"""
-            with st.spinner("AI đang tạo kế hoạch 7 ngày..."):
-                answer = call_ai([
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": ai_context + "\n\n" + user_prompt},
-                ])
-            render_ai_answer(answer, 'phuclong')
+        if st.button("Generate 7-day Action Plan", width="stretch"):
+            with st.spinner("Content Strategy Agent đang truy vấn MCP semantic context và tạo kế hoạch 7 ngày..."):
+                result = run_semantic_agent(
+                    user_question=question,
+                    agent_type="action_plan_7d",
+                    brand=brand_for_agent,
+                    platform=platform_for_agent,
+                )
+
+            st.caption(
+                "Intent="
+                + str(result.get("intent"))
+                + " | Tools="
+                + ", ".join(result.get("tools_used", []))
+            )
+            render_ai_answer(result.get("answer", ""), "action_plan_7d")
 
     with col3:
-        if st.button("Generate Risk Response Plan", use_container_width=True):
-            user_prompt = """
-Tạo kế hoạch phản ứng rủi ro truyền thông cho Phúc Long dựa trên sentiment và risk groups.
-Cần chia theo mức ưu tiên cao/trung bình/thấp và bộ phận phụ trách.
-"""
-            with st.spinner("AI đang tạo risk response plan..."):
-                answer = call_ai([
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": ai_context + "\n\n" + user_prompt},
-                ])
-            render_ai_answer(answer, 'phuclong')
+        if st.button("Generate Risk Response Plan", width="stretch"):
+            with st.spinner("Risk Response Agent đang truy vấn MCP risk data và tạo kế hoạch phản ứng..."):
+                result = run_semantic_agent(
+                    user_question=question,
+                    agent_type="risk_response",
+                    brand=brand_for_agent,
+                    platform=platform_for_agent,
+                )
+
+            st.caption(
+                "Intent="
+                + str(result.get("intent"))
+                + " | Tools="
+                + ", ".join(result.get("tools_used", []))
+            )
+            render_ai_answer(result.get("answer", ""), "risk_response_plan")
 
     st.divider()
 
-    question = st.text_area(
-        "Hỏi AI về dữ liệu",
-        value="Phúc Long nên ưu tiên hành động gì trên TikTok và Facebook trong tuần tới?",
-        height=120,
+    if st.button("Ask Semantic MCP Chatbot", width="stretch"):
+        with st.spinner("Semantic MCP Chatbot đang hiểu câu hỏi, chọn tool và truy vấn dữ liệu..."):
+            result = run_semantic_agent(
+                user_question=question,
+                agent_type="natural_language_chat",
+                brand=brand_for_agent,
+                platform=platform_for_agent,
+            )
+
+        st.caption(
+            "Semantic Router: intent="
+            + str(result.get("intent"))
+            + " | tools="
+            + ", ".join(result.get("tools_used", []))
+        )
+        render_ai_answer(result.get("answer", ""), "semantic_chatbot_answer")
+
+    st.divider()
+
+    st.markdown("### A2A-ready Multi-Agent Decision Review")
+    st.caption(
+        "MVP mô phỏng phối hợp nhiều agent. Tất cả agent đều dùng MCP semantic context và Gold SQLite thực tế. "
+        "Phase production có thể bọc mỗi agent thành A2A endpoint."
     )
 
-    if st.button("Ask AI", use_container_width=True):
-        with st.spinner("AI đang trả lời..."):
-            answer = call_ai([
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": ai_context + "\n\nCâu hỏi: " + question},
-            ])
-        render_ai_answer(answer, 'phuclong')
+    if st.button("Run A2A-ready Multi-Agent Review", width="stretch"):
+        with st.spinner("Đang chạy Insight Agent, Risk Agent, Content Strategy Agent và Executive Decision Agent qua MCP semantic data..."):
+            outputs = run_multi_agent_a2a(
+                user_question=question,
+                brand=brand_for_agent,
+                platform=platform_for_agent,
+            )
 
-    st.divider()
-    st.markdown("### MCP Tool Inspector")
-    st.caption("Khu vực này mô phỏng MCP tool call: Streamlit gọi tool layer để truy vấn sâu Gold SQLite và semantic context.")
+        combined = []
 
-    tool_col1, tool_col2 = st.columns([1, 2])
+        for name, payload in outputs.items():
+            with st.expander(name, expanded=(name == "Executive Decision Agent")):
+                st.caption(
+                    "Intent="
+                    + str(payload.get("intent"))
+                    + " | Tools="
+                    + ", ".join(payload.get("tools_used", []))
+                )
+                st.markdown(payload.get("answer", ""))
 
-    with tool_col1:
-        selected_tool = st.selectbox(
-            "Chọn MCP-style tool",
-            [
-                "get_platform_performance",
-                "get_content_pillar_performance",
-                "get_sentiment_risk",
-                "get_top_posts",
-            ],
-        )
-        tool_top_n = st.slider("Số dòng", min_value=5, max_value=50, value=15)
+            combined.append(export_agent_result_markdown(payload))
 
-    with tool_col2:
-        if st.button("Run selected MCP tool", use_container_width=True):
-            try:
-                if selected_tool == "get_platform_performance":
-                    tool_result = get_platform_performance(
-                        brand=None if brand_filter == "All" else brand_filter,
-                        platform=None if platform_filter == "All" else platform_filter,
-                    )
-                elif selected_tool == "get_content_pillar_performance":
-                    tool_result = get_content_pillar_performance(
-                        brand=None if brand_filter == "All" else brand_filter,
-                        platform=None if platform_filter == "All" else platform_filter,
-                    )
-                elif selected_tool == "get_sentiment_risk":
-                    tool_result = get_sentiment_risk(
-                        brand=None if brand_filter == "All" else brand_filter,
-                        platform=None if platform_filter == "All" else platform_filter,
-                        top_n=tool_top_n,
-                    )
-                else:
-                    tool_result = get_top_posts(
-                        brand=None if brand_filter == "All" else brand_filter,
-                        platform=None if platform_filter == "All" else platform_filter,
-                        top_n=tool_top_n,
-                    )
+        combined_md = "\n\n---\n\n".join(combined)
 
-                st.markdown(tool_result.get("markdown", "No output"))
-            except Exception as exc:
-                st.error(f"MCP tool failed: {type(exc).__name__}: {exc}")
-
-    st.divider()
-    st.markdown("### A2A-ready Multi-Agent Decision Review")
-    st.caption("MVP mô phỏng phối hợp nhiều agent. Phase sau có thể bọc từng agent thành A2A server/card và dùng MCP để truy cập Gold database.")
-
-    if st.button("Run Multi-Agent Decision Review", use_container_width=True):
-        with st.spinner("Đang chạy Insight Agent, Risk Agent, Content Strategy Agent và Executive Decision Agent..."):
-            agent_outputs = run_multi_agent_review(ai_context)
-
-        for agent_name, output in agent_outputs.items():
-            with st.expander(agent_name, expanded=(agent_name == "Executive Decision Agent")):
-                st.markdown(output)
-
-        combined = "\n\n".join([f"# {k}\n\n{v}" for k, v in agent_outputs.items()])
         st.download_button(
-            label="Download multi-agent decision review (.md)",
-            data=combined.encode("utf-8"),
-            file_name="phuclong_multi_agent_decision_review.md",
+            label="Download A2A multi-agent review (.md)",
+            data=combined_md.encode("utf-8"),
+            file_name="phuclong_a2a_multi_agent_review.md",
             mime="text/markdown",
-            use_container_width=True,
+            width="stretch",
         )
 
     st.divider()
-    st.markdown("### Rule-based recommendations từ Gold table")
-    show_df(ai_recs)
+
+    with st.expander("Developer Debug: Semantic/MCP details", expanded=False):
+        st.markdown("#### Rule-based recommendations từ Gold table")
+        show_df(ai_recs)
+
+        st.markdown("#### Semantic runtime")
+        st.write("Natural language → semantic_query_router → MCP tools → Gold SQLite → AI Agent.")
