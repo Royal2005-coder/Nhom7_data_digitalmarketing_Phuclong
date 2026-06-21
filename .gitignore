@@ -9,8 +9,7 @@ __pycache__/
 *.db
 
 # Junk folders
-file_rac_cho_xoa/
-data_rac_cho_xoa/
+data/file_rac_cho_xoa/
 
 # Except for git config files
 !.gitignore
