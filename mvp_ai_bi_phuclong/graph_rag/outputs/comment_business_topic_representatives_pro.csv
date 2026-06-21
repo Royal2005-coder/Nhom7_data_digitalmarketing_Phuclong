@@ -1,0 +1,49 @@
+﻿business_topic,rank,topic_id,brand,platform,sentiment_label,risk_group,topic_probability,topic_reliability_score,text
+app_payment_order,1,63,highlands,tiktok,neutral,none,1.0,0.4907,@Phan Minh Tuấn
+app_payment_order,2,63,katinat,tiktok,positive,none,1.0,0.4907,Khả năng cao là ngay góc Nguyễn Thái Học vs Lê Triệu Kiết ở Long Xuyên
+app_payment_order,3,63,phuc_long,tiktok,positive,none,1.0,0.4907,Mood nang len luon
+app_payment_order,4,63,highlands,tiktok,positive,none,1.0,0.4907,Cần giải thích.
+app_payment_order,5,63,katinat,tiktok,neutral,none,1.0,0.4907,phá sản đi đang hay
+app_payment_order,6,63,phuc_long,tiktok,neutral,none,1.0,0.4907,@Hướng Lam Nhiên 😗
+app_payment_order,7,63,highlands,tiktok,neutral,none,1.0,0.4907,@Lưu Tuệ Nhật 🤣
+app_payment_order,8,63,highlands,tiktok,neutral,none,1.0,0.4907,@Người bình thường
+branch_availability,1,95,phuc_long,tiktok,neutral,none,1.0,0.5265,Mình full màu
+branch_availability,2,95,phuc_long,tiktok,neutral,none,1.0,0.5265,Chọn màu dc ko
+branch_availability,3,95,phuc_long,tiktok,positive,service_store,1.0,0.5265,"Lúc order nhớ nói nhân viên kĩ là combo ly đổi màu nha mấy bà, nay tui mua PL ở Cần Thơ chỗ Vincom Hùng Hương, đã nói mấy lần là combo ly đổi màu nhưng vẫn order sai, đến lúc dô hỏi thì kêu thông cảm 🙂🙂🙂"
+branch_availability,4,95,highlands,tiktok,positive,none,1.0,0.5265,Mình có thể lây màu nâu để làm đẹp hơn Á. Chứ làm màu này nó kêu nhái .
+branch_availability,5,95,phuc_long,tiktok,positive,app_payment_promotion,1.0,0.5265,Co ai xem xong ma thich nhu minh khong
+branch_availability,6,95,katinat,tiktok,neutral,none,1.0,0.5265,ly đổi màu thì sao add
+branch_availability,7,95,phuc_long,tiktok,neutral,none,1.0,0.5265,Bà Thơ ơi. Bình giữ nhiệt có bán hông dị. Thấy có 2 màu trắng vs xanh lá ý
+branch_availability,8,95,highlands,tiktok,positive,none,1.0,0.5265,Màu nhìn ưng mắt quá nhỉ
+brand_love_content,1,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh
+brand_love_content,2,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh12 Tháng 5 lúc 02:07·Đã chia sẻ với Công khai
+brand_love_content,3,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh14 Tháng 4·Đã chia sẻ với Công khai
+brand_love_content,4,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh3 Tháng 4·Đã chia sẻ với Công khai
+brand_love_content,5,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh13 Tháng 4·Đã chia sẻ với Công khai
+brand_love_content,6,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minh1 Tháng 4·Đã chia sẻ với Công khai
+brand_love_content,7,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minhđã cập nhật ảnh bìa của họ.17 Tháng 4·Đã chia sẻ với Công khai
+brand_love_content,8,83,katinat,facebook,neutral,none,1.0,0.6423,KATINATTài khoản đã xác minhđã cập nhật ảnh bìa của họ.
+delivery_waiting,1,82,highlands,facebook,neutral,none,1.0,0.6407,Cách kể chuyện đơn giản mà lại chạm được cảm xúc ghê
+delivery_waiting,2,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:4,1K"
+delivery_waiting,3,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:1,3K"
+delivery_waiting,4,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:5,6K"
+delivery_waiting,5,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:5,4K"
+delivery_waiting,6,82,phuc_long,facebook,neutral,none,1.0,0.6407,Tất cả cảm xúc:16K
+delivery_waiting,7,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:1,9K"
+delivery_waiting,8,82,phuc_long,facebook,neutral,none,1.0,0.6407,"Tất cả cảm xúc:1,8K"
+price_promotion,1,85,highlands,tiktok,neutral,app_payment_promotion,1.0,0.6067,"Tặng mã km 1-1, ai cần fl và ib tui nha. có vài mã hoy nha nha😘😘"
+price_promotion,2,85,highlands,tiktok,positive,app_payment_promotion,1.0,0.6067,kết hợp xong. cái mã chuyển khoản nhỏ xíu. phải dí cái điện thoại vô mới nhận
+price_promotion,3,85,highlands,tiktok,positive,app_payment_promotion,1.0,0.6067,Xin ít mã giảm giá ạ
+price_promotion,4,85,highlands,tiktok,neutral,app_payment_promotion,1.0,0.6067,có mã giảm giá j ko vậy
+price_promotion,5,85,highlands,tiktok,negative,app_payment_promotion,1.0,0.6067,https://shorten.asia/KMsz734w Mã giảm giá cho bạn nào cần nhé
+price_promotion,6,85,highlands,tiktok,negative,app_payment_promotion,1.0,0.6067,Mã giảm giá cho ai cần: https://shorten.asia/KMsz734w
+price_promotion,7,85,highlands,tiktok,negative,app_payment_promotion,1.0,0.6067,https://shorten.asia/CNSawmFG mã free dành cho những bạn nào cần ạ
+price_promotion,8,85,highlands,tiktok,neutral,app_payment_promotion,1.0,0.6067,nhập thông tin dài nhỉ :) có cách nào quét mã quay lun đc k sốp
+product_taste_quality,1,93,phuc_long,tiktok,positive,none,1.0,0.6762,"ê, cover lại bưởi mật ong starbuck mà ko ra gì dân nó chửi cho đó. để t đi thử"
+product_taste_quality,2,93,phuc_long,tiktok,positive,none,1.0,0.6762,hồng trà bưởi mật ong hiện còn bán ko ạ? mình rất thích và đợt trc lễ thường uống nhưng này hnhu hok thấy trên menu
+product_taste_quality,3,93,phuc_long,facebook,positive,none,1.0,0.6762,Ai thử hồng trà yến mạch mật ong chưa cho e xin review chân thật với 🤣🤣
+product_taste_quality,4,93,phuc_long,facebook,neutral,none,1.0,0.6762,Mật ong vào dở lắm :((
+product_taste_quality,5,93,phuc_long,facebook,positive,none,1.0,0.6762,"Đọc cmt thấy nhiều người mê trà bưởi mật ong giống tôi, PL nên cân nhắc đưa vào menu chính. Gần đây vào hè rồi các món trà hoa quả sẽ dễ uống hơn"
+product_taste_quality,6,93,phuc_long,facebook,positive,none,1.0,0.6762,"Cho hồng trà bưởi mật ong comeback đc ko ạ, ún chưa đã"
+product_taste_quality,7,93,phuc_long,facebook,positive,none,1.0,0.6762,Trà bưởi mật ong đê! Mấy Món mới này k hợp @@
+product_taste_quality,8,93,phuc_long,facebook,positive,none,1.0,0.6762,"Hồng trà bưởi mật ong đeeee ad ơi, huhu"

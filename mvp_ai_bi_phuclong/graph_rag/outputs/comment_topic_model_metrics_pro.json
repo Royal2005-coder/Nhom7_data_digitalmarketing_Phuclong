@@ -1,0 +1,16 @@
+{
+  "silhouette_score": 0.13010863959789276,
+  "davies_bouldin_score": 2.4491775151222885,
+  "calinski_harabasz_score": 71.76625572788637,
+  "valid_cluster_count": 43,
+  "outlier_ratio": 0.26302845766483196,
+  "status": "PASS",
+  "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "raw_comments_after_cleaning": 8539,
+  "bertopic_topic_count_excluding_outliers": 43,
+  "outlier_count": 2246,
+  "topic_quality_rows": 43,
+  "high_confidence": 0,
+  "medium_confidence": 9,
+  "low_confidence": 34
+}

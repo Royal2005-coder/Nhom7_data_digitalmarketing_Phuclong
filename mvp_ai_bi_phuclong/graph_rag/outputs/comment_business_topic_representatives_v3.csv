@@ -1,0 +1,71 @@
+﻿business_topic,rank,topic_id,brand,platform,sentiment_label,risk_group,business_match_confidence,topic_probability,text
+app_payment_order,1,4,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,"Túi Phúng Phính “Dệt Gấm Vóc Tự Hào” đã có mặt tại các gian hàng chính hãng của KATINAT, Katies có thể săn tại: 📍APP KATINAT: https://mba.katinat.vn/download-mobile-app-katinat 📍TikTok Shop: https://vt.tiktok.com/ZS9N9MCja9M6q-6jbsk/ 📍ShopeeMall: https://vn.shp.ee/5Wj1HBYp 📍ShopeeFood: https://shopeefood.vn/u/bu38Vtx"
+app_payment_order,2,4,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,"Tác giảKATINATTúi Phúng Phính “Dệt Gấm Vóc Tự Hào” đã có mặt tại các gian hàng chính hãng của KATINAT, Katies có thể săn tại:APP KATINAT:https://mba.katinat.vn/download-mobile-app-katinatTikTok Shop:https://vt.tiktok.com/ZS9N9MCja9M6q-6jbsk/ShopeeMall:https://vn.shp.ee/5Wj1HBYpShopeeFood:https://shopeefood.vn/u/bu38Vtx3 tuần"
+app_payment_order,3,4,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,"Túi Phúng Phính “Dệt Gấm Vóc Tự Hào” đã có mặt tại các gian hàng chính hãng của KATINAT, Katies có thể săn tại:APP KATINAT:https://mba.katinat.vn/download-mobile-app-katinatTikTok Shop:https://vt.tiktok.com/ZS9N9MCja9M6q-6jbsk/ShopeeMall:https://vn.shp.ee/5Wj1HBYpShopeeFood:https://shopeefood.vn/u/bu38Vtx"
+app_payment_order,4,4,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,"Tác giảKATINATTai Phuc Le Cảm ơn Katies đã quan tâm ạTúi Phúng Phính “Dệt Gấm Vóc Tự Hào” đã có mặt tại các gian hàng chính hãng của KATINAT, Katies có thể săn tại:APP KATINAT:https://mba.katinat.vn/download-mobile-app-katinatTikTok Shop:https://vt.tiktok.com/ZS9N9MCja9M6q-6jbsk/ShopeeMall:https://vn.shp.ee/5Wj1HBYpShopeeFood:https://shopeefood.vn/u/bu38VtxMBA.KATINAT.VNKATINATKATINAT3 tuần"
+app_payment_order,5,4,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,"Tai Phuc Le Cảm ơn Katies đã quan tâm ạTúi Phúng Phính “Dệt Gấm Vóc Tự Hào” đã có mặt tại các gian hàng chính hãng của KATINAT, Katies có thể săn tại:APP KATINAT:https://mba.katinat.vn/download-mobile-app-katinatTikTok Shop:https://vt.tiktok.com/ZS9N9MCja9M6q-6jbsk/ShopeeMall:https://vn.shp.ee/5Wj1HBYpShopeeFood:https://shopeefood.vn/u/bu38Vtx"
+app_payment_order,6,3,highlands,facebook,neutral,app_payment_promotion,1.0,1.0,di.highlandscoffee.com.vnTải ứng dụng Highlands CoffeeĐặt hàng ngay
+app_payment_order,7,16,phuc_long,facebook,neutral,app_payment_promotion,1.0,1.0,"Có đặt đc k ạ,mình vào thử app rồi mà k có đặt đc"
+app_payment_order,8,16,katinat,tiktok,neutral,app_payment_promotion,1.0,1.0,Đặt trên app có được ly này không vậy?
+app_payment_order,9,16,katinat,tiktok,neutral,app_payment_promotion,1.0,1.0,Ủa đặt qua app có ly này k ta
+app_payment_order,10,16,katinat,facebook,neutral,app_payment_promotion,1.0,1.0,Đặt app có đc li như này hông mng
+branch_availability,1,40,phuc_long,facebook,positive,none,1.0,1.0,"Cánh cửa của Hội Lớn Phúc Long chuẩn bị mở, bạn đã sẵn sàng để trở thành những thành viên đầu tiên chinh phục thử thách chưa?"
+branch_availability,2,40,highlands,facebook,neutral,none,1.0,1.0,"Quán có quy định giờ không ạ , hay ra lúc nào 3 ngày này cũng dc khuyến mại"
+branch_availability,3,40,katinat,tiktok,neutral,none,1.0,1.0,cho em hỏi katinat mạc cửu bắt đầu nhận khách vào quán từ mấy giờ vậy ạ
+branch_availability,4,40,highlands,tiktok,neutral,none,1.0,1.0,Bên mình có mở cửa qua 0h để xem pháo hoa khommm ạ
+branch_availability,5,40,phuc_long,facebook,neutral,none,1.0,1.0,Nghi LươngTôi hỏi em: Bao giờ thì em mở cửa?!!?
+branch_availability,6,40,katinat,tiktok,neutral,none,1.0,1.0,Cho e hỏi Katinat VT mấy giờ đóng cửa vậy ạ
+branch_availability,7,40,phuc_long,facebook,neutral,none,1.0,1.0,Tôi hỏi em: Bao giờ thì em mở cửa?!!?
+branch_availability,8,40,highlands,tiktok,neutral,none,1.0,1.0,quán mở cửa đến mấy giờ buổi tối vậy ạ
+branch_availability,9,40,highlands,facebook,positive,none,1.0,1.0,địa chỉ quang trung mấy giờ mở cửa v ạ
+branch_availability,10,40,katinat,tiktok,neutral,none,1.0,1.0,Quán mở cửa lúc mấy giờ sáng v
+brand_love_content,1,11,phuc_long,tiktok,neutral,none,1.0,1.0,Có ai ăn thử chưa review với
+brand_love_content,2,38,highlands,tiktok,neutral,none,1.0,1.0,Ko biết ad chỉnh nhạc gì nge tai nó ê nhức 😅
+brand_love_content,3,38,highlands,tiktok,positive,none,1.0,1.0,"Quá đã, cất tiếng hát là thấy mê r 😌"
+brand_love_content,4,38,highlands,tiktok,neutral,none,1.0,1.0,không có sub t tưởng nhạc thái không đó :)))
+brand_love_content,5,38,highlands,tiktok,positive,none,1.0,1.0,nhạc đầu tiên giống meme sea v
+brand_love_content,6,38,highlands,tiktok,neutral,none,1.0,1.0,ê nay ghép nhạc hay v ta =)))))))
+brand_love_content,7,38,highlands,tiktok,neutral,none,1.0,1.0,tôi xem hết qc vì nhạc👍🏻
+brand_love_content,8,38,highlands,tiktok,positive,none,1.0,1.0,Tự nhiên thích cái quảng cáo này vì nhạc 😳
+brand_love_content,9,38,highlands,tiktok,neutral,none,1.0,1.0,nhạc hay quá sộp ơi bắt trend lắm nha 🫰🫰
+brand_love_content,10,38,highlands,tiktok,neutral,none,1.0,1.0,Nhạc tên gì ấy nhỉ
+delivery_waiting,1,42,phuc_long,tiktok,positive,none,1.0,1.0,"Bữa sáng kiểu này nhìn đơn giản mà hợp lý ghê, không biết ăn có no tới trưa không"
+delivery_waiting,2,42,phuc_long,tiktok,positive,none,1.0,1.0,Bữa sáng kiểu này nhìn đơn giản mà hợp lý ghê
+delivery_waiting,3,29,highlands,tiktok,neutral,none,1.0,1.0,giao diện mới nhỉ
+delivery_waiting,4,18,phuc_long,facebook,neutral,none,1.0,1.0,Tác giảPhuc Long Coffee & TeaCác Tâm Giao nào muốn đi biển giơ tay lên nà4 tuần2Phuc Long Coffee & Tea đã trả lời·3 phản hồi
+delivery_waiting,5,18,phuc_long,facebook,positive,none,1.0,1.0,Tu Anh NguyenShop có ship k ạ3 tuầnPhuc Long Coffee & Tea đã trả lời·1 phản hồi
+delivery_waiting,6,24,phuc_long,tiktok,positive,none,1.0,1.0,Sáng nào cũng trễ thì ăn cái này hợp nè
+delivery_waiting,7,35,highlands,tiktok,positive,none,1.0,1.0,Văn bản sao chép sẽ được giữ trong vòng 24h. Nhấn giữ văn bản để giữ lâu hơn.
+delivery_waiting,8,35,katinat,facebook,positive,none,1.0,1.0,"Tháng 04, tháng của niềm tự hào trong ngày vui Thống Nhất!Cùng đón chờ vào ngày 18.04.2026 nha Katies ơi"
+delivery_waiting,9,35,katinat,facebook,neutral,none,1.0,1.0,Tác giảKATINATKaties cùng đón chờ vào ngày 14/05/2026 nha!1 tuần1Xem 1 phản hồi
+delivery_waiting,10,35,katinat,facebook,neutral,none,1.0,1.0,Tác giảKATINATKaties cùng đón chờ vào ngày 14/05/2026 nha!
+price_promotion,1,42,phuc_long,tiktok,neutral,none,1.0,1.0,"combo này tiện thật, khỏi nghĩ ăn gì mỗi sáng"
+price_promotion,2,42,phuc_long,tiktok,positive,none,1.0,1.0,Giá hợp lý cho bữa sáng SG
+price_promotion,3,42,phuc_long,tiktok,neutral,none,1.0,1.0,Còn combo bữa sáng không nhỉ?
+price_promotion,4,42,phuc_long,tiktok,neutral,none,1.0,1.0,Giờ còn combo bữa sáng k ạ?
+price_promotion,5,32,highlands,facebook,positive,app_payment_promotion,1.0,1.0,Thuý NguyễnMh đăng kí rồi nhưng cũng k thấy mã tặng ạ
+price_promotion,6,32,phuc_long,tiktok,neutral,app_payment_promotion,1.0,1.0,Có được áp thêm mã ưu đãi khác k
+price_promotion,7,32,highlands,facebook,neutral,app_payment_promotion,1.0,1.0,Có được ap dụng add thêm mã giảm ko ạ
+price_promotion,8,32,highlands,facebook,positive,app_payment_promotion,1.0,1.0,Mh đăng kí rồi nhưng cũng k thấy mã tặng ạ
+price_promotion,9,32,highlands,tiktok,neutral,app_payment_promotion,1.0,1.0,có mã giảm giá j ko vậy
+price_promotion,10,32,highlands,tiktok,negative,app_payment_promotion,1.0,1.0,https://shorten.asia/KMsz734w Mã giảm giá cho ae nào cần
+product_taste_quality,1,36,phuc_long,facebook,positive,taste_quality,1.0,1.0,"Từ hương thơm thanh lành của trà, cà phê hòa quyện cùng mật ong, đến vị ngọt lành của những chiếc bánh tốt cho sức khỏe. Tất cả tạo nên dư vị của một mùa xuân Hương Mật Ươm Sắc thật đậm vị và khó quên."
+product_taste_quality,2,36,phuc_long,facebook,positive,none,1.0,1.0,"Bộ sưu tập nước Hương Mật Ươm Sắc: Hồng Trà Bưởi Mật Ong, Hồng Trà Sữa Yến Mạch Mật Ong, Cà Phê Curcumin Mật Ong:"
+product_taste_quality,3,36,phuc_long,tiktok,positive,none,1.0,1.0,"ê, cover lại bưởi mật ong starbuck mà ko ra gì dân nó chửi cho đó. để t đi thử"
+product_taste_quality,4,36,phuc_long,facebook,positive,none,1.0,1.0,"hồng trà bưởi mật ong của tiệm có ngon hog mấy bà? t hèn, chưa dám thử ☺️"
+product_taste_quality,5,36,phuc_long,facebook,positive,none,1.0,1.0,"Từ những đồi trà bạt ngàn, đến hương vị ngọt thơm của nền Hồng Trà Mật Ong."
+product_taste_quality,6,36,phuc_long,facebook,positive,none,1.0,1.0,Hi Quý PhiHồng Trà Bưởi mật ong uống cũng cũng nha m.n must try11 tuần
+product_taste_quality,7,36,phuc_long,facebook,positive,none,1.0,1.0,Ngô HuyềnTrà bưởi mật ong nếu có vị chua xíu thì ngon hơn5 tuần
+product_taste_quality,8,36,phuc_long,facebook,positive,none,1.0,1.0,Ngô HuyềnTrà bưởi mật ong nếu có vị chua xíu thì ngon hơn
+product_taste_quality,9,36,highlands,tiktok,neutral,none,1.0,1.0,tại sao hl kh bán trà quả mọng anh đào nữa 💔
+product_taste_quality,10,36,phuc_long,facebook,positive,none,1.0,1.0,"Cho hồng trà bưởi mật ong comeback đc ko ạ, ún chưa đã"
+service_store_staff,1,42,phuc_long,tiktok,neutral,service_store,1.0,1.0,"sáng nào cũng đông, muốn ăn mà lười xếp hàng"
+service_store_staff,2,42,phuc_long,facebook,neutral,none,1.0,1.0,BỮA SÁNG NHANH GỌN – NĂNG LƯỢNG TRỌN NGÀY
+service_store_staff,3,42,phuc_long,tiktok,neutral,none,1.0,1.0,Sáng ăn nhanh gọn
+service_store_staff,4,37,highlands,facebook,neutral,none,1.0,1.0,Fan cứngHoàng QuỳnhAnhThu Trang7 tuần1
+service_store_staff,5,37,highlands,facebook,neutral,none,1.0,1.0,Fan cứngHoàng QuỳnhAnhThu Trang
+service_store_staff,6,0,phuc_long,tiktok,positive,none,1.0,1.0,"thôi khỏi nghĩ chân trái phải, đi Phúc Long cho nhanh"
+service_store_staff,7,0,highlands,facebook,neutral,app_payment_promotion,1.0,1.0,Mai Hà Vy lên nhanh còn chốt nào 😂
+service_store_staff,8,5,highlands,tiktok,neutral,service_store,1.0,1.0,HL nv dth qua Starbuck nv thái độ ra mặt luôn :))
+service_store_staff,9,21,phuc_long,facebook,neutral,none,1.0,1.0,Chỉ 3 bước “nhanh như chớp” để nhận quà:
+service_store_staff,10,15,highlands,tiktok,positive,none,1.0,1.0,Bữa đi hái lèn kêu ly cà phê cái bạn nhân ziên bản đứng trong quầy bản..

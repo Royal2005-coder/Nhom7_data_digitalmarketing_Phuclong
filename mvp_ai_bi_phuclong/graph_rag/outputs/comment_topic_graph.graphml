@@ -1,0 +1,1492 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="edge" attr.name="title" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d3" for="node" attr.name="title" attr.type="string"/>
+<key id="d2" for="node" attr.name="value" attr.type="long"/>
+<key id="d1" for="node" attr.name="group" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="undirected"><node id="topic_0">
+  <data key="d0">T0: minh / hay / ai / phạm</data>
+  <data key="d1">topic</data>
+  <data key="d2">768</data>
+  <data key="d3">Topic 0&lt;br&gt;Comments: 768&lt;br&gt;Positive: 141&lt;br&gt;Neutral: 602&lt;br&gt;Negative: 25&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_minh">
+  <data key="d0">minh</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: minh</data>
+</node>
+<node id="keyword_hay">
+  <data key="d0">hay</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: hay</data>
+</node>
+<node id="keyword_ai">
+  <data key="d0">ai</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ai</data>
+</node>
+<node id="keyword_phạm">
+  <data key="d0">phạm</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: phạm</data>
+</node>
+<node id="keyword_nhận">
+  <data key="d0">nhận</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nhận</data>
+</node>
+<node id="keyword_ủa">
+  <data key="d0">ủa</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ủa</data>
+</node>
+<node id="brand_highlands">
+  <data key="d0">highlands</data>
+  <data key="d1">brand</data>
+  <data key="d2">10</data>
+  <data key="d3">brand: highlands</data>
+</node>
+<node id="platform_tiktok">
+  <data key="d0">tiktok</data>
+  <data key="d1">platform</data>
+  <data key="d2">10</data>
+  <data key="d3">platform: tiktok</data>
+</node>
+<node id="risk_none">
+  <data key="d0">none</data>
+  <data key="d1">risk</data>
+  <data key="d2">10</data>
+  <data key="d3">risk: none</data>
+</node>
+<node id="sentiment_positive">
+  <data key="d0">positive</data>
+  <data key="d1">sentiment</data>
+  <data key="d2">12</data>
+  <data key="d3">Sentiment: positive</data>
+</node>
+<node id="sentiment_neutral">
+  <data key="d0">neutral</data>
+  <data key="d1">sentiment</data>
+  <data key="d2">12</data>
+  <data key="d3">Sentiment: neutral</data>
+</node>
+<node id="sentiment_negative">
+  <data key="d0">negative</data>
+  <data key="d1">sentiment</data>
+  <data key="d2">12</data>
+  <data key="d3">Sentiment: negative</data>
+</node>
+<node id="topic_1">
+  <data key="d0">T1: ngon / uống / tuần / trà</data>
+  <data key="d1">topic</data>
+  <data key="d2">2606</data>
+  <data key="d3">Topic 1&lt;br&gt;Comments: 2606&lt;br&gt;Positive: 1245&lt;br&gt;Neutral: 1257&lt;br&gt;Negative: 104&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_ngon">
+  <data key="d0">ngon</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ngon</data>
+</node>
+<node id="keyword_uống">
+  <data key="d0">uống</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: uống</data>
+</node>
+<node id="keyword_tuần">
+  <data key="d0">tuần</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuần</data>
+</node>
+<node id="keyword_trà">
+  <data key="d0">trà</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: trà</data>
+</node>
+<node id="keyword_ly">
+  <data key="d0">ly</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ly</data>
+</node>
+<node id="keyword_cái">
+  <data key="d0">cái</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: cái</data>
+</node>
+<node id="topic_2">
+  <data key="d0">T2: phản / phản hồi / hồi / cả phản</data>
+  <data key="d1">topic</data>
+  <data key="d2">384</data>
+  <data key="d3">Topic 2&lt;br&gt;Comments: 384&lt;br&gt;Positive: 130&lt;br&gt;Neutral: 246&lt;br&gt;Negative: 8&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_phản">
+  <data key="d0">phản</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: phản</data>
+</node>
+<node id="keyword_phản hồi">
+  <data key="d0">phản hồi</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: phản hồi</data>
+</node>
+<node id="keyword_hồi">
+  <data key="d0">hồi</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: hồi</data>
+</node>
+<node id="keyword_cả phản">
+  <data key="d0">cả phản</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: cả phản</data>
+</node>
+<node id="keyword_tuầnxem">
+  <data key="d0">tuầnxem</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuầnxem</data>
+</node>
+<node id="keyword_tuần1xem">
+  <data key="d0">tuần1xem</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuần1xem</data>
+</node>
+<node id="platform_facebook">
+  <data key="d0">facebook</data>
+  <data key="d1">platform</data>
+  <data key="d2">10</data>
+  <data key="d3">platform: facebook</data>
+</node>
+<node id="topic_3">
+  <data key="d0">T3: nguyễn / tuần / nguyễn thị / thị</data>
+  <data key="d1">topic</data>
+  <data key="d2">440</data>
+  <data key="d3">Topic 3&lt;br&gt;Comments: 440&lt;br&gt;Positive: 61&lt;br&gt;Neutral: 378&lt;br&gt;Negative: 1&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_nguyễn">
+  <data key="d0">nguyễn</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nguyễn</data>
+</node>
+<node id="keyword_nguyễn thị">
+  <data key="d0">nguyễn thị</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nguyễn thị</data>
+</node>
+<node id="keyword_thị">
+  <data key="d0">thị</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: thị</data>
+</node>
+<node id="keyword_tuần1">
+  <data key="d0">tuần1</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuần1</data>
+</node>
+<node id="keyword_ngọc">
+  <data key="d0">ngọc</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ngọc</data>
+</node>
+<node id="topic_4">
+  <data key="d0">T4: mai / fan / phải / luôn</data>
+  <data key="d1">topic</data>
+  <data key="d2">511</data>
+  <data key="d3">Topic 4&lt;br&gt;Comments: 511&lt;br&gt;Positive: 94&lt;br&gt;Neutral: 402&lt;br&gt;Negative: 15&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_mai">
+  <data key="d0">mai</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: mai</data>
+</node>
+<node id="keyword_fan">
+  <data key="d0">fan</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: fan</data>
+</node>
+<node id="keyword_phải">
+  <data key="d0">phải</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: phải</data>
+</node>
+<node id="keyword_luôn">
+  <data key="d0">luôn</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: luôn</data>
+</node>
+<node id="keyword_châu">
+  <data key="d0">châu</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: châu</data>
+</node>
+<node id="keyword_trân">
+  <data key="d0">trân</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: trân</data>
+</node>
+<node id="topic_5">
+  <data key="d0">T5: tuyệt / tuyệt vời / vời / đẹp</data>
+  <data key="d1">topic</data>
+  <data key="d2">45</data>
+  <data key="d3">Topic 5&lt;br&gt;Comments: 45&lt;br&gt;Positive: 45&lt;br&gt;Neutral: 0&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_tuyệt">
+  <data key="d0">tuyệt</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuyệt</data>
+</node>
+<node id="keyword_tuyệt vời">
+  <data key="d0">tuyệt vời</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tuyệt vời</data>
+</node>
+<node id="keyword_vời">
+  <data key="d0">vời</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: vời</data>
+</node>
+<node id="keyword_đẹp">
+  <data key="d0">đẹp</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: đẹp</data>
+</node>
+<node id="keyword_thật">
+  <data key="d0">thật</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: thật</data>
+</node>
+<node id="brand_katinat">
+  <data key="d0">katinat</data>
+  <data key="d1">brand</data>
+  <data key="d2">10</data>
+  <data key="d3">brand: katinat</data>
+</node>
+<node id="topic_6">
+  <data key="d0">T6: chia sẻ / sẻ / lượt chia / lượt</data>
+  <data key="d1">topic</data>
+  <data key="d2">60</data>
+  <data key="d3">Topic 6&lt;br&gt;Comments: 60&lt;br&gt;Positive: 0&lt;br&gt;Neutral: 60&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_chia sẻ">
+  <data key="d0">chia sẻ</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: chia sẻ</data>
+</node>
+<node id="keyword_sẻ">
+  <data key="d0">sẻ</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: sẻ</data>
+</node>
+<node id="keyword_lượt chia">
+  <data key="d0">lượt chia</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: lượt chia</data>
+</node>
+<node id="keyword_lượt">
+  <data key="d0">lượt</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: lượt</data>
+</node>
+<node id="keyword_chia">
+  <data key="d0">chia</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: chia</data>
+</node>
+<node id="keyword_15">
+  <data key="d0">15</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: 15</data>
+</node>
+<node id="topic_7">
+  <data key="d0">T7: trai / đẹp / nhân viên / viên</data>
+  <data key="d1">topic</data>
+  <data key="d2">34</data>
+  <data key="d3">Topic 7&lt;br&gt;Comments: 34&lt;br&gt;Positive: 33&lt;br&gt;Neutral: 1&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_trai">
+  <data key="d0">trai</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: trai</data>
+</node>
+<node id="keyword_nhân viên">
+  <data key="d0">nhân viên</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nhân viên</data>
+</node>
+<node id="keyword_viên">
+  <data key="d0">viên</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: viên</data>
+</node>
+<node id="keyword_nhân">
+  <data key="d0">nhân</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nhân</data>
+</node>
+<node id="topic_8">
+  <data key="d0">T8: sẻ công / đã chia / công khai / khai</data>
+  <data key="d1">topic</data>
+  <data key="d2">138</data>
+  <data key="d3">Topic 8&lt;br&gt;Comments: 138&lt;br&gt;Positive: 14&lt;br&gt;Neutral: 123&lt;br&gt;Negative: 1&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_sẻ công">
+  <data key="d0">sẻ công</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: sẻ công</data>
+</node>
+<node id="keyword_đã chia">
+  <data key="d0">đã chia</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: đã chia</data>
+</node>
+<node id="keyword_công khai">
+  <data key="d0">công khai</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: công khai</data>
+</node>
+<node id="keyword_khai">
+  <data key="d0">khai</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: khai</data>
+</node>
+<node id="keyword_đã">
+  <data key="d0">đã</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: đã</data>
+</node>
+<node id="keyword_công">
+  <data key="d0">công</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: công</data>
+</node>
+<node id="topic_9">
+  <data key="d0">T9: đẹp / highlands / giá / dụng</data>
+  <data key="d1">topic</data>
+  <data key="d2">1573</data>
+  <data key="d3">Topic 9&lt;br&gt;Comments: 1573&lt;br&gt;Positive: 640&lt;br&gt;Neutral: 864&lt;br&gt;Negative: 69&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_highlands">
+  <data key="d0">highlands</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: highlands</data>
+</node>
+<node id="keyword_giá">
+  <data key="d0">giá</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: giá</data>
+</node>
+<node id="keyword_dụng">
+  <data key="d0">dụng</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: dụng</data>
+</node>
+<node id="keyword_hàng">
+  <data key="d0">hàng</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: hàng</data>
+</node>
+<node id="keyword_katinat">
+  <data key="d0">katinat</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: katinat</data>
+</node>
+<node id="topic_10">
+  <data key="d0">T10: cả cảm / cảm xúc / xúc / cảm</data>
+  <data key="d1">topic</data>
+  <data key="d2">108</data>
+  <data key="d3">Topic 10&lt;br&gt;Comments: 108&lt;br&gt;Positive: 0&lt;br&gt;Neutral: 108&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_cả cảm">
+  <data key="d0">cả cảm</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: cả cảm</data>
+</node>
+<node id="keyword_cảm xúc">
+  <data key="d0">cảm xúc</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: cảm xúc</data>
+</node>
+<node id="keyword_xúc">
+  <data key="d0">xúc</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: xúc</data>
+</node>
+<node id="keyword_cảm">
+  <data key="d0">cảm</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: cảm</data>
+</node>
+<node id="keyword_tất">
+  <data key="d0">tất</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tất</data>
+</node>
+<node id="keyword_tất cả">
+  <data key="d0">tất cả</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tất cả</data>
+</node>
+<node id="topic_11">
+  <data key="d0">T11: thích / bảo / hồng / tao</data>
+  <data key="d1">topic</data>
+  <data key="d2">2724</data>
+  <data key="d3">Topic 11&lt;br&gt;Comments: 2724&lt;br&gt;Positive: 578&lt;br&gt;Neutral: 2045&lt;br&gt;Negative: 101&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_thích">
+  <data key="d0">thích</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: thích</data>
+</node>
+<node id="keyword_bảo">
+  <data key="d0">bảo</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: bảo</data>
+</node>
+<node id="keyword_hồng">
+  <data key="d0">hồng</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: hồng</data>
+</node>
+<node id="keyword_tao">
+  <data key="d0">tao</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tao</data>
+</node>
+<node id="keyword_lại">
+  <data key="d0">lại</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: lại</data>
+</node>
+<node id="keyword_fl">
+  <data key="d0">fl</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: fl</data>
+</node>
+<node id="topic_12">
+  <data key="d0">T12: cả cảm / cảm xúc / xúc / cảm</data>
+  <data key="d1">topic</data>
+  <data key="d2">149</data>
+  <data key="d3">Topic 12&lt;br&gt;Comments: 149&lt;br&gt;Positive: 17&lt;br&gt;Neutral: 132&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="topic_13">
+  <data key="d0">T13: bình luận / luận / bình / xem</data>
+  <data key="d1">topic</data>
+  <data key="d2">101</data>
+  <data key="d3">Topic 13&lt;br&gt;Comments: 101&lt;br&gt;Positive: 2&lt;br&gt;Neutral: 99&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_bình luận">
+  <data key="d0">bình luận</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: bình luận</data>
+</node>
+<node id="keyword_luận">
+  <data key="d0">luận</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: luận</data>
+</node>
+<node id="keyword_bình">
+  <data key="d0">bình</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: bình</data>
+</node>
+<node id="keyword_xem">
+  <data key="d0">xem</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: xem</data>
+</node>
+<node id="keyword_thêm">
+  <data key="d0">thêm</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: thêm</data>
+</node>
+<node id="keyword_25">
+  <data key="d0">25</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: 25</data>
+</node>
+<node id="topic_14">
+  <data key="d0">T14: sẻthíchbình luận / sẻthíchbình / chia sẻthíchbình / luận</data>
+  <data key="d1">topic</data>
+  <data key="d2">124</data>
+  <data key="d3">Topic 14&lt;br&gt;Comments: 124&lt;br&gt;Positive: 124&lt;br&gt;Neutral: 0&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_sẻthíchbình luận">
+  <data key="d0">sẻthíchbình luận</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: sẻthíchbình luận</data>
+</node>
+<node id="keyword_sẻthíchbình">
+  <data key="d0">sẻthíchbình</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: sẻthíchbình</data>
+</node>
+<node id="keyword_chia sẻthíchbình">
+  <data key="d0">chia sẻthíchbình</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: chia sẻthíchbình</data>
+</node>
+<node id="topic_15">
+  <data key="d0">T15: chia sẻ / sẻ / lượt chia / lượt</data>
+  <data key="d1">topic</data>
+  <data key="d2">111</data>
+  <data key="d3">Topic 15&lt;br&gt;Comments: 111&lt;br&gt;Positive: 0&lt;br&gt;Neutral: 111&lt;br&gt;Negative: 0&lt;br&gt;Risk: none</data>
+</node>
+<node id="topic_16">
+  <data key="d0">T16: tuần1 / nguyen / ngọc / tháng</data>
+  <data key="d1">topic</data>
+  <data key="d2">1204</data>
+  <data key="d3">Topic 16&lt;br&gt;Comments: 1204&lt;br&gt;Positive: 181&lt;br&gt;Neutral: 1002&lt;br&gt;Negative: 21&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_nguyen">
+  <data key="d0">nguyen</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: nguyen</data>
+</node>
+<node id="keyword_tháng">
+  <data key="d0">tháng</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: tháng</data>
+</node>
+<node id="keyword_phương">
+  <data key="d0">phương</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: phương</data>
+</node>
+<node id="keyword_trần">
+  <data key="d0">trần</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: trần</data>
+</node>
+<node id="topic_17">
+  <data key="d0">T17: quán / đâu / bán / ngọt</data>
+  <data key="d1">topic</data>
+  <data key="d2">920</data>
+  <data key="d3">Topic 17&lt;br&gt;Comments: 920&lt;br&gt;Positive: 242&lt;br&gt;Neutral: 631&lt;br&gt;Negative: 47&lt;br&gt;Risk: none</data>
+</node>
+<node id="keyword_quán">
+  <data key="d0">quán</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: quán</data>
+</node>
+<node id="keyword_đâu">
+  <data key="d0">đâu</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: đâu</data>
+</node>
+<node id="keyword_bán">
+  <data key="d0">bán</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: bán</data>
+</node>
+<node id="keyword_ngọt">
+  <data key="d0">ngọt</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: ngọt</data>
+</node>
+<node id="keyword_mở">
+  <data key="d0">mở</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: mở</data>
+</node>
+<node id="keyword_xin">
+  <data key="d0">xin</data>
+  <data key="d1">keyword</data>
+  <data key="d2">4</data>
+  <data key="d3">Keyword: xin</data>
+</node>
+<edge source="topic_0" target="keyword_minh">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="keyword_hay">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="keyword_ai">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="keyword_phạm">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="keyword_nhận">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="keyword_ủa">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_0" target="brand_highlands">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="topic_0" target="platform_tiktok">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="topic_0" target="risk_none">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="topic_0" target="sentiment_positive">
+  <data key="d4">141</data>
+  <data key="d5">141 comments</data>
+</edge>
+<edge source="topic_0" target="sentiment_neutral">
+  <data key="d4">602</data>
+  <data key="d5">602 comments</data>
+</edge>
+<edge source="topic_0" target="sentiment_negative">
+  <data key="d4">25</data>
+  <data key="d5">25 comments</data>
+</edge>
+<edge source="brand_highlands" target="topic_1">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_2">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_3">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_4">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_6">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_7">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_9">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_10">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_11">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_12">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_13">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_14">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_15">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_16">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="brand_highlands" target="topic_17">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="platform_tiktok" target="topic_1">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_tiktok" target="topic_5">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_tiktok" target="topic_7">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_tiktok" target="topic_11">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_tiktok" target="topic_17">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="risk_none" target="topic_1">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_2">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_3">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_4">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_5">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_6">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_7">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_8">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_9">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_10">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_11">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_12">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_13">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_14">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_15">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_16">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="risk_none" target="topic_17">
+  <data key="d4">3</data>
+  <data key="d5">topic-risk</data>
+</edge>
+<edge source="sentiment_positive" target="topic_1">
+  <data key="d4">1245</data>
+  <data key="d5">1245 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_2">
+  <data key="d4">130</data>
+  <data key="d5">130 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_3">
+  <data key="d4">61</data>
+  <data key="d5">61 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_4">
+  <data key="d4">94</data>
+  <data key="d5">94 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_5">
+  <data key="d4">45</data>
+  <data key="d5">45 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_7">
+  <data key="d4">33</data>
+  <data key="d5">33 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_8">
+  <data key="d4">14</data>
+  <data key="d5">14 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_9">
+  <data key="d4">640</data>
+  <data key="d5">640 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_11">
+  <data key="d4">578</data>
+  <data key="d5">578 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_12">
+  <data key="d4">17</data>
+  <data key="d5">17 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_13">
+  <data key="d4">2</data>
+  <data key="d5">2 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_14">
+  <data key="d4">124</data>
+  <data key="d5">124 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_16">
+  <data key="d4">181</data>
+  <data key="d5">181 comments</data>
+</edge>
+<edge source="sentiment_positive" target="topic_17">
+  <data key="d4">242</data>
+  <data key="d5">242 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_1">
+  <data key="d4">1257</data>
+  <data key="d5">1257 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_2">
+  <data key="d4">246</data>
+  <data key="d5">246 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_3">
+  <data key="d4">378</data>
+  <data key="d5">378 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_4">
+  <data key="d4">402</data>
+  <data key="d5">402 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_6">
+  <data key="d4">60</data>
+  <data key="d5">60 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_7">
+  <data key="d4">1</data>
+  <data key="d5">1 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_8">
+  <data key="d4">123</data>
+  <data key="d5">123 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_9">
+  <data key="d4">864</data>
+  <data key="d5">864 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_10">
+  <data key="d4">108</data>
+  <data key="d5">108 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_11">
+  <data key="d4">2045</data>
+  <data key="d5">2045 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_12">
+  <data key="d4">132</data>
+  <data key="d5">132 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_13">
+  <data key="d4">99</data>
+  <data key="d5">99 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_15">
+  <data key="d4">111</data>
+  <data key="d5">111 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_16">
+  <data key="d4">1002</data>
+  <data key="d5">1002 comments</data>
+</edge>
+<edge source="sentiment_neutral" target="topic_17">
+  <data key="d4">631</data>
+  <data key="d5">631 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_1">
+  <data key="d4">104</data>
+  <data key="d5">104 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_2">
+  <data key="d4">8</data>
+  <data key="d5">8 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_3">
+  <data key="d4">1</data>
+  <data key="d5">1 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_4">
+  <data key="d4">15</data>
+  <data key="d5">15 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_8">
+  <data key="d4">1</data>
+  <data key="d5">1 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_9">
+  <data key="d4">69</data>
+  <data key="d5">69 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_11">
+  <data key="d4">101</data>
+  <data key="d5">101 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_16">
+  <data key="d4">21</data>
+  <data key="d5">21 comments</data>
+</edge>
+<edge source="sentiment_negative" target="topic_17">
+  <data key="d4">47</data>
+  <data key="d5">47 comments</data>
+</edge>
+<edge source="topic_1" target="keyword_ngon">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_1" target="keyword_uống">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_1" target="keyword_tuần">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_1" target="keyword_trà">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_1" target="keyword_ly">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_1" target="keyword_cái">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_tuần" target="topic_3">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_phản">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_phản hồi">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_hồi">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_cả phản">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_tuầnxem">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="keyword_tuần1xem">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_2" target="platform_facebook">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_3">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_4">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_6">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_8">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_9">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_10">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_12">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_13">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_14">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_15">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="platform_facebook" target="topic_16">
+  <data key="d4">3</data>
+  <data key="d5">topic-platform</data>
+</edge>
+<edge source="topic_3" target="keyword_nguyễn">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_3" target="keyword_nguyễn thị">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_3" target="keyword_thị">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_3" target="keyword_tuần1">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_3" target="keyword_ngọc">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_tuần1" target="topic_16">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_ngọc" target="topic_16">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_mai">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_fan">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_phải">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_luôn">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_châu">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_4" target="keyword_trân">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_luôn" target="topic_5">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_luôn" target="topic_7">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="keyword_tuyệt">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="keyword_tuyệt vời">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="keyword_vời">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="keyword_đẹp">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="keyword_thật">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_5" target="brand_katinat">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="keyword_đẹp" target="topic_7">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_đẹp" target="topic_9">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="brand_katinat" target="topic_8">
+  <data key="d4">3</data>
+  <data key="d5">topic-brand</data>
+</edge>
+<edge source="topic_6" target="keyword_chia sẻ">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_6" target="keyword_sẻ">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_6" target="keyword_lượt chia">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_6" target="keyword_lượt">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_6" target="keyword_chia">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_6" target="keyword_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_chia sẻ" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_sẻ" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_lượt chia" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_lượt" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_chia" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_7" target="keyword_trai">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_7" target="keyword_nhân viên">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_7" target="keyword_viên">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_7" target="keyword_nhân">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_sẻ công">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_đã chia">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_công khai">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_khai">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_đã">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_8" target="keyword_công">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_9" target="keyword_highlands">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_9" target="keyword_giá">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_9" target="keyword_dụng">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_9" target="keyword_hàng">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_9" target="keyword_katinat">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_cả cảm">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_cảm xúc">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_xúc">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_cảm">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_tất">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_10" target="keyword_tất cả">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_cả cảm" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_cả cảm" target="topic_14">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_cảm xúc" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_cảm xúc" target="topic_14">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_xúc" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_cảm" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_tất" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_tất cả" target="topic_12">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_thích">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_bảo">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_hồng">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_tao">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_lại">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_11" target="keyword_fl">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_bình luận">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_luận">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_bình">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_xem">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_thêm">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_13" target="keyword_25">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_luận" target="topic_14">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="keyword_bình" target="topic_15">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_14" target="keyword_sẻthíchbình luận">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_14" target="keyword_sẻthíchbình">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_14" target="keyword_chia sẻthíchbình">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_16" target="keyword_nguyen">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_16" target="keyword_tháng">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_16" target="keyword_phương">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_16" target="keyword_trần">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_quán">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_đâu">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_bán">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_ngọt">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_mở">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+<edge source="topic_17" target="keyword_xin">
+  <data key="d4">2</data>
+  <data key="d5">topic-keyword</data>
+</edge>
+</graph></graphml>

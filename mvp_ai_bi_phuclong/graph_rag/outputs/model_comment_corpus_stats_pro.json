@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "clean_input_rows": 13742,
+  "modeling_rows": 8539,
+  "removed_general_noise": 5203,
+  "min_quality": 0.35,
+  "business_topic_distribution": {
+    "product_taste_quality": 4550,
+    "price_promotion": 1638,
+    "branch_availability": 879,
+    "brand_love_content": 814,
+    "delivery_waiting": 288,
+    "service_store_staff": 207,
+    "app_payment_order": 163
+  },
+  "brand_distribution": {
+    "highlands": 4210,
+    "phuc_long": 2412,
+    "katinat": 1917
+  },
+  "platform_distribution": {
+    "tiktok": 4595,
+    "facebook": 3944
+  }
+}

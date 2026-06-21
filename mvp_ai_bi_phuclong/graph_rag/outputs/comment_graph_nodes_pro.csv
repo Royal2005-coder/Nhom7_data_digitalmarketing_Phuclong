@@ -1,0 +1,59 @@
+﻿id,label,group,value,title
+topic_36,product_taste_quality,business_topic,39,"Reliability: 0.6774 | Confidence: medium | Keywords: mật, ong, mật ong, bưởi, bưởi mật, trà bưởi, hồng trà, hồng, trà, yến mạch"
+brand_phuc_long,phuc_long,brand,10,brand: phuc_long
+platform_facebook,facebook,platform,10,platform: facebook
+risk_product_quality_risk,product_quality_risk,risk,10,risk: product_quality_risk
+confidence_medium,medium,confidence,10,confidence: medium
+focus_phuc_long,phuc_long,focus,10,focus: phuc_long
+topic_42,product_taste_quality,business_topic,30,"Reliability: 0.6481 | Confidence: medium | Keywords: sáng, ăn, bữa, kiểu này, gọn, kiểu, tiện, hợp lý, chất lượng, lý"
+platform_tiktok,tiktok,platform,10,platform: tiktok
+topic_32,price_promotion,business_topic,43,"Reliability: 0.5973 | Confidence: medium | Keywords: mã, mã giảm, có mã, giảm giá, giảm, giá, được mã, nhận, nhận được, cần"
+brand_highlands,highlands,brand,10,brand: highlands
+risk_app_payment_promotion,app_payment_promotion,risk,10,risk: app_payment_promotion
+topic_1,product_taste_quality,business_topic,455,"Reliability: 0.5721 | Confidence: medium | Keywords: trà, trà sen, sen, sen vàng, vàng, vải, đào, ngon, uống, dưa hấu"
+topic_29,product_taste_quality,business_topic,48,"Reliability: 0.572 | Confidence: medium | Keywords: món mới, món, ra món, mới nè, có món, thử, nè, thử món, muốn thử, dung"
+topic_11,product_taste_quality,business_topic,215,"Reliability: 0.5661 | Confidence: medium | Keywords: ngọt, ngon, ăn, bánh, vị, xoài, hơi, đác, món, thơm"
+topic_38,brand_love_content,business_topic,32,"Reliability: 0.5613 | Confidence: medium | Keywords: nhạc, tên, gì vậy, cảnh, gì, hay quá, là gì, tên gì, vậy, ad"
+risk_brand_content_signal,brand_content_signal,risk,10,risk: brand_content_signal
+focus_no_phuc_long_signal,no_phuc_long_signal,focus,10,focus: no_phuc_long_signal
+topic_10,product_taste_quality,business_topic,239,"Reliability: 0.5603 | Confidence: medium | Keywords: bánh mì, mì, bánh, ăn, sandwich, giòn, thịt, nhìn, nóng, croissant"
+topic_40,price_promotion,business_topic,31,"Reliability: 0.5529 | Confidence: medium | Keywords: mở cửa, mở, mấy, cửa, giờ, quán, đóng, hỏi, lúc, vậy"
+risk_price_promotion_risk,price_promotion_risk,risk,10,risk: price_promotion_risk
+topic_7,product_taste_quality,business_topic,278,"Reliability: 0.5453 | Confidence: low | Keywords: đẹp, ngon, nhìn, đẹp quá, xinh, lắm, thấy ngon, ngon lắm, ngon quá, thử"
+confidence_low,low,confidence,10,confidence: low
+topic_2,product_taste_quality,business_topic,443,"Reliability: 0.5444 | Confidence: low | Keywords: sữa, trà sữa, trà, dụng, áp dụng, áp, 01, chôm, sản phẩm, phẩm"
+topic_39,brand_love_content,business_topic,31,"Reliability: 0.5366 | Confidence: low | Keywords: miền, những, nam, hào, bộ, tiết, khăn, tự hào, dệt, một"
+brand_katinat,katinat,brand,10,brand: katinat
+topic_20,product_taste_quality,business_topic,106,"Reliability: 0.5334 | Confidence: low | Keywords: dừa, môn, châu, trân châu, trân, matcha, dừa mây, matcha dừa, mây, nước"
+topic_17,price_promotion,business_topic,113,"Reliability: 0.5249 | Confidence: low | Keywords: muốn mua, mua cho, muốn, làm sao, mua tặng, làm, đc, tặng, cho em, thế nào"
+topic_33,product_taste_quality,business_topic,41,"Reliability: 0.5226 | Confidence: low | Keywords: latte, matcha latte, matcha, bán lại, tây, quảng cáo, dâu, ảnh, cáo, mai thử"
+topic_19,product_taste_quality,business_topic,110,"Reliability: 0.5201 | Confidence: low | Keywords: nước, có nước, mua nước, uống nước, nước uống, đc, bình, nước thì, cũng đc, ly nước"
+topic_18,product_taste_quality,business_topic,112,"Reliability: 0.5162 | Confidence: low | Keywords: coffee, long, coffee tea, tea, lời phản, đã trả, trả lời, lời, phản, trả"
+topic_41,product_taste_quality,business_topic,31,"Reliability: 0.5133 | Confidence: low | Keywords: xanh, màu xanh, màu, có ly, ly, đổi, ai, ly hồng, đã có, hồng"
+topic_9,product_taste_quality,business_topic,240,"Reliability: 0.5091 | Confidence: low | Keywords: uống, uống xong, xong, ly, uống rồi, ai uống, muốn uống, rồi, ai, dọn"
+topic_34,price_promotion,business_topic,39,"Reliability: 0.5089 | Confidence: low | Keywords: ly, ly này, đc, đc ly, mua ly, có đc, có ly, dũng, ly có, ck"
+topic_25,branch_availability,business_topic,86,"Reliability: 0.5029 | Confidence: low | Keywords: chi nhánh, nhánh, chi, nhánh nào, có chi, các chi, có chưa, cũng có, mở, nào cũng"
+risk_availability_store_risk,availability_store_risk,risk,10,risk: availability_store_risk
+topic_24,product_taste_quality,business_topic,90,"Reliability: 0.4982 | Confidence: low | Keywords: sáng, ngủ, sáng nay, xong, buổi, mất, sớm, mai, đêm, buổi sáng"
+topic_27,brand_love_content,business_topic,59,"Reliability: 0.498 | Confidence: low | Keywords: video, chụp, ảnh, màn, màn hình, clip, máy, hình, cơm, nhận"
+topic_35,price_promotion,business_topic,39,"Reliability: 0.4959 | Confidence: low | Keywords: 2026, 04, thời gian, thời, 04 2026, 03, gian, gian áp, ngày, dụng"
+topic_26,product_taste_quality,business_topic,70,"Reliability: 0.4951 | Confidence: low | Keywords: voucher, 000, giảm, 10, vnđ, 000 vnđ, đơn từ, đơn, từ, nhận"
+topic_4,product_taste_quality,business_topic,341,"Reliability: 0.493 | Confidence: low | Keywords: katinat, katies, bắp, hào, tự hào, bi, bắp bi, tự, dệt, phong vị"
+topic_37,product_taste_quality,business_topic,38,"Reliability: 0.4891 | Confidence: low | Keywords: fan, tuần1, mã, ngon và, hoàng, shop ơi, quáaa, trông, là tỉnh, này mua"
+topic_31,brand_love_content,business_topic,43,"Reliability: 0.4889 | Confidence: low | Keywords: ship, tàu, có ship, hũ, tàu hủ, hủ, quán, đc, matcha tàu, thì"
+topic_12,product_taste_quality,business_topic,158,"Reliability: 0.4883 | Confidence: low | Keywords: kem, freeze, bánh, lớp, ngon, muối, dâu, mặn, nhân, vị"
+topic_8,product_taste_quality,business_topic,246,"Reliability: 0.4832 | Confidence: low | Keywords: giá, tiền, combo, đắt, chỉ, rẻ, hộp, thì, 69k, nhiêu"
+topic_0,product_taste_quality,business_topic,460,"Reliability: 0.481 | Confidence: low | Keywords: nó, món, dở, luôn, nhanh, combo, đợi, món này, làm, combo này"
+topic_5,product_taste_quality,business_topic,335,"Reliability: 0.4729 | Confidence: low | Keywords: phindi, nguyễn, dâu, matcha, phindi matcha, matcha dâu, ngon, uống, nguyen, tuần1"
+topic_21,price_promotion,business_topic,104,"Reliability: 0.4703 | Confidence: low | Keywords: quà, trình, áp, áp dụng, chương trình, chương, dụng, không áp, quà tặng, hàng"
+topic_3,product_taste_quality,business_topic,442,"Reliability: 0.4677 | Confidence: low | Keywords: highlands, highlands coffee, highland, coffee, ngay, tại, hàng, deal, cửa hàng, dụng"
+topic_16,price_promotion,business_topic,119,"Reliability: 0.46 | Confidence: low | Keywords: app, trên app, đặt, trên, qua app, dụng, đãi, ưu đãi, shopeefood, ưu"
+topic_28,price_promotion,business_topic,49,"Reliability: 0.4571 | Confidence: low | Keywords: phúc, phúc long, long, mãi, hoàng, giao, huyền, hiện đại, yêu, bình"
+topic_15,product_taste_quality,business_topic,124,"Reliability: 0.4501 | Confidence: low | Keywords: cafe, cà phê, cà, phê, uống, bánh mì, mì, ngon, thì, caffe"
+topic_13,branch_availability,business_topic,150,"Reliability: 0.4499 | Confidence: low | Keywords: quán, quán này, địa, địa chỉ, xe, chỗ, có chỗ, chỉ, quán có, đâu"
+topic_22,price_promotion,business_topic,93,"Reliability: 0.4473 | Confidence: low | Keywords: coffee đã, lời phản, đã trả, trả lời, lời, trả, phản, coffee, đã, phản hồi"
+topic_30,product_taste_quality,business_topic,44,"Reliability: 0.4434 | Confidence: low | Keywords: hồng, hoa, rạng, ly hồng, dạ, anh, những, màu, rỡ, ly"
+topic_14,branch_availability,business_topic,147,"Reliability: 0.423 | Confidence: low | Keywords: cửa hàng, cửa, hàng, tại cửa, shop, tiệm, tại, online, bán, áp dụng"
+topic_6,product_taste_quality,business_topic,288,"Reliability: 0.4175 | Confidence: low | Keywords: tuần, phản, cả phản, tất cả, tất, tuầnxem, phản hồi, hồi, tuần1, cả"
+topic_23,brand_love_content,business_topic,92,"Reliability: 0.4055 | Confidence: low | Keywords: nhân viên, viên, nhân, văn phòng, phòng, văn, lương, khách, dân, làm"
+risk_service_store,service_store,risk,10,risk: service_store

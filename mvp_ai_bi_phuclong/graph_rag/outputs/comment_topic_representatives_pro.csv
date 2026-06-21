@@ -1,0 +1,216 @@
+﻿topic_id,rank,brand,platform,sentiment_label,risk_group,topic_probability,text
+0,1,highlands,tiktok,neutral,app_payment_promotion,1.0,chờ mãi đoàn mình mới đến
+0,2,phuc_long,facebook,positive,none,1.0,quá mê Venus Trần
+0,3,phuc_long,tiktok,neutral,service_store,1.0,"đợi món hơi lâu nha, chắc tại đông quá"
+0,4,phuc_long,tiktok,negative,none,1.0,PL dờ dở quá PL ơi
+0,5,phuc_long,facebook,neutral,none,1.0,Chờ ngày này lâu lắm ùiiiiiii
+1,1,highlands,tiktok,neutral,none,1.0,hãy trả lại món trà dưa hấu please🥺
+1,2,highlands,tiktok,positive,none,1.0,Trà sen vàng lúc trước us ngon bữa mua uống sao thấy
+1,3,phuc_long,facebook,positive,app_payment_promotion,1.0,"Ghé Phúc Long ngay để vừa mang trà ngon về nhà, vừa được tặng thêm 01 ly mát lạnh để ""chill"" tại chỗ nha Tâm Giao ơi!"
+1,4,phuc_long,tiktok,positive,taste_quality,1.0,"trà pl vị lúc nào cũng đậm, k chê đc"
+1,5,phuc_long,tiktok,positive,none,1.0,Uống Phúc Long bao năm vẫn thấy trà vải lài là ngon nhất
+2,1,phuc_long,tiktok,positive,none,1.0,"vừa nhận ly trà sữa ô long lài, chưa kịp hớp ngụm nào đã đổ ra bàn, đau xót thực sự"
+2,2,katinat,facebook,positive,none,1.0,Mê Sữa Đá (S) chỉ 17k (Giá gốc 39k)
+2,3,highlands,tiktok,positive,none,1.0,"mình bị dị ứng lactose ko uống sữa bò dc,có 1 lần thử uống phindi rất ngon nhưng ko dám uống nhiều,phải chi 2 land có sữa thay thế thig tốt quá"
+2,4,highlands,tiktok,positive,none,1.0,Thôi tui vẫn thích phindi kem sữa nha 😌
+2,5,highlands,facebook,neutral,app_payment_promotion|service_store,1.0,"(*) 😜 Chúng Mình tham khảo điều kiện & điều khoản chương trình tại đây nhenn!! - Áp dụng khi khách hàng đưa ảnh chụp màn hình khuyến mãi cho nhân viên cửa hàng. - Sản phẩm mua: Áp dụng dòng sản phẩm: Cà Phê Phin/Espresso/Freeze/PhinĐI/Trà/Trà Sữa cỡ Lớn. - Sản phẩm tặng: Áp dụng sản phẩm cùng dòng cỡ Nhỏ. (Không áp dụng sản phẩm không có cỡ Nhỏ - Ngoại trừ Trà Sữa áp dụng cỡ Vừa) - Không áp dụng sản phẩm theo mùa - Khách hàng có thể trả thêm tiền để tăng cỡ Lớn cho sản phẩm tặng hoặc mua thêm Topping. - Chương trình được phép cộng dồn. - Không áp dụng chương trình khuyến mãi đối tác giao hàng và Call Center. - Không áp dụng đồng thời chương trình khuyến mãi khác. - Khu vực áp dụng tại tất cả cửa hàng Highlands Coffee trên toàn quốc ngoại trừ khu vực Sân bay, Bưu Điện Sài Gòn, Bưu Điện Chợ Lớn, Tôn Thất Thiệp, Bảo Tàng Lịch Sử Quốc Gia, 233 Nguyễn Văn Thoại, VTV8 2 Đà Nẵng, Viễn Đông Hotel 2, hệ thống Vin wonders, Grand World, Sun World, Tràng An và Tam Cốc. #HighlandsCoffee"
+3,1,highlands,tiktok,positive,none,1.0,thấy chỗ Highlands Coffee này bán ngon v:))))
+3,2,highlands,tiktok,positive,app_payment_promotion|service_store,1.0,Cảm ơn nhà tài trợ bạc Highlands đã đồng hành cùng Day 2 concert ATSH2025. Không biết Highlands có thể cho Mason Nguyễn một cơ hội mang “Bí mật nhỏ” lên sân khấu Day 2 được không ạ? Bài hát mang tỏn đỏ rất match với hình ảnh của nhãn hàng lun ạ🫶🫶 Các Cổ đông đã sẵn sàng bế nhà mình ạ😘😘😘😘😘😘
+3,3,highlands,facebook,neutral,none,1.0,"Thái ThanhChào bạn, Fanpage Highlands Coffee không nhận order qua Fanpage ạ."
+3,4,highlands,tiktok,positive,none,1.0,em là bị mê bánh mì que á highlands ui
+3,5,highlands,facebook,positive,none,1.0,"DEAL QUEN ĐẦU TUẦN, HIGHLANDS KHAO CÀ PHÊ CỰC THÍCH"
+4,1,katinat,tiktok,positive,none,1.0,Rất là ngon tôi yêu KATINAT
+4,2,katinat,tiktok,neutral,none,1.0,Hóc Môn chờ Katinat về mở nè
+4,3,katinat,tiktok,neutral,none,1.0,Hồi trc bạn kia hay quay tt cho katinat. Lúc bạn tóc ngắn xuất hiện cứ tưởng là bạn đó cắt tóc. Ai dè là 2 ng khác nhau
+4,4,katinat,facebook,neutral,none,1.0,Ruby Nga Tran uống Katinat được tặng khăn Rằn kìa 😘😘😘
+4,5,katinat,facebook,positive,app_payment_promotion,1.0,KATINAT Kim Mã lên đèn lung linh đợi Katies ghé thăm 😘😘
+5,1,katinat,facebook,positive,app_payment_promotion,1.0,Nguyễn Thu matcha bạn mê n
+5,2,highlands,facebook,positive,none,1.0,Diem Chau Nguyen HoangNay HL chơi đẹp rùi .8 tuần2Xem tất cả 4 phản hồi
+5,3,katinat,facebook,positive,app_payment_promotion,1.0,"Nguyễn Quốc ThôngTrần ThiệnMỹ HươngThơm Phan Ly Huynh chủaan bị hoy. Ô Long Dâu Tằm 3 lá, Tằm Tằm Đác Đác, Tằm già dừa non, Matcha Iku Dâu Tằm, Trà sữa dâu tằm nướng.1 tuần5Xem 1 phản hồi"
+5,4,highlands,facebook,positive,none,1.0,"Nguyen Dieu LinhBán lại r, ngon nha"
+5,5,katinat,facebook,positive,app_payment_promotion,1.0,"Trần ThiệnMỹ HươngThơm Phan Ly Huynh chủaan bị hoy. Ô Long Dâu Tằm 3 lá, Tằm Tằm Đác Đác, Tằm già dừa non, Matcha Iku Dâu Tằm, Trà sữa dâu tằm nướng."
+6,1,katinat,facebook,positive,none,1.0,Thùy PhươngĐẹp nha3 tuần
+6,2,phuc_long,facebook,positive,none,1.0,CHẠM RetroXinh quá4 tuần
+6,3,highlands,facebook,positive,none,1.0,Kiệt Nguyễnngon luôn4 tuần
+6,4,highlands,facebook,positive,none,1.0,Phươngg ThảooNgon nha3 tuần1
+6,5,phuc_long,facebook,positive,none,1.0,Nguyễn Thiên TrangNgon ko cả nhà iu8 tuần
+7,1,highlands,facebook,positive,none,1.0,Yến Phượngquán đẹp quá nha
+7,2,phuc_long,facebook,positive,none,1.0,Ngon quá à. Thích
+7,3,katinat,facebook,positive,none,1.0,Chị ấy rất yêu thương và quan tâm đến người khác nhưng vẫn luôn cố gắng sống tốt hơn anh ạ
+7,4,highlands,tiktok,positive,none,1.0,Anh đẹp đồ ngon
+7,5,highlands,facebook,positive,none,1.0,Nhìn ngon và đẹp quá
+8,1,phuc_long,facebook,positive,app_payment_promotion,1.0,Có ai dư mã mua 65K tặng ly size L không cho mình xin 1 mã với ạ
+8,2,phuc_long,facebook,neutral,none,1.0,• Gấu bông Trà Sư/Trà Nương + 01 thức uống size L - chỉ 365k
+8,3,phuc_long,facebook,neutral,none,1.0,Sở hữu ngay siêu phẩm với mức giá chỉ 299.000 VNĐ.
+8,4,phuc_long,tiktok,positive,none,1.0,75k mà đủ combo vậy là ổn áp á
+8,5,phuc_long,facebook,neutral,none,1.0,Combo Ly Đổi Màu - giá chỉ 129k (tiết kiệm đến 45k) gồm:
+9,1,phuc_long,tiktok,positive,none,1.0,Ngày xưa rất ngon tôi uống thường xuyên mà giờ uống chán ngắc
+9,2,katinat,tiktok,neutral,none,1.0,"Ai uống rồi cho mình hỏi có tanh ko ạ 🥲 , tanh mình uống k dc 🥲"
+9,3,highlands,tiktok,neutral,none,1.0,uống 1 lần và từ đó chở đi ko thấy bóng dáng t ở 2 land nữa
+9,4,highlands,tiktok,neutral,none,1.0,Có ai uống rồi say cf như tui ko 😂
+9,5,highlands,tiktok,neutral,none,1.0,Ta nói nghiện đồ uống ở đây luôn Á
+10,1,highlands,tiktok,positive,none,1.0,Bánh mì ăn được nhưng so với bên ngoài là hơi cao á mí bà
+10,2,highlands,tiktok,neutral,none,1.0,@Cô bé nô đùa 🦄💁‍♀️💅 cây gắp bánh mì
+10,3,phuc_long,tiktok,neutral,none,1.0,"bánh mì ở đây giòn nha, tui ăn mấy lần rồi"
+10,4,phuc_long,tiktok,neutral,none,1.0,Bánh mì này là thập cẩm đúng không mọi người
+10,5,phuc_long,tiktok,neutral,none,1.0,bánh mì nhìn vậy mà ăn cuốn lắm
+11,1,highlands,facebook,positive,app_payment_promotion,1.0,"Hà Nội những ngày xuân, còn gì tuyệt hơn là được ""trốn"" vào một góc quen, ngắm dòng người qua lại và nhâm nhi vị chát nhẹ, ngọt hậu của Matcha?"
+11,2,highlands,tiktok,positive,taste_quality,1.0,thơm nhưng vị nhạt qá...uống giải khát thì được chứ nhâm nhi thì k ngon
+11,3,highlands,tiktok,positive,app_payment_promotion,1.0,Matcha dâu uống từng phần thấy ngon chứ trộn lên như tẩm độc khách hàng…
+11,4,highlands,tiktok,positive,none,1.0,theo cảm nhận của tôi là trà mơ mận tây bắc khá chua và ko ngon lắm
+11,5,highlands,tiktok,neutral,none,1.0,từ cái thời mà blox fruit chx nổi cho lắm nhớ lúc đó ko có trẻ châu vào roblox nó vui 😭
+12,1,highlands,tiktok,positive,none,1.0,"Lớp kem ngon thiệt á mà nước ở dưới thì ngọt đean luôn, hôm qua ún lần đầu nên hong biết kêu bth -.- bỏ nửa ly lun🥺"
+12,2,highlands,tiktok,positive,none,1.0,Kem trứng là quá tuyệt
+12,3,highlands,facebook,neutral,none,1.0,Cơ sở này có kem không ?
+12,4,highlands,tiktok,neutral,none,1.0,cho đem bánh kem k ạ
+12,5,highlands,tiktok,neutral,none,1.0,kem mặn đó bn 1 phần vậy bạn
+13,1,phuc_long,tiktok,positive,none,1.0,"Xưởng mộc ( setup chung cư, nhà ở, khách sạn, quán caffe, nhà hàng...) cung cấp bàn ghế văn phòng, bàn ghế caffe, nhà hàng, khách sạn... khách cần ủng hộ bên e nha"
+13,2,highlands,tiktok,negative,stock_gift,1.0,Đi mà lúc nào cũng hết hàng quán nào cx vậy 😩
+13,3,katinat,tiktok,positive,none,1.0,"hơi tiếc ko có quán nào ở gần chỗ mik,mik miền trung"
+13,4,katinat,tiktok,positive,none,1.0,cái quán quá đẹp
+13,5,phuc_long,tiktok,positive,none,1.0,Quán đẹp quá ạ
+14,1,phuc_long,facebook,neutral,app_payment_promotion,1.0,Thông tin chi tiết chương trình & DS cửa hàng có hàng sớm (dự kiến): https://phuclong.com.vn/khuyen-mai/ly-doi-mau---moi-ly-mot-mood-moi-ngay-mot-vibe-20260305103941
+14,2,highlands,tiktok,neutral,none,1.0,có bán ở những cửa hàng nào tại đống đa Hà Nội v ạ
+14,3,phuc_long,facebook,neutral,none,1.0,Có áp dụng mua tại cửa hàng k
+14,4,phuc_long,facebook,positive,none,1.0,Mình không thấy combo trong tiệm
+14,5,phuc_long,facebook,neutral,none,1.0,Mua tại quán có áp dụng chương trình này ko?
+15,1,highlands,tiktok,neutral,none,1.0,"T hay uống cà phê thì thấy khá ngọt, ai k hay uống cà phê thì có thể thử"
+15,2,highlands,tiktok,positive,app_payment_promotion,1.0,thương hiệu cafe nma nước tắt và trà sen vàng lại ngon hơn cf :))
+15,3,highlands,facebook,positive,none,1.0,Khải Đăng Lương Chí Đạt ngày xưa a hay nói vs em là 1 ly cà phê thật ngon sẽ làm cho chúng ta …. 😂😂
+15,4,highlands,tiktok,positive,none,1.0,Bữa đi hái lèn kêu ly cà phê cái bạn nhân ziên bản đứng trong quầy bản..
+15,5,highlands,facebook,positive,none,1.0,Cốc này mà uống cà phê Đặc sản nhà tuii nữa thì đúng ngonn
+16,1,phuc_long,facebook,neutral,app_payment_promotion,1.0,"Có đặt đc k ạ,mình vào thử app rồi mà k có đặt đc"
+16,2,katinat,tiktok,neutral,app_payment_promotion,1.0,Đặt trên app có được ly này không vậy?
+16,3,katinat,facebook,neutral,app_payment_promotion,1.0,Đặt app có đc li như này hông mng
+16,4,katinat,tiktok,neutral,app_payment_promotion,1.0,Ủa đặt qua app có ly này k ta
+16,5,highlands,facebook,neutral,app_payment_promotion,1.0,Thủy LêMình ko cài được App
+17,1,katinat,tiktok,neutral,none,1.0,mua bất kỳ nc nào cũng dc đúng k ạ
+17,2,highlands,tiktok,neutral,none,1.0,Đang tính mua thì đọc cmt
+17,3,phuc_long,facebook,neutral,none,1.0,Mua trực tiếp hay gì em
+17,4,highlands,tiktok,neutral,none,1.0,Muốn mua thì sao ak
+17,5,highlands,tiktok,neutral,none,1.0,mua như nào z cj
+18,1,phuc_long,facebook,neutral,none,1.0,Tác giảPhuc Long Coffee & TeaPà nào nghĩ content giùm tui với6 tuần3Xem 1 phản hồi
+18,2,phuc_long,facebook,positive,none,1.0,"Hoàng ThắngTôi đã trúng “síc rịt” nha mn , Quá đẹp4 tuần3Phuc Long Coffee & Tea đã trả lời·4 phản hồi"
+18,3,phuc_long,facebook,neutral,service_store,1.0,Canh Dong TuyetHnay có combo ko nhỉ???GIPHY3 tuầnPhuc Long Coffee & Tea đã trả lời·1 phản hồi
+18,4,phuc_long,facebook,positive,service_store,1.0,Nam TeaNét đẹp Đông Phương4 tuầnPhuc Long Coffee & Tea đã trả lời·1 phản hồi
+18,5,phuc_long,facebook,neutral,none,1.0,Tác giảPhuc Long Coffee & TeaĐường đi đến Phúc Long Waterbus Thủ Thiêm cho các tình yêu nào chưa biết nhaaa3 tuần3Xem tất cả 2 phản hồi
+19,1,highlands,tiktok,positive,none,1.0,"Quản lý bên Hailen đọc được thì mong là tăng size đừng cho đá nhiều nữa, nước thì ít mà đá nguyên cốc"
+19,2,highlands,tiktok,negative,none,1.0,"nước cũng tạm 🥲 đi date mà ghé hl là tình tan, vía này kh nhận"
+19,3,katinat,tiktok,positive,none,1.0,Bánh trung thu lâm thuỷ tự nhiên hôm nay lại bán nước vậy
+19,4,highlands,facebook,neutral,none,1.0,"Chủ động hơn: chọn sẵn giờ nhận, tới là có nước"
+19,5,phuc_long,tiktok,neutral,none,1.0,ko có tiền làm gì có nước
+20,1,highlands,tiktok,positive,taste_quality,1.0,Phindi dừa môn uống Ko có zi đặc biệt. Lớp kem dừa ko làm nổi bật đc vị béo vị thơm của dừa. Mùi khoai môn ko đậm . Chỉ ngửi đc mùi khét của cafe cháy
+20,2,highlands,tiktok,positive,none,1.0,trân châu dừa ngon nhưng mà có thể làm mềm xíu được hông chứ ăn cứng quá nhai mỏi hàm luôn 😂
+20,3,katinat,tiktok,positive,none,1.0,mng ơi bơ già dừa non mua về để tủ lạnh có sao khum ạ 🥹
+20,4,katinat,facebook,neutral,app_payment_promotion,1.0,Hy vọng là matcha nước dừa kèm dừa miếng sấy giòn
+20,5,highlands,facebook,positive,app_payment_promotion,1.0,Mai PhuongMatcha dừa mây là 1 cái gì đó rất …1 tuần1
+21,1,katinat,tiktok,neutral,app_payment_promotion,1.0,"Tưởng tượng mai thấy ảnh cầm quà đứng trước cửa nhà, chắc cười tủm tỉm cả ngày luôn quá 😆"
+21,2,katinat,facebook,neutral,app_payment_promotion,1.0,Nhận 01 Quạt nhựa Cầm Tay Trái Mít/ Quạt Nhựa Cầm Tay Bowtiful Christmas cho hoá đơn từ 199K.
+21,3,highlands,facebook,neutral,none,1.0,"Lên lịch săn deal, tới ngày chỉ việc nhận quà, x2 niềm vui:"
+21,4,highlands,facebook,neutral,none,1.0,Quà tặng sinh nhật hấp dẫn dành riêng cho thành viên.
+21,5,highlands,facebook,neutral,none,1.0,"Đặt lịch săn deal ngay, đúng ngày là có quà liền tay:"
+22,1,highlands,facebook,neutral,app_payment_promotion,1.0,"- BTC sẽ chọn 10 có đáp án đúng và sớm nhất, may mắn được chọn bởi Highlands Coffee.​"
+22,2,highlands,facebook,neutral,app_payment_promotion,1.0,Huyền ThiMời Chang đi tới đây để thưởng thức màu matcha real nèTrang Hoàng5 tuần1Highlands Coffee đã trả lời·1 phản hồi
+22,3,highlands,facebook,positive,none,1.0,Bui CuccuNgày thứ 6 hay lần mua thứ 6 ad?7 tuầnHighlands Coffee đã trả lời·1 phản hồi
+22,4,highlands,facebook,positive,none,1.0,Thùy LinhĐẹp quáaa9 tuần1Highlands Coffee đã trả lời·1 phản hồi
+22,5,highlands,facebook,positive,none,1.0,Nguyễn Đức DuyĐẹp không xốp2 tuầnHighlands Coffee đã trả lời·1 phản hồi
+23,1,katinat,facebook,positive,none,1.0,Gọi các “boss” là cái ghế vì đeo Khăn Vòm Lá Bắp đẹp khỏi phải bàn
+23,2,highlands,tiktok,positive,none,1.0,"Lương công nhân vẫn thích ngồi Hl,nghiện nhất ly phindi hạnh nhân😋😋😋"
+23,3,katinat,facebook,positive,none,1.0,"Văn phòng tôi trong tuần làm việc ""hiệu quả"" nhất trước thềm nghỉ Lễ 30/4: Việc nào khó, để qua Lễ làm vì đang bận mở tiệc phủ sóng sắc đỏ rực rỡ cùng Bộ Sưu Tập Ly 30/4 ""Dệt Gấm Vóc Tự Hào"
+23,4,highlands,tiktok,neutral,service_store,1.0,tuyển nhân viên ko bt chọn lựa chọn chúng nhân viên khác thải vô
+23,5,phuc_long,tiktok,positive,none,1.0,Mấy bạn văn phòng chắc mê lắm
+24,1,highlands,tiktok,positive,none,1.0,Có ai như em khum . K biêt trong chà có thành phần gì mà em uống vê mất ngủ đến sáng
+24,2,highlands,tiktok,neutral,none,1.0,Sáng lỡ làm ly caffe sai lớn làm uống từ sáng tới trưa chưa hết ly caffe nữa
+24,3,phuc_long,tiktok,neutral,none,1.0,"Uống vô say trà, uống chiều 4-5h mà thức tới 2h sáng. Quá hại sức khoẻ"
+24,4,phuc_long,tiktok,positive,none,1.0,"ô long lài pl k uống quen dễ bị mất ngủ lắm nha, ai đô yếu né ra"
+24,5,highlands,tiktok,neutral,none,1.0,bữa uống ở đây làm rơi ví sáng hôm sau đi qua hỏi thì bé nv có giữ nv ở đây nói chuyện nhiệt tình lắm lun
+25,1,katinat,tiktok,neutral,none,1.0,chi nhánh vũng tàu có chương trình này 0 vậy ạ
+25,2,katinat,tiktok,positive,app_payment_promotion,1.0,có chi nhánh ở Cà Mau hong ạ
+25,3,phuc_long,tiktok,positive,none,1.0,Ở vũng liêm có chi nhánh phuc long ko ban
+25,4,katinat,tiktok,neutral,none,1.0,Ra món có liên quan tới thốt nốt thôi chứ dễ gì mở chi nhánh ở dưới
+25,5,highlands,tiktok,neutral,none,1.0,vừa rồi đi chi nhánh lý thường kiệt hóc môn có đâu!
+26,1,highlands,facebook,neutral,app_payment_promotion,1.0,Voucher OđEm tham lam em sin chọn cả 2 dc k ạ1 ngày
+26,2,phuc_long,facebook,neutral,app_payment_promotion,1.0,Trang VoThêm voucher còn có 83kquá đã11 tuần1
+26,3,phuc_long,facebook,neutral,app_payment_promotion,1.0,Châu ThuSao vô ko có voucher để mua
+26,4,highlands,facebook,neutral,app_payment_promotion,1.0,Voucher OđEm tham lam em sin chọn cả 2 dc k ạ
+26,5,highlands,facebook,neutral,app_payment_promotion,1.0,Đừng quên add voucher 50K để tận hưởng trọn vẹn ưu đãi!
+27,1,katinat,tiktok,neutral,none,1.0,"các bạn ơi, giúp mình follow và tương tác video với, mình cảm ơn các bạn thật nhiều🥰🥰"
+27,2,katinat,tiktok,neutral,none,1.0,có đấm bể màng hình đầu video có đc nhận quà ko chị 😅
+27,3,katinat,tiktok,neutral,none,1.0,ê ra làm hết hồn nha má đang ngủ mà còn không gặp cái video này
+27,4,katinat,tiktok,positive,none,1.0,"🥰🥰🥰 mình mới làm id. mình làm clip vui , bạn xem hay cho mình xin 1 followe nhak🥰🥰🥰"
+27,5,highlands,tiktok,neutral,none,1.0,Đang ngồi tại hailind thì lướt trúng video
+28,1,phuc_long,facebook,positive,none,1.0,"Thương chúc phái đẹp luôn giữ trọn bản sắc, tự tin tỏa sáng theo cách của riêng mình."
+28,2,highlands,facebook,neutral,none,1.0,Sự Giao Thoa Giữa Di Sản Và Hiện Đại
+28,3,katinat,facebook,positive,none,1.0,51 năm đã trôi qua Đất nước sống trong hoà bình Non sông thống nhất hai miền Bắc-Nam sum họp hân hoan Ký ức xưa bỗng chợt về Xe tăng vào Dinh Độc Lập Cờ đỏ sao vàng tung bay Biết bao cha ông đã hy sinh Vì nền độc lập-tự do Hôm nay không khỏi bồi hồi Nhìn lá cờ đỏ sao vàng Tự hào là người Việt Nam #KATINAT #DetGamVocTuHao Tú Hoàng Võ Hồng Phần Lan
+28,4,highlands,tiktok,neutral,none,1.0,@0️⃣7️⃣🔟Nam MÔ CỰC LẠC TÂY 🔟:🤗🌺😁🥰🤗😃0️⃣7️⃣🔟📿💯♀🔯✡✝📿💯♀🎰🎵🎶🔘✅☑⬜⚪🔵💎chúc luôn luôn CẢ SUỐT ĐỜI an vui hạnh phúc bình an không không 0️⃣0️⃣không không buồn là Chính Mình giác THIỆN GIÁC Gi
+28,5,highlands,facebook,neutral,none,1.0,"Dòng chảy tự hào trên ly Âu Lạc,Sự Giao Thoa Giữa Di Sản Và Hiện Đại"
+29,1,phuc_long,tiktok,neutral,none,1.0,Càng ra món mới theo mùa càng dỡ
+29,2,highlands,tiktok,neutral,none,1.0,Hải Phòng bao giờ có trân châu mới vậy nhỉ
+29,3,highlands,tiktok,neutral,none,1.0,@Cuong Do món mới nữa nè 😂
+29,4,highlands,tiktok,neutral,none,1.0,@( Lợn 🙈❤️🏠) món mới nè. Vợ
+29,5,highlands,tiktok,neutral,none,1.0,@Diệu Pc món mới kìa m 😂😂😂
+30,1,highlands,facebook,positive,none,1.0,Hoa Bat Tu đẹp zị huuu
+30,2,highlands,facebook,positive,none,1.0,THÊM RỰC RỠ CÙNG HOA XINH
+30,3,katinat,facebook,positive,none,1.0,Hoa Trầnkk Ly đẹp nhoaaa...4 tuần3
+30,4,phuc_long,facebook,neutral,none,1.0,"Từ nắng gió đồng xa, đến sắc vàng óng ả của Nhụy hoa nghệ tây."
+30,5,katinat,facebook,positive,none,1.0,Hoa Trầnkk Ly đẹp nhoaaa...
+31,1,katinat,tiktok,positive,app_payment_promotion,1.0,Trải nghiệm ko tốt là có tàu hủ nhưng ko có kèm muỗng 😑 hút thì đc nhưng chưa hết tàu hủ đã hết matcha. Uống xong còn lớp tàu hủ ngon ko ăn đc tức ghê
+31,2,phuc_long,tiktok,neutral,none,1.0,ship bù cho tui 1 ly kô nữa nha . 2 ly ts mà ship bù có 1 ly (kô) . sao đủ 🤣🤣🤣
+31,3,phuc_long,facebook,neutral,none,1.0,Lê Nguyên Bảo Trân mốt pl mở quán trên du thuyền luôn nè
+31,4,phuc_long,tiktok,neutral,none,1.0,Ship ly ko cho khách là sao vậy ạ
+31,5,phuc_long,facebook,neutral,app_payment_promotion,1.0,Phạm Kiều DiễmAi ship dùm 1 ly về CM đc kh tr
+32,1,phuc_long,tiktok,neutral,app_payment_promotion,1.0,Có được áp thêm mã ưu đãi khác k
+32,2,highlands,facebook,neutral,app_payment_promotion,1.0,"Tặng miễn phí qua lễ áp dụng hả quán , e có cái mã mà ch sd"
+32,3,highlands,facebook,positive,app_payment_promotion,1.0,Thuý NguyễnMh đăng kí rồi nhưng cũng k thấy mã tặng ạ
+32,4,highlands,facebook,positive,app_payment_promotion,1.0,Mh đăng kí rồi nhưng cũng k thấy mã tặng ạ
+32,5,highlands,tiktok,neutral,app_payment_promotion,1.0,có mã giảm giá j ko vậy
+33,1,highlands,facebook,negative,app_payment_promotion,1.0,"Võ Thành NghĩaEm kèo giữa, thêm matcha foam lên matcha latte cho em nha2 tuần6Xem 1 phản hồi"
+33,2,highlands,facebook,negative,app_payment_promotion,1.0,"Hé lộ tập cuối phim Bóng Ma Hạnh PhúcHúp nhẹ ly MatchaĐI Latte, chị Mai cầm bút ghi chú tâm nguyện...Nguyện gì đây!?"
+33,3,highlands,facebook,neutral,app_payment_promotion,1.0,Hoàng Thị Mỹ DuyênMong HL bán lại matcha latte dâu5 tuần4Xem tất cả 4 phản hồi
+33,4,highlands,facebook,positive,app_payment_promotion,1.0,"Đề nghị giữ lại món matcha latte dâu tây nhé, ngon thế mà bỏ"
+33,5,highlands,facebook,negative,app_payment_promotion,1.0,"Húp nhẹ ly MatchaĐI Latte, chị Mai cầm bút ghi chú tâm nguyện..."
+34,1,phuc_long,facebook,neutral,none,1.0,Trời ơi vừa có 1 cái bà nội nào mua 1 lúc 8 ly. 🙃 giới hạn số lượng dùm em luôn với.
+34,2,phuc_long,facebook,neutral,none,1.0,Mách nhỏ cả nhà mình cách săn deal 1 Brew nè:
+34,3,highlands,tiktok,positive,app_payment_promotion,1.0,Mang theo ly có đc giảm giá hong ạ
+34,4,phuc_long,facebook,neutral,none,1.0,THỨ 6 ĐỔI BREWS - SĂN DEAL FREE HẾT NẤC
+34,5,katinat,tiktok,neutral,none,1.0,Mình đến mua ly trực tiếp đc hả ad
+35,1,highlands,tiktok,positive,none,1.0,Văn bản sao chép sẽ được giữ trong vòng 24h. Nhấn giữ văn bản để giữ lâu hơn.
+35,2,phuc_long,facebook,neutral,none,1.0,"Thời gian: Duy nhất từ ngày 25.04 - 29.4.2026.Địa chỉ: Số 11-13 đường Hùng Vương, Đặc Khu Phú Quốc, Tỉnh An Giang"
+35,3,katinat,facebook,neutral,none,1.0,"Ưu đãi áp dụng đến hết ngày 04/05/2026, sở hữu ngay để hoà tinh thần đi chơi Lễ nào Katies ơi!"
+35,4,katinat,facebook,positive,none,1.0,"Tháng 04, tháng của niềm tự hào trong ngày vui Thống Nhất!Cùng đón chờ vào ngày 18.04.2026 nha Katies ơi"
+35,5,katinat,facebook,neutral,none,1.0,Tác giảKATINATKaties cùng đón chờ vào ngày 14/05/2026 nha!1 tuần1Xem 1 phản hồi
+36,1,phuc_long,facebook,positive,taste_quality,1.0,"Từ hương thơm thanh lành của trà, cà phê hòa quyện cùng mật ong, đến vị ngọt lành của những chiếc bánh tốt cho sức khỏe. Tất cả tạo nên dư vị của một mùa xuân Hương Mật Ươm Sắc thật đậm vị và khó quên."
+36,2,phuc_long,facebook,positive,taste_quality,1.0,"Từ những đóa hoa rừng nồng nàn nắng mới, đến những giọt mật tinh khiết sánh đậm.Từ những tán cây xanh mướt, đến tép bưởi tươi thanh mát.Từ tinh túy đất mẹ, đến tinh nghệ sạch lành.Từ nắng gió đồng xa, đến sắc vàng óng ả của Nhụy hoa nghệ tây.Từ những đồi trà bạt ngàn, đến hương vị ngọt thơm của nền Hồng Trà Mật Ong."
+36,3,phuc_long,facebook,positive,taste_quality,1.0,"Hồng Trà Bưởi Mật Ong: Thơm dậy vị, thanh mát.Hồng Trà Sữa Yến Mạch Mật Ong: Béo bùi dịu nhẹ, đậm đà khó quên.Cà Phê Curcumin Mật Ong: Dung hòa tinh tế, đậm vị bừng tỉnh."
+36,4,phuc_long,facebook,positive,none,1.0,"Bộ sưu tập nước Hương Mật Ươm Sắc: Hồng Trà Bưởi Mật Ong, Hồng Trà Sữa Yến Mạch Mật Ong, Cà Phê Curcumin Mật Ong:"
+36,5,phuc_long,tiktok,positive,none,1.0,"ê, cover lại bưởi mật ong starbuck mà ko ra gì dân nó chửi cho đó. để t đi thử"
+37,1,katinat,facebook,positive,none,1.0,Fan cứngAn NguyenLy đẹp quá nè!!! Năm nào cũng zị hết trơn. Lẹ nè Quyên Lê5 tuần1KATINAT đã trả lời·1 phản hồi
+37,2,katinat,facebook,positive,none,1.0,Fan cứngAn NguyenÊ xinh á Shop ơi Quyên Lê5 tuần1Xem 1 phản hồi
+37,3,highlands,facebook,neutral,app_payment_promotion,1.0,Fan cứngSiêu Mã GiảmTrước khi đi nhớ ghé qua tui lấy mã rùi đi nha10 tuần
+37,4,highlands,facebook,negative,app_payment_promotion,1.0,Fan cứngThai Anh AnhPhindi Matcha DâuTeam matcha quẹo đâyNhu ThuyPhạm LinhGIPHY2 tuần1
+37,5,highlands,facebook,neutral,none,1.0,Fan cứngHoàng NguyễnThấy là tỉnh táo lợi liền kkk7 tuần1
+38,1,highlands,tiktok,neutral,none,1.0,Ko biết ad chỉnh nhạc gì nge tai nó ê nhức 😅
+38,2,highlands,tiktok,positive,none,1.0,"Quá đã, cất tiếng hát là thấy mê r 😌"
+38,3,highlands,tiktok,neutral,none,1.0,không có sub t tưởng nhạc thái không đó :)))
+38,4,highlands,tiktok,positive,none,1.0,nhạc đầu tiên giống meme sea v
+38,5,highlands,tiktok,neutral,none,1.0,ê nay ghép nhạc hay v ta =)))))))
+39,1,katinat,facebook,positive,none,1.0,"Phiên bản đẹp nhức cái nách, lại thấy hào khí lễ hội tinh thần dân tộc bản sắc Việt Nam 🇻🇳"
+39,2,phuc_long,facebook,positive,none,1.0,"Những nét vẽ trên Quai Xách Ly được vẽ nên từ những bạn thiếu nhi - các em được thỏa thích sáng tạo, nhìn ngắm quê hương mình dưới lăng kính tuổi thơ đầy mơ mộng, hồn nhiên và đầy màu sắc"
+39,3,katinat,facebook,positive,none,1.0,"Bên cạnh phiên bản cover ly tái hiện dải khăn được dệt nên từ những họa tiết văn hóa nổi bật của ba miền, KATINAT dành riêng họa tiết Khăn Rằn trên một thiết kế độc lập, bởi lẽ hình ảnh Chiếc Khăn Rằn gắn liền với con người và vùng đất phương Nam trong suốt những năm tháng lịch sử hào hùng, trở thành biểu tượng của tinh thần kiên cường và bất khuất."
+39,4,katinat,facebook,positive,service_store,1.0,"Bộ Sưu Tập Ly 30/4 “Dệt Gấm Vóc Tự Hào” gồm 2 phiên bản cover size L:Cover “Dệt Gấm Vóc Tự Hào” - Dải gấm ""dệt"" nên từ họa tiết văn hóa nổi bật của 3 miền Bắc – Trung – Nam, Từ họa tiết Sen Tiên của Lụa Hà Đông, Thổ cẩm Mường, Cổ áo Nhật Bình, Khăn Rằn, đến nét mộc mạc, bình dị của những người phụ nữ miền Tây Nam Bộ trong những bộ đồ bông thân thương, tất cả cùng hòa vào nhau như những mảnh ghép bản sắc, gợi nên hình ảnh non sông liền một dải và tinh thần gắn kết dân tộc."
+39,5,katinat,facebook,neutral,app_payment_promotion,1.0,"Từ những chuyến ngược xuôi tìm về những làng nghề, gặp gỡ nghệ nhân,Từ các công đoạn tỉ mỉ chọn vải, cắt, may, thêu, khâu, ghép,Từng bàn tay góp sức, từng mảnh ghép dần thành hình."
+40,1,phuc_long,facebook,positive,none,1.0,"Cánh cửa của Hội Lớn Phúc Long chuẩn bị mở, bạn đã sẵn sàng để trở thành những thành viên đầu tiên chinh phục thử thách chưa?"
+40,2,highlands,facebook,neutral,none,1.0,"Quán có quy định giờ không ạ , hay ra lúc nào 3 ngày này cũng dc khuyến mại"
+40,3,katinat,tiktok,neutral,none,1.0,cho em hỏi katinat mạc cửu bắt đầu nhận khách vào quán từ mấy giờ vậy ạ
+40,4,highlands,tiktok,neutral,none,1.0,Bên mình có mở cửa qua 0h để xem pháo hoa khommm ạ
+40,5,phuc_long,facebook,neutral,none,1.0,Nghi LươngTôi hỏi em: Bao giờ thì em mở cửa?!!?
+41,1,katinat,tiktok,neutral,none,1.0,M vừa nhận tức thì ly màu xanh 😢 ai có ly hồng đổi với mình k
+41,2,highlands,facebook,neutral,none,1.0,"Ly mào xanh nha, mơn c Đẩu Phạm quà nha trang chỉ v là đủ 🥰"
+41,3,katinat,tiktok,neutral,none,1.0,Mình dư ly mào xanh ai có ly hằm muốn đổi khum ạ
+41,4,katinat,tiktok,neutral,none,1.0,Ai đổi ly với m k. M có ly xanh😢
+41,5,katinat,tiktok,neutral,none,1.0,"Ai có ly hồng đổi cho mình với nha, mình có ly xanh ạ 🥰"
+42,1,phuc_long,tiktok,positive,none,1.0,"Bữa sáng kiểu này nhìn đơn giản mà hợp lý ghê, không biết ăn có no tới trưa không"
+42,2,phuc_long,tiktok,neutral,none,1.0,"Ai cũng hỏi sao tui làm việc năng suất thế, bí quyết là ăn sáng PL đó kk"
+42,3,phuc_long,tiktok,neutral,service_store,1.0,"sáng nào cũng đông, muốn ăn mà lười xếp hàng"
+42,4,highlands,tiktok,positive,none,1.0,Ăn sáng của b hết 90k = 2 bát phở bò ngon
+42,5,phuc_long,tiktok,neutral,none,1.0,"Bữa sáng chất lượng, 10 điểm cho sự tiện lợi"

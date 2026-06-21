@@ -1,0 +1,42 @@
+# Comment GraphRAG Diagnostics Report
+
+- **Total topic clusters**: 18
+- **Total comments represented**: 12,000
+- **Graph nodes**: 112
+- **Graph edges**: 203
+
+## Decision confidence distribution
+| decision_confidence   |   count |
+|:----------------------|--------:|
+| low                   |      18 |
+
+## Management usefulness distribution
+| management_usefulness   |   count |
+|:------------------------|--------:|
+| noisy_do_not_conclude   |      18 |
+
+## High-confidence topics
+No data
+
+## Medium-confidence topics
+No data
+
+## Low-confidence / noisy topics
+|   topic_id | topic_label                                              | keywords                                                                                          |   comment_count |   positive_count |   neutral_count |   negative_count |   negative_ratio | top_brand   |   brand_purity_proxy | top_platform   | top_risk_group   |   keyword_quality_score |   noise_keyword_ratio |   strategic_keyword_ratio |   volume_score |   sentiment_clarity_score |   risk_clarity_score |   topic_reliability_score | decision_confidence   | noisy_topic_flag   | management_usefulness   |
+|-----------:|:---------------------------------------------------------|:--------------------------------------------------------------------------------------------------|----------------:|-----------------:|----------------:|-----------------:|-----------------:|:------------|---------------------:|:---------------|:-----------------|------------------------:|----------------------:|--------------------------:|---------------:|--------------------------:|---------------------:|--------------------------:|:----------------------|:-------------------|:------------------------|
+|          9 | đẹp / highlands / giá / dụng                             | đẹp, highlands, giá, dụng, hàng, katinat, từ, matcha, áp, áp dụng                                 |            1573 |              640 |             864 |               69 |           0.0439 | highlands   |                 0.55 | facebook       | none             |                   0.36  |                   0   |                       0.2 |         0.8354 |                    0.5493 |                  0.2 |                    0.4965 | low                   | False              | noisy_do_not_conclude   |
+|          1 | ngon / uống / tuần / trà                                 | ngon, uống, tuần, trà, ly, cái, mua, long, mới, thấy                                              |            2606 |             1245 |            1257 |              104 |           0.0399 | highlands   |                 0.55 | tiktok         | none             |                   0.275 |                   0.3 |                       0.1 |         1      |                    0.4823 |                  0.2 |                    0.4888 | low                   | True               | noisy_do_not_conclude   |
+|         11 | thích / bảo / hồng / tao                                 | thích, bảo, hồng, tao, lại, fl, nam, xinh, huyền, tui                                             |            2724 |              578 |            2045 |              101 |           0.0371 | highlands   |                 0.55 | tiktok         | none             |                   0.02  |                   0.9 |                       0   |         1      |                    0.7507 |                  0.2 |                    0.4577 | low                   | True               | noisy_do_not_conclude   |
+|         17 | quán / đâu / bán / ngọt                                  | quán, đâu, bán, ngọt, mở, xin, chi, nhánh, bị, chi nhánh                                          |             920 |              242 |             631 |               47 |           0.0511 | highlands   |                 0.55 | tiktok         | none             |                   0.275 |                   0.3 |                       0.1 |         0.4886 |                    0.6859 |                  0.2 |                    0.413  | low                   | True               | noisy_do_not_conclude   |
+|         16 | tuần1 / nguyen / ngọc / tháng                            | tuần1, nguyen, ngọc, tháng, phương, trần, lê, thanh, hoàng, thảo                                  |            1204 |              181 |            1002 |               21 |           0.0174 | highlands   |                 0.55 | facebook       | none             |                   0.02  |                   0.9 |                       0   |         0.6394 |                    0.8322 |                  0.2 |                    0.3931 | low                   | True               | noisy_do_not_conclude   |
+|          0 | minh / hay / ai / phạm                                   | minh, hay, ai, phạm, nhận, ủa, vé, người, katinat, nhỉ                                            |             768 |              141 |             602 |               25 |           0.0326 | highlands   |                 0.55 | tiktok         | none             |                   0.2   |                   0   |                       0   |         0.4079 |                    0.7839 |                  0.2 |                    0.3838 | low                   | True               | noisy_do_not_conclude   |
+|          7 | trai / đẹp / nhân viên / viên                            | trai, đẹp, nhân viên, viên, nhân, luôn, vậy, xem, đang, nè                                        |              34 |               33 |               1 |                0 |           0      | highlands   |                 0.55 | tiktok         | none             |                   0.28  |                   0   |                       0.1 |         0.0181 |                    0.9706 |                  0.2 |                    0.3621 | low                   | True               | noisy_do_not_conclude   |
+|          4 | mai / fan / phải / luôn                                  | mai, fan, phải, luôn, châu, trân, bà, trân châu, thử, tuần                                        |             511 |               94 |             402 |               15 |           0.0294 | highlands   |                 0.55 | facebook       | none             |                   0.2   |                   0   |                       0   |         0.2714 |                    0.7867 |                  0.2 |                    0.3543 | low                   | True               | noisy_do_not_conclude   |
+|         14 | sẻthíchbình luận / sẻthíchbình / chia sẻthíchbình / luận | sẻthíchbình luận, sẻthíchbình, chia sẻthíchbình, luận, cả cảm, cảm xúc, xúc, lượt chia, lượt, cảm |             124 |              124 |               0 |                0 |           0      | highlands   |                 0.55 | facebook       | none             |                   0.2   |                   0   |                       0   |         0.0659 |                    1      |                  0.2 |                    0.3475 | low                   | True               | noisy_do_not_conclude   |
+|         15 | chia sẻ / sẻ / lượt chia / lượt                          | chia sẻ, sẻ, lượt chia, lượt, chia, bình, luận5 lượt, bình luận5, luận5, luận6                    |             111 |                0 |             111 |                0 |           0      | highlands   |                 0.55 | facebook       | none             |                   0.2   |                   0   |                       0   |         0.059  |                    1      |                  0.2 |                    0.346  | low                   | True               | noisy_do_not_conclude   |
+
+## Academic note
+Vì topic clustering là bài toán không giám sát (Unsupervised Learning), hệ thống không dùng accuracy theo nghĩa phân loại có nhãn (Supervised Evaluation). Thay vào đó, dashboard sử dụng topic reliability score và decision confidence để đánh giá mức độ đáng tin cậy của từng cụm khi hỗ trợ ra quyết định marketing, CSKH và vận hành.
+
+## Management interpretation
+Topic có decision_confidence = high có thể dùng làm insight chính. Topic medium chỉ nên dùng làm tín hiệu tham khảo và cần human review trước khi ra quyết định lớn. Topic low hoặc noisy_topic_flag = True không nên dùng làm kết luận quản trị chính.

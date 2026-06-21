@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 780px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::product_taste_quality", "label": "product_taste_quality", "physics": false, "shape": "dot", "title": "\u003cb\u003eproduct_taste_quality\u003c/b\u003e\u003cbr\u003eComments: 4,547\u003cbr\u003eReliability: 0.636\u003cbr\u003eConfidence: medium\u003cbr\u003ePhuc Long ratio: 27.82%\u003cbr\u003eOwner: Product + Content\u003cbr\u003eRisk: product_taste_quality_risk\u003cbr\u003eKeywords: u\u1ed1ng, tr\u00e0, ngon, s\u1eefa, m\u00f3n, b\u00e1nh, matcha, v\u1ecb, n\u01b0\u1edbc, tr\u00e0 s\u1eefa, \u0111\u00e1, ng\u1ecdt, tr\u00e0 sen, kem, d\u1edf, \u0111\u1eadm", "value": 56.8375, "x": -500.0, "y": 0.0}, {"color": "#F59E0B", "font": {"color": "#111827"}, "id": "confidence::medium", "label": "medium", "physics": false, "shape": "dot", "title": "confidence: medium", "value": 20.0, "x": -120.0, "y": 0.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::product_plus_content", "label": "Product + Content", "physics": false, "shape": "dot", "title": "owner: Product + Content", "value": 20.0, "x": 240.0, "y": 0.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::product_taste_quality_risk", "label": "product_taste_quality_risk", "physics": false, "shape": "dot", "title": "risk: product_taste_quality_risk", "value": 20.0, "x": 520.0, "y": 0.0}, {"color": "#64748B", "font": {"color": "#111827"}, "id": "platform::tiktok", "label": "tiktok", "physics": false, "shape": "dot", "title": "platform: tiktok", "value": 20.0, "x": 640.0, "y": 55.0}, {"color": "#0EA5E9", "font": {"color": "#111827"}, "id": "brand_focus::phuc_long_ratio", "label": "Ph\u00fac Long focus", "physics": false, "shape": "dot", "title": "brand_focus: Ph\u00fac Long focus", "value": 20.0, "x": 760.0, "y": 0.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::price_promotion", "label": "price_promotion", "physics": false, "shape": "dot", "title": "\u003cb\u003eprice_promotion\u003c/b\u003e\u003cbr\u003eComments: 1,637\u003cbr\u003eReliability: 0.618\u003cbr\u003eConfidence: medium\u003cbr\u003ePhuc Long ratio: 34.94%\u003cbr\u003eOwner: Marketing + CRM\u003cbr\u003eRisk: price_promotion_risk\u003cbr\u003eKeywords: mua, t\u1eb7ng, \u00e1p d\u1ee5ng, gi\u00e1, m\u00e3, combo, \u01b0u \u0111\u00e3i, deal, gi\u1ea3m, voucher, r\u1ebb, gi\u1ea3m gi\u00e1, khuy\u1ebfn m\u00e3i, m\u00e3 gi\u1ea3m, \u0111\u1eaft, sale", "value": 20.4625, "x": -500.0, "y": 150.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::marketing_plus_crm", "label": "Marketing + CRM", "physics": false, "shape": "dot", "title": "owner: Marketing + CRM", "value": 20.0, "x": 240.0, "y": 150.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::price_promotion_risk", "label": "price_promotion_risk", "physics": false, "shape": "dot", "title": "risk: price_promotion_risk", "value": 20.0, "x": 520.0, "y": 150.0}, {"color": "#64748B", "font": {"color": "#111827"}, "id": "platform::facebook", "label": "facebook", "physics": false, "shape": "dot", "title": "platform: facebook", "value": 20.0, "x": 640.0, "y": 205.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::branch_availability", "label": "branch_availability", "physics": false, "shape": "dot", "title": "\u003cb\u003ebranch_availability\u003c/b\u003e\u003cbr\u003eComments: 878\u003cbr\u003eReliability: 0.563\u003cbr\u003eConfidence: medium\u003cbr\u003ePhuc Long ratio: 26.99%\u003cbr\u003eOwner: Retail Expansion + Operations\u003cbr\u003eRisk: branch_availability_risk\u003cbr\u003eKeywords: qu\u00e1n, m\u1edf, c\u1eeda h\u00e0ng, chi nh\u00e1nh, ch\u1ed7, \u1edf \u0111\u00e2u, xa, g\u1ea7n, khu v\u1ef1c, \u0111\u1ecba ch\u1ec9, t\u1ec9nh, th\u00e0nh ph\u1ed1, c\u00f3 ch\u1ed7, \u0111\u00f3ng, c\u00f2n m\u00f3n, h\u1ebft m\u00f3n", "value": 15.0, "x": -500.0, "y": 300.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::retail_expansion_plus_operations", "label": "Retail Expansion + Operations", "physics": false, "shape": "dot", "title": "owner: Retail Expansion + Operations", "value": 20.0, "x": 240.0, "y": 300.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::branch_availability_risk", "label": "branch_availability_risk", "physics": false, "shape": "dot", "title": "risk: branch_availability_risk", "value": 20.0, "x": 520.0, "y": 300.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::brand_love_content", "label": "brand_love_content", "physics": false, "shape": "dot", "title": "\u003cb\u003ebrand_love_content\u003c/b\u003e\u003cbr\u003eComments: 820\u003cbr\u003eReliability: 0.548\u003cbr\u003eConfidence: medium\u003cbr\u003ePhuc Long ratio: 19.63%\u003cbr\u003eOwner: Content + Social Team\u003cbr\u003eRisk: brand_love_content_risk\u003cbr\u003eKeywords: \u0111\u1eb9p, \u1ea3nh, xinh, th\u00edch, y\u00eau, h\u00ecnh, m\u00ea, quay, trend, nh\u1ea1c, video, clip, review, d\u1ec5 th\u01b0\u01a1ng, content, viral", "value": 15.0, "x": -500.0, "y": 450.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::content_plus_social_team", "label": "Content + Social Team", "physics": false, "shape": "dot", "title": "owner: Content + Social Team", "value": 20.0, "x": 240.0, "y": 450.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::brand_love_content_risk", "label": "brand_love_content_risk", "physics": false, "shape": "dot", "title": "risk: brand_love_content_risk", "value": 20.0, "x": 520.0, "y": 450.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::delivery_waiting", "label": "delivery_waiting", "physics": false, "shape": "dot", "title": "\u003cb\u003edelivery_waiting\u003c/b\u003e\u003cbr\u003eComments: 287\u003cbr\u003eReliability: 0.517\u003cbr\u003eConfidence: medium\u003cbr\u003ePhuc Long ratio: 32.40%\u003cbr\u003eOwner: Operations + Delivery Partner\u003cbr\u003eRisk: delivery_waiting_risk\u003cbr\u003eKeywords: ch\u1edd, giao, \u0111\u1ee3i, ship, l\u00e2u, \u0111\u01a1n, giao h\u00e0ng, \u0111\u1eb7t giao, shipper, tr\u1ec5, nh\u1eadn h\u00e0ng, ch\u1edd l\u00e2u", "value": 15.0, "x": -500.0, "y": 600.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::operations_plus_delivery_partner", "label": "Operations + Delivery Partner", "physics": false, "shape": "dot", "title": "owner: Operations + Delivery Partner", "value": 20.0, "x": 240.0, "y": 600.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::delivery_waiting_risk", "label": "delivery_waiting_risk", "physics": false, "shape": "dot", "title": "risk: delivery_waiting_risk", "value": 20.0, "x": 520.0, "y": 600.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::app_payment_order", "label": "app_payment_order", "physics": false, "shape": "dot", "title": "\u003cb\u003eapp_payment_order\u003c/b\u003e\u003cbr\u003eComments: 163\u003cbr\u003eReliability: 0.480\u003cbr\u003eConfidence: low\u003cbr\u003ePhuc Long ratio: 20.86%\u003cbr\u003eOwner: Digital Product + Data\u003cbr\u003eRisk: app_payment_promotion\u003cbr\u003eKeywords: app, order, \u0111\u1eb7t h\u00e0ng, online, thanh to\u00e1n, qr, \u0111\u01a1n h\u00e0ng, bank, chuy\u1ec3n kho\u1ea3n, momo", "value": 15.0, "x": -500.0, "y": 750.0}, {"color": "#DC2626", "font": {"color": "#111827"}, "id": "confidence::low", "label": "low", "physics": false, "shape": "dot", "title": "confidence: low", "value": 20.0, "x": -120.0, "y": 750.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::digital_product_plus_data", "label": "Digital Product + Data", "physics": false, "shape": "dot", "title": "owner: Digital Product + Data", "value": 20.0, "x": 240.0, "y": 750.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::app_payment_promotion", "label": "app_payment_promotion", "physics": false, "shape": "dot", "title": "risk: app_payment_promotion", "value": 20.0, "x": 520.0, "y": 750.0}, {"color": "#2563EB", "font": {"color": "#111827"}, "id": "topic::service_store_staff", "label": "service_store_staff", "physics": false, "shape": "dot", "title": "\u003cb\u003eservice_store_staff\u003c/b\u003e\u003cbr\u003eComments: 207\u003cbr\u003eReliability: 0.463\u003cbr\u003eConfidence: low\u003cbr\u003ePhuc Long ratio: 24.15%\u003cbr\u003eOwner: Operations + Store Manager\u003cbr\u003eRisk: service_store\u003cbr\u003eKeywords: nh\u00e2n vi\u00ean, nhanh, ph\u1ee5c v\u1ee5, th\u00e1i \u0111\u1ed9, d\u1ecbch v\u1ee5, order, b\u1ea3o v\u1ec7, x\u1ebfp h\u00e0ng, ch\u1eadm, qu\u1ea7y", "value": 15.0, "x": -500.0, "y": 900.0}, {"color": "#7C3AED", "font": {"color": "#111827"}, "id": "owner::operations_plus_store_manager", "label": "Operations + Store Manager", "physics": false, "shape": "dot", "title": "owner: Operations + Store Manager", "value": 20.0, "x": 240.0, "y": 900.0}, {"color": "#EF4444", "font": {"color": "#111827"}, "id": "risk::service_store", "label": "service_store", "physics": false, "shape": "dot", "title": "risk: service_store", "value": 20.0, "x": 520.0, "y": 900.0}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#F59E0B", "from": "topic::product_taste_quality", "label": "has_confidence", "smooth": false, "title": "Reliability=0.636", "to": "confidence::medium", "value": 3.1795}, {"arrows": "to", "color": "#7C3AED", "from": "topic::product_taste_quality", "label": "owned_by", "smooth": false, "title": "Owner=Product + Content", "to": "owner::product_plus_content", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::product_taste_quality", "label": "risk_signal", "smooth": false, "title": "Risk=product_taste_quality_risk", "to": "risk::product_taste_quality_risk", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::product_taste_quality", "label": "dominant_platform", "smooth": false, "title": "Platform=tiktok", "to": "platform::tiktok", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::product_taste_quality", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=27.82%", "to": "brand_focus::phuc_long_ratio", "value": 1.391}, {"arrows": "to", "color": "#F59E0B", "from": "topic::price_promotion", "label": "has_confidence", "smooth": false, "title": "Reliability=0.618", "to": "confidence::medium", "value": 3.0909999999999997}, {"arrows": "to", "color": "#7C3AED", "from": "topic::price_promotion", "label": "owned_by", "smooth": false, "title": "Owner=Marketing + CRM", "to": "owner::marketing_plus_crm", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::price_promotion", "label": "risk_signal", "smooth": false, "title": "Risk=price_promotion_risk", "to": "risk::price_promotion_risk", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::price_promotion", "label": "dominant_platform", "smooth": false, "title": "Platform=facebook", "to": "platform::facebook", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::price_promotion", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=34.94%", "to": "brand_focus::phuc_long_ratio", "value": 1.7469999999999999}, {"arrows": "to", "color": "#F59E0B", "from": "topic::branch_availability", "label": "has_confidence", "smooth": false, "title": "Reliability=0.563", "to": "confidence::medium", "value": 2.814}, {"arrows": "to", "color": "#7C3AED", "from": "topic::branch_availability", "label": "owned_by", "smooth": false, "title": "Owner=Retail Expansion + Operations", "to": "owner::retail_expansion_plus_operations", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::branch_availability", "label": "risk_signal", "smooth": false, "title": "Risk=branch_availability_risk", "to": "risk::branch_availability_risk", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::branch_availability", "label": "dominant_platform", "smooth": false, "title": "Platform=tiktok", "to": "platform::tiktok", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::branch_availability", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=26.99%", "to": "brand_focus::phuc_long_ratio", "value": 1.3495}, {"arrows": "to", "color": "#F59E0B", "from": "topic::brand_love_content", "label": "has_confidence", "smooth": false, "title": "Reliability=0.548", "to": "confidence::medium", "value": 2.74}, {"arrows": "to", "color": "#7C3AED", "from": "topic::brand_love_content", "label": "owned_by", "smooth": false, "title": "Owner=Content + Social Team", "to": "owner::content_plus_social_team", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::brand_love_content", "label": "risk_signal", "smooth": false, "title": "Risk=brand_love_content_risk", "to": "risk::brand_love_content_risk", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::brand_love_content", "label": "dominant_platform", "smooth": false, "title": "Platform=facebook", "to": "platform::facebook", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::brand_love_content", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=19.63%", "to": "brand_focus::phuc_long_ratio", "value": 1.0}, {"arrows": "to", "color": "#F59E0B", "from": "topic::delivery_waiting", "label": "has_confidence", "smooth": false, "title": "Reliability=0.517", "to": "confidence::medium", "value": 2.5855}, {"arrows": "to", "color": "#7C3AED", "from": "topic::delivery_waiting", "label": "owned_by", "smooth": false, "title": "Owner=Operations + Delivery Partner", "to": "owner::operations_plus_delivery_partner", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::delivery_waiting", "label": "risk_signal", "smooth": false, "title": "Risk=delivery_waiting_risk", "to": "risk::delivery_waiting_risk", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::delivery_waiting", "label": "dominant_platform", "smooth": false, "title": "Platform=facebook", "to": "platform::facebook", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::delivery_waiting", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=32.40%", "to": "brand_focus::phuc_long_ratio", "value": 1.62}, {"arrows": "to", "color": "#F59E0B", "from": "topic::app_payment_order", "label": "has_confidence", "smooth": false, "title": "Reliability=0.480", "to": "confidence::low", "value": 2.3985000000000003}, {"arrows": "to", "color": "#7C3AED", "from": "topic::app_payment_order", "label": "owned_by", "smooth": false, "title": "Owner=Digital Product + Data", "to": "owner::digital_product_plus_data", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::app_payment_order", "label": "risk_signal", "smooth": false, "title": "Risk=app_payment_promotion", "to": "risk::app_payment_promotion", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::app_payment_order", "label": "dominant_platform", "smooth": false, "title": "Platform=facebook", "to": "platform::facebook", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::app_payment_order", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=20.86%", "to": "brand_focus::phuc_long_ratio", "value": 1.0430000000000001}, {"arrows": "to", "color": "#F59E0B", "from": "topic::service_store_staff", "label": "has_confidence", "smooth": false, "title": "Reliability=0.463", "to": "confidence::low", "value": 2.3169999999999997}, {"arrows": "to", "color": "#7C3AED", "from": "topic::service_store_staff", "label": "owned_by", "smooth": false, "title": "Owner=Operations + Store Manager", "to": "owner::operations_plus_store_manager", "value": 2.0}, {"arrows": "to", "color": "#EF4444", "from": "topic::service_store_staff", "label": "risk_signal", "smooth": false, "title": "Risk=service_store", "to": "risk::service_store", "value": 2.0}, {"arrows": "to", "color": "#94A3B8", "from": "topic::service_store_staff", "label": "dominant_platform", "smooth": false, "title": "Platform=tiktok", "to": "platform::tiktok", "value": 1.0}, {"arrows": "to", "color": "#0EA5E9", "from": "topic::service_store_staff", "label": "phuc_long_ratio", "smooth": false, "title": "Phuc Long ratio=24.15%", "to": "brand_focus::phuc_long_ratio", "value": 1.2075}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": false}, "interaction": {"hover": true, "navigationButtons": true, "keyboard": true}, "edges": {"arrows": {"to": {"enabled": true, "scaleFactor": 0.7}}, "font": {"size": 9, "align": "middle"}, "smooth": false}, "nodes": {"font": {"size": 16, "face": "arial"}, "shape": "dot", "scaling": {"min": 12, "max": 50}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

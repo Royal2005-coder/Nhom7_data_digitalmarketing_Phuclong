@@ -1,0 +1,27 @@
+﻿id,label,group,value,title,x,y
+topic::product_taste_quality,product_taste_quality,business_topic,56.8375,"<b>product_taste_quality</b><br>Comments: 4,547<br>Reliability: 0.636<br>Confidence: medium<br>Phuc Long ratio: 27.82%<br>Owner: Product + Content<br>Risk: product_taste_quality_risk<br>Keywords: uống, trà, ngon, sữa, món, bánh, matcha, vị, nước, trà sữa, đá, ngọt, trà sen, kem, dở, đậm",-500,0
+confidence::medium,medium,confidence,20.0,confidence: medium,-120,0
+owner::product_plus_content,Product + Content,owner,20.0,owner: Product + Content,240,0
+risk::product_taste_quality_risk,product_taste_quality_risk,risk,20.0,risk: product_taste_quality_risk,520,0
+platform::tiktok,tiktok,platform,20.0,platform: tiktok,640,55
+brand_focus::phuc_long_ratio,Phúc Long focus,brand_focus,20.0,brand_focus: Phúc Long focus,760,0
+topic::price_promotion,price_promotion,business_topic,20.4625,"<b>price_promotion</b><br>Comments: 1,637<br>Reliability: 0.618<br>Confidence: medium<br>Phuc Long ratio: 34.94%<br>Owner: Marketing + CRM<br>Risk: price_promotion_risk<br>Keywords: mua, tặng, áp dụng, giá, mã, combo, ưu đãi, deal, giảm, voucher, rẻ, giảm giá, khuyến mãi, mã giảm, đắt, sale",-500,150
+owner::marketing_plus_crm,Marketing + CRM,owner,20.0,owner: Marketing + CRM,240,150
+risk::price_promotion_risk,price_promotion_risk,risk,20.0,risk: price_promotion_risk,520,150
+platform::facebook,facebook,platform,20.0,platform: facebook,640,205
+topic::branch_availability,branch_availability,business_topic,15.0,"<b>branch_availability</b><br>Comments: 878<br>Reliability: 0.563<br>Confidence: medium<br>Phuc Long ratio: 26.99%<br>Owner: Retail Expansion + Operations<br>Risk: branch_availability_risk<br>Keywords: quán, mở, cửa hàng, chi nhánh, chỗ, ở đâu, xa, gần, khu vực, địa chỉ, tỉnh, thành phố, có chỗ, đóng, còn món, hết món",-500,300
+owner::retail_expansion_plus_operations,Retail Expansion + Operations,owner,20.0,owner: Retail Expansion + Operations,240,300
+risk::branch_availability_risk,branch_availability_risk,risk,20.0,risk: branch_availability_risk,520,300
+topic::brand_love_content,brand_love_content,business_topic,15.0,"<b>brand_love_content</b><br>Comments: 820<br>Reliability: 0.548<br>Confidence: medium<br>Phuc Long ratio: 19.63%<br>Owner: Content + Social Team<br>Risk: brand_love_content_risk<br>Keywords: đẹp, ảnh, xinh, thích, yêu, hình, mê, quay, trend, nhạc, video, clip, review, dễ thương, content, viral",-500,450
+owner::content_plus_social_team,Content + Social Team,owner,20.0,owner: Content + Social Team,240,450
+risk::brand_love_content_risk,brand_love_content_risk,risk,20.0,risk: brand_love_content_risk,520,450
+topic::delivery_waiting,delivery_waiting,business_topic,15.0,"<b>delivery_waiting</b><br>Comments: 287<br>Reliability: 0.517<br>Confidence: medium<br>Phuc Long ratio: 32.40%<br>Owner: Operations + Delivery Partner<br>Risk: delivery_waiting_risk<br>Keywords: chờ, giao, đợi, ship, lâu, đơn, giao hàng, đặt giao, shipper, trễ, nhận hàng, chờ lâu",-500,600
+owner::operations_plus_delivery_partner,Operations + Delivery Partner,owner,20.0,owner: Operations + Delivery Partner,240,600
+risk::delivery_waiting_risk,delivery_waiting_risk,risk,20.0,risk: delivery_waiting_risk,520,600
+topic::app_payment_order,app_payment_order,business_topic,15.0,"<b>app_payment_order</b><br>Comments: 163<br>Reliability: 0.480<br>Confidence: low<br>Phuc Long ratio: 20.86%<br>Owner: Digital Product + Data<br>Risk: app_payment_promotion<br>Keywords: app, order, đặt hàng, online, thanh toán, qr, đơn hàng, bank, chuyển khoản, momo",-500,750
+confidence::low,low,confidence,20.0,confidence: low,-120,750
+owner::digital_product_plus_data,Digital Product + Data,owner,20.0,owner: Digital Product + Data,240,750
+risk::app_payment_promotion,app_payment_promotion,risk,20.0,risk: app_payment_promotion,520,750
+topic::service_store_staff,service_store_staff,business_topic,15.0,"<b>service_store_staff</b><br>Comments: 207<br>Reliability: 0.463<br>Confidence: low<br>Phuc Long ratio: 24.15%<br>Owner: Operations + Store Manager<br>Risk: service_store<br>Keywords: nhân viên, nhanh, phục vụ, thái độ, dịch vụ, order, bảo vệ, xếp hàng, chậm, quầy",-500,900
+owner::operations_plus_store_manager,Operations + Store Manager,owner,20.0,owner: Operations + Store Manager,240,900
+risk::service_store,service_store,risk,20.0,risk: service_store,520,900

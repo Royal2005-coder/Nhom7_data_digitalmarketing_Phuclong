@@ -1,0 +1,273 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 720px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 720px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "#222222"}, "group": "topic", "id": "topic_0", "label": "T0: minh / hay / ai / ph\u1ea1m", "shape": "dot", "size": 10, "title": "Topic 0\u003cbr\u003eComments: 768\u003cbr\u003ePositive: 141\u003cbr\u003eNeutral: 602\u003cbr\u003eNegative: 25\u003cbr\u003eRisk: none", "value": 768}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_minh", "label": "minh", "shape": "dot", "size": 10, "title": "Keyword: minh", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_hay", "label": "hay", "shape": "dot", "size": 10, "title": "Keyword: hay", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ai", "label": "ai", "shape": "dot", "size": 10, "title": "Keyword: ai", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ph\u1ea1m", "label": "ph\u1ea1m", "shape": "dot", "size": 10, "title": "Keyword: ph\u1ea1m", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nh\u1eadn", "label": "nh\u1eadn", "shape": "dot", "size": 10, "title": "Keyword: nh\u1eadn", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_\u1ee7a", "label": "\u1ee7a", "shape": "dot", "size": 10, "title": "Keyword: \u1ee7a", "value": 4}, {"font": {"color": "#222222"}, "group": "brand", "id": "brand_highlands", "label": "highlands", "shape": "dot", "size": 10, "title": "brand: highlands", "value": 10}, {"font": {"color": "#222222"}, "group": "platform", "id": "platform_tiktok", "label": "tiktok", "shape": "dot", "size": 10, "title": "platform: tiktok", "value": 10}, {"font": {"color": "#222222"}, "group": "risk", "id": "risk_none", "label": "none", "shape": "dot", "size": 10, "title": "risk: none", "value": 10}, {"font": {"color": "#222222"}, "group": "sentiment", "id": "sentiment_positive", "label": "positive", "shape": "dot", "size": 10, "title": "Sentiment: positive", "value": 12}, {"font": {"color": "#222222"}, "group": "sentiment", "id": "sentiment_neutral", "label": "neutral", "shape": "dot", "size": 10, "title": "Sentiment: neutral", "value": 12}, {"font": {"color": "#222222"}, "group": "sentiment", "id": "sentiment_negative", "label": "negative", "shape": "dot", "size": 10, "title": "Sentiment: negative", "value": 12}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_1", "label": "T1: ngon / u\u1ed1ng / tu\u1ea7n / tr\u00e0", "shape": "dot", "size": 10, "title": "Topic 1\u003cbr\u003eComments: 2606\u003cbr\u003ePositive: 1245\u003cbr\u003eNeutral: 1257\u003cbr\u003eNegative: 104\u003cbr\u003eRisk: none", "value": 2606}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_2", "label": "T2: ph\u1ea3n / ph\u1ea3n h\u1ed3i / h\u1ed3i / c\u1ea3 ph\u1ea3n", "shape": "dot", "size": 10, "title": "Topic 2\u003cbr\u003eComments: 384\u003cbr\u003ePositive: 130\u003cbr\u003eNeutral: 246\u003cbr\u003eNegative: 8\u003cbr\u003eRisk: none", "value": 384}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_3", "label": "T3: nguy\u1ec5n / tu\u1ea7n / nguy\u1ec5n th\u1ecb / th\u1ecb", "shape": "dot", "size": 10, "title": "Topic 3\u003cbr\u003eComments: 440\u003cbr\u003ePositive: 61\u003cbr\u003eNeutral: 378\u003cbr\u003eNegative: 1\u003cbr\u003eRisk: none", "value": 440}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_4", "label": "T4: mai / fan / ph\u1ea3i / lu\u00f4n", "shape": "dot", "size": 10, "title": "Topic 4\u003cbr\u003eComments: 511\u003cbr\u003ePositive: 94\u003cbr\u003eNeutral: 402\u003cbr\u003eNegative: 15\u003cbr\u003eRisk: none", "value": 511}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_6", "label": "T6: chia s\u1ebb / s\u1ebb / l\u01b0\u1ee3t chia / l\u01b0\u1ee3t", "shape": "dot", "size": 10, "title": "Topic 6\u003cbr\u003eComments: 60\u003cbr\u003ePositive: 0\u003cbr\u003eNeutral: 60\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 60}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_7", "label": "T7: trai / \u0111\u1eb9p / nh\u00e2n vi\u00ean / vi\u00ean", "shape": "dot", "size": 10, "title": "Topic 7\u003cbr\u003eComments: 34\u003cbr\u003ePositive: 33\u003cbr\u003eNeutral: 1\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 34}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_9", "label": "T9: \u0111\u1eb9p / highlands / gi\u00e1 / d\u1ee5ng", "shape": "dot", "size": 10, "title": "Topic 9\u003cbr\u003eComments: 1573\u003cbr\u003ePositive: 640\u003cbr\u003eNeutral: 864\u003cbr\u003eNegative: 69\u003cbr\u003eRisk: none", "value": 1573}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_10", "label": "T10: c\u1ea3 c\u1ea3m / c\u1ea3m x\u00fac / x\u00fac / c\u1ea3m", "shape": "dot", "size": 10, "title": "Topic 10\u003cbr\u003eComments: 108\u003cbr\u003ePositive: 0\u003cbr\u003eNeutral: 108\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 108}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_11", "label": "T11: th\u00edch / b\u1ea3o / h\u1ed3ng / tao", "shape": "dot", "size": 10, "title": "Topic 11\u003cbr\u003eComments: 2724\u003cbr\u003ePositive: 578\u003cbr\u003eNeutral: 2045\u003cbr\u003eNegative: 101\u003cbr\u003eRisk: none", "value": 2724}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_12", "label": "T12: c\u1ea3 c\u1ea3m / c\u1ea3m x\u00fac / x\u00fac / c\u1ea3m", "shape": "dot", "size": 10, "title": "Topic 12\u003cbr\u003eComments: 149\u003cbr\u003ePositive: 17\u003cbr\u003eNeutral: 132\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 149}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_13", "label": "T13: b\u00ecnh lu\u1eadn / lu\u1eadn / b\u00ecnh / xem", "shape": "dot", "size": 10, "title": "Topic 13\u003cbr\u003eComments: 101\u003cbr\u003ePositive: 2\u003cbr\u003eNeutral: 99\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 101}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_14", "label": "T14: s\u1ebbth\u00edchb\u00ecnh lu\u1eadn / s\u1ebbth\u00edchb\u00ecnh / chia s\u1ebbth\u00edchb\u00ecnh / lu\u1eadn", "shape": "dot", "size": 10, "title": "Topic 14\u003cbr\u003eComments: 124\u003cbr\u003ePositive: 124\u003cbr\u003eNeutral: 0\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 124}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_15", "label": "T15: chia s\u1ebb / s\u1ebb / l\u01b0\u1ee3t chia / l\u01b0\u1ee3t", "shape": "dot", "size": 10, "title": "Topic 15\u003cbr\u003eComments: 111\u003cbr\u003ePositive: 0\u003cbr\u003eNeutral: 111\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 111}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_16", "label": "T16: tu\u1ea7n1 / nguyen / ng\u1ecdc / th\u00e1ng", "shape": "dot", "size": 10, "title": "Topic 16\u003cbr\u003eComments: 1204\u003cbr\u003ePositive: 181\u003cbr\u003eNeutral: 1002\u003cbr\u003eNegative: 21\u003cbr\u003eRisk: none", "value": 1204}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_17", "label": "T17: qu\u00e1n / \u0111\u00e2u / b\u00e1n / ng\u1ecdt", "shape": "dot", "size": 10, "title": "Topic 17\u003cbr\u003eComments: 920\u003cbr\u003ePositive: 242\u003cbr\u003eNeutral: 631\u003cbr\u003eNegative: 47\u003cbr\u003eRisk: none", "value": 920}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_5", "label": "T5: tuy\u1ec7t / tuy\u1ec7t v\u1eddi / v\u1eddi / \u0111\u1eb9p", "shape": "dot", "size": 10, "title": "Topic 5\u003cbr\u003eComments: 45\u003cbr\u003ePositive: 45\u003cbr\u003eNeutral: 0\u003cbr\u003eNegative: 0\u003cbr\u003eRisk: none", "value": 45}, {"font": {"color": "#222222"}, "group": "topic", "id": "topic_8", "label": "T8: s\u1ebb c\u00f4ng / \u0111\u00e3 chia / c\u00f4ng khai / khai", "shape": "dot", "size": 10, "title": "Topic 8\u003cbr\u003eComments: 138\u003cbr\u003ePositive: 14\u003cbr\u003eNeutral: 123\u003cbr\u003eNegative: 1\u003cbr\u003eRisk: none", "value": 138}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ngon", "label": "ngon", "shape": "dot", "size": 10, "title": "Keyword: ngon", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_u\u1ed1ng", "label": "u\u1ed1ng", "shape": "dot", "size": 10, "title": "Keyword: u\u1ed1ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tu\u1ea7n", "label": "tu\u1ea7n", "shape": "dot", "size": 10, "title": "Keyword: tu\u1ea7n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tr\u00e0", "label": "tr\u00e0", "shape": "dot", "size": 10, "title": "Keyword: tr\u00e0", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ly", "label": "ly", "shape": "dot", "size": 10, "title": "Keyword: ly", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u00e1i", "label": "c\u00e1i", "shape": "dot", "size": 10, "title": "Keyword: c\u00e1i", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ph\u1ea3n", "label": "ph\u1ea3n", "shape": "dot", "size": 10, "title": "Keyword: ph\u1ea3n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ph\u1ea3n h\u1ed3i", "label": "ph\u1ea3n h\u1ed3i", "shape": "dot", "size": 10, "title": "Keyword: ph\u1ea3n h\u1ed3i", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_h\u1ed3i", "label": "h\u1ed3i", "shape": "dot", "size": 10, "title": "Keyword: h\u1ed3i", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u1ea3 ph\u1ea3n", "label": "c\u1ea3 ph\u1ea3n", "shape": "dot", "size": 10, "title": "Keyword: c\u1ea3 ph\u1ea3n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tu\u1ea7nxem", "label": "tu\u1ea7nxem", "shape": "dot", "size": 10, "title": "Keyword: tu\u1ea7nxem", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tu\u1ea7n1xem", "label": "tu\u1ea7n1xem", "shape": "dot", "size": 10, "title": "Keyword: tu\u1ea7n1xem", "value": 4}, {"font": {"color": "#222222"}, "group": "platform", "id": "platform_facebook", "label": "facebook", "shape": "dot", "size": 10, "title": "platform: facebook", "value": 10}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nguy\u1ec5n", "label": "nguy\u1ec5n", "shape": "dot", "size": 10, "title": "Keyword: nguy\u1ec5n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nguy\u1ec5n th\u1ecb", "label": "nguy\u1ec5n th\u1ecb", "shape": "dot", "size": 10, "title": "Keyword: nguy\u1ec5n th\u1ecb", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_th\u1ecb", "label": "th\u1ecb", "shape": "dot", "size": 10, "title": "Keyword: th\u1ecb", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tu\u1ea7n1", "label": "tu\u1ea7n1", "shape": "dot", "size": 10, "title": "Keyword: tu\u1ea7n1", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ng\u1ecdc", "label": "ng\u1ecdc", "shape": "dot", "size": 10, "title": "Keyword: ng\u1ecdc", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_mai", "label": "mai", "shape": "dot", "size": 10, "title": "Keyword: mai", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_fan", "label": "fan", "shape": "dot", "size": 10, "title": "Keyword: fan", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ph\u1ea3i", "label": "ph\u1ea3i", "shape": "dot", "size": 10, "title": "Keyword: ph\u1ea3i", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_lu\u00f4n", "label": "lu\u00f4n", "shape": "dot", "size": 10, "title": "Keyword: lu\u00f4n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ch\u00e2u", "label": "ch\u00e2u", "shape": "dot", "size": 10, "title": "Keyword: ch\u00e2u", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tr\u00e2n", "label": "tr\u00e2n", "shape": "dot", "size": 10, "title": "Keyword: tr\u00e2n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tuy\u1ec7t", "label": "tuy\u1ec7t", "shape": "dot", "size": 10, "title": "Keyword: tuy\u1ec7t", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tuy\u1ec7t v\u1eddi", "label": "tuy\u1ec7t v\u1eddi", "shape": "dot", "size": 10, "title": "Keyword: tuy\u1ec7t v\u1eddi", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_v\u1eddi", "label": "v\u1eddi", "shape": "dot", "size": 10, "title": "Keyword: v\u1eddi", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_\u0111\u1eb9p", "label": "\u0111\u1eb9p", "shape": "dot", "size": 10, "title": "Keyword: \u0111\u1eb9p", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_th\u1eadt", "label": "th\u1eadt", "shape": "dot", "size": 10, "title": "Keyword: th\u1eadt", "value": 4}, {"font": {"color": "#222222"}, "group": "brand", "id": "brand_katinat", "label": "katinat", "shape": "dot", "size": 10, "title": "brand: katinat", "value": 10}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_chia s\u1ebb", "label": "chia s\u1ebb", "shape": "dot", "size": 10, "title": "Keyword: chia s\u1ebb", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_s\u1ebb", "label": "s\u1ebb", "shape": "dot", "size": 10, "title": "Keyword: s\u1ebb", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_l\u01b0\u1ee3t chia", "label": "l\u01b0\u1ee3t chia", "shape": "dot", "size": 10, "title": "Keyword: l\u01b0\u1ee3t chia", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_l\u01b0\u1ee3t", "label": "l\u01b0\u1ee3t", "shape": "dot", "size": 10, "title": "Keyword: l\u01b0\u1ee3t", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_chia", "label": "chia", "shape": "dot", "size": 10, "title": "Keyword: chia", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_15", "label": "15", "shape": "dot", "size": 10, "title": "Keyword: 15", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_trai", "label": "trai", "shape": "dot", "size": 10, "title": "Keyword: trai", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nh\u00e2n vi\u00ean", "label": "nh\u00e2n vi\u00ean", "shape": "dot", "size": 10, "title": "Keyword: nh\u00e2n vi\u00ean", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_vi\u00ean", "label": "vi\u00ean", "shape": "dot", "size": 10, "title": "Keyword: vi\u00ean", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nh\u00e2n", "label": "nh\u00e2n", "shape": "dot", "size": 10, "title": "Keyword: nh\u00e2n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_s\u1ebb c\u00f4ng", "label": "s\u1ebb c\u00f4ng", "shape": "dot", "size": 10, "title": "Keyword: s\u1ebb c\u00f4ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_\u0111\u00e3 chia", "label": "\u0111\u00e3 chia", "shape": "dot", "size": 10, "title": "Keyword: \u0111\u00e3 chia", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u00f4ng khai", "label": "c\u00f4ng khai", "shape": "dot", "size": 10, "title": "Keyword: c\u00f4ng khai", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_khai", "label": "khai", "shape": "dot", "size": 10, "title": "Keyword: khai", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_\u0111\u00e3", "label": "\u0111\u00e3", "shape": "dot", "size": 10, "title": "Keyword: \u0111\u00e3", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u00f4ng", "label": "c\u00f4ng", "shape": "dot", "size": 10, "title": "Keyword: c\u00f4ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_highlands", "label": "highlands", "shape": "dot", "size": 10, "title": "Keyword: highlands", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_gi\u00e1", "label": "gi\u00e1", "shape": "dot", "size": 10, "title": "Keyword: gi\u00e1", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_d\u1ee5ng", "label": "d\u1ee5ng", "shape": "dot", "size": 10, "title": "Keyword: d\u1ee5ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_h\u00e0ng", "label": "h\u00e0ng", "shape": "dot", "size": 10, "title": "Keyword: h\u00e0ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_katinat", "label": "katinat", "shape": "dot", "size": 10, "title": "Keyword: katinat", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u1ea3 c\u1ea3m", "label": "c\u1ea3 c\u1ea3m", "shape": "dot", "size": 10, "title": "Keyword: c\u1ea3 c\u1ea3m", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u1ea3m x\u00fac", "label": "c\u1ea3m x\u00fac", "shape": "dot", "size": 10, "title": "Keyword: c\u1ea3m x\u00fac", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_x\u00fac", "label": "x\u00fac", "shape": "dot", "size": 10, "title": "Keyword: x\u00fac", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_c\u1ea3m", "label": "c\u1ea3m", "shape": "dot", "size": 10, "title": "Keyword: c\u1ea3m", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_t\u1ea5t", "label": "t\u1ea5t", "shape": "dot", "size": 10, "title": "Keyword: t\u1ea5t", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_t\u1ea5t c\u1ea3", "label": "t\u1ea5t c\u1ea3", "shape": "dot", "size": 10, "title": "Keyword: t\u1ea5t c\u1ea3", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_th\u00edch", "label": "th\u00edch", "shape": "dot", "size": 10, "title": "Keyword: th\u00edch", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_b\u1ea3o", "label": "b\u1ea3o", "shape": "dot", "size": 10, "title": "Keyword: b\u1ea3o", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_h\u1ed3ng", "label": "h\u1ed3ng", "shape": "dot", "size": 10, "title": "Keyword: h\u1ed3ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tao", "label": "tao", "shape": "dot", "size": 10, "title": "Keyword: tao", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_l\u1ea1i", "label": "l\u1ea1i", "shape": "dot", "size": 10, "title": "Keyword: l\u1ea1i", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_fl", "label": "fl", "shape": "dot", "size": 10, "title": "Keyword: fl", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_b\u00ecnh lu\u1eadn", "label": "b\u00ecnh lu\u1eadn", "shape": "dot", "size": 10, "title": "Keyword: b\u00ecnh lu\u1eadn", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_lu\u1eadn", "label": "lu\u1eadn", "shape": "dot", "size": 10, "title": "Keyword: lu\u1eadn", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_b\u00ecnh", "label": "b\u00ecnh", "shape": "dot", "size": 10, "title": "Keyword: b\u00ecnh", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_xem", "label": "xem", "shape": "dot", "size": 10, "title": "Keyword: xem", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_th\u00eam", "label": "th\u00eam", "shape": "dot", "size": 10, "title": "Keyword: th\u00eam", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_25", "label": "25", "shape": "dot", "size": 10, "title": "Keyword: 25", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_s\u1ebbth\u00edchb\u00ecnh lu\u1eadn", "label": "s\u1ebbth\u00edchb\u00ecnh lu\u1eadn", "shape": "dot", "size": 10, "title": "Keyword: s\u1ebbth\u00edchb\u00ecnh lu\u1eadn", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_s\u1ebbth\u00edchb\u00ecnh", "label": "s\u1ebbth\u00edchb\u00ecnh", "shape": "dot", "size": 10, "title": "Keyword: s\u1ebbth\u00edchb\u00ecnh", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_chia s\u1ebbth\u00edchb\u00ecnh", "label": "chia s\u1ebbth\u00edchb\u00ecnh", "shape": "dot", "size": 10, "title": "Keyword: chia s\u1ebbth\u00edchb\u00ecnh", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_nguyen", "label": "nguyen", "shape": "dot", "size": 10, "title": "Keyword: nguyen", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_th\u00e1ng", "label": "th\u00e1ng", "shape": "dot", "size": 10, "title": "Keyword: th\u00e1ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ph\u01b0\u01a1ng", "label": "ph\u01b0\u01a1ng", "shape": "dot", "size": 10, "title": "Keyword: ph\u01b0\u01a1ng", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_tr\u1ea7n", "label": "tr\u1ea7n", "shape": "dot", "size": 10, "title": "Keyword: tr\u1ea7n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_qu\u00e1n", "label": "qu\u00e1n", "shape": "dot", "size": 10, "title": "Keyword: qu\u00e1n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_\u0111\u00e2u", "label": "\u0111\u00e2u", "shape": "dot", "size": 10, "title": "Keyword: \u0111\u00e2u", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_b\u00e1n", "label": "b\u00e1n", "shape": "dot", "size": 10, "title": "Keyword: b\u00e1n", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_ng\u1ecdt", "label": "ng\u1ecdt", "shape": "dot", "size": 10, "title": "Keyword: ng\u1ecdt", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_m\u1edf", "label": "m\u1edf", "shape": "dot", "size": 10, "title": "Keyword: m\u1edf", "value": 4}, {"font": {"color": "#222222"}, "group": "keyword", "id": "keyword_xin", "label": "xin", "shape": "dot", "size": 10, "title": "Keyword: xin", "value": 4}]);
+                  edges = new vis.DataSet([{"from": "topic_0", "title": "topic-keyword", "to": "keyword_minh", "width": 2}, {"from": "topic_0", "title": "topic-keyword", "to": "keyword_hay", "width": 2}, {"from": "topic_0", "title": "topic-keyword", "to": "keyword_ai", "width": 2}, {"from": "topic_0", "title": "topic-keyword", "to": "keyword_ph\u1ea1m", "width": 2}, {"from": "topic_0", "title": "topic-keyword", "to": "keyword_nh\u1eadn", "width": 2}, {"from": "topic_0", "title": "topic-keyword", "to": "keyword_\u1ee7a", "width": 2}, {"from": "topic_0", "title": "topic-brand", "to": "brand_highlands", "width": 3}, {"from": "topic_0", "title": "topic-platform", "to": "platform_tiktok", "width": 3}, {"from": "topic_0", "title": "topic-risk", "to": "risk_none", "width": 3}, {"from": "topic_0", "title": "141 comments", "to": "sentiment_positive", "width": 141}, {"from": "topic_0", "title": "602 comments", "to": "sentiment_neutral", "width": 602}, {"from": "topic_0", "title": "25 comments", "to": "sentiment_negative", "width": 25}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_1", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_2", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_3", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_4", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_6", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_7", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_9", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_10", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_11", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_12", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_13", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_14", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_15", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_16", "width": 3}, {"from": "brand_highlands", "title": "topic-brand", "to": "topic_17", "width": 3}, {"from": "platform_tiktok", "title": "topic-platform", "to": "topic_1", "width": 3}, {"from": "platform_tiktok", "title": "topic-platform", "to": "topic_5", "width": 3}, {"from": "platform_tiktok", "title": "topic-platform", "to": "topic_7", "width": 3}, {"from": "platform_tiktok", "title": "topic-platform", "to": "topic_11", "width": 3}, {"from": "platform_tiktok", "title": "topic-platform", "to": "topic_17", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_1", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_2", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_3", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_4", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_5", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_6", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_7", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_8", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_9", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_10", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_11", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_12", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_13", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_14", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_15", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_16", "width": 3}, {"from": "risk_none", "title": "topic-risk", "to": "topic_17", "width": 3}, {"from": "sentiment_positive", "title": "1245 comments", "to": "topic_1", "width": 1245}, {"from": "sentiment_positive", "title": "130 comments", "to": "topic_2", "width": 130}, {"from": "sentiment_positive", "title": "61 comments", "to": "topic_3", "width": 61}, {"from": "sentiment_positive", "title": "94 comments", "to": "topic_4", "width": 94}, {"from": "sentiment_positive", "title": "45 comments", "to": "topic_5", "width": 45}, {"from": "sentiment_positive", "title": "33 comments", "to": "topic_7", "width": 33}, {"from": "sentiment_positive", "title": "14 comments", "to": "topic_8", "width": 14}, {"from": "sentiment_positive", "title": "640 comments", "to": "topic_9", "width": 640}, {"from": "sentiment_positive", "title": "578 comments", "to": "topic_11", "width": 578}, {"from": "sentiment_positive", "title": "17 comments", "to": "topic_12", "width": 17}, {"from": "sentiment_positive", "title": "2 comments", "to": "topic_13", "width": 2}, {"from": "sentiment_positive", "title": "124 comments", "to": "topic_14", "width": 124}, {"from": "sentiment_positive", "title": "181 comments", "to": "topic_16", "width": 181}, {"from": "sentiment_positive", "title": "242 comments", "to": "topic_17", "width": 242}, {"from": "sentiment_neutral", "title": "1257 comments", "to": "topic_1", "width": 1257}, {"from": "sentiment_neutral", "title": "246 comments", "to": "topic_2", "width": 246}, {"from": "sentiment_neutral", "title": "378 comments", "to": "topic_3", "width": 378}, {"from": "sentiment_neutral", "title": "402 comments", "to": "topic_4", "width": 402}, {"from": "sentiment_neutral", "title": "60 comments", "to": "topic_6", "width": 60}, {"from": "sentiment_neutral", "title": "1 comments", "to": "topic_7", "width": 1}, {"from": "sentiment_neutral", "title": "123 comments", "to": "topic_8", "width": 123}, {"from": "sentiment_neutral", "title": "864 comments", "to": "topic_9", "width": 864}, {"from": "sentiment_neutral", "title": "108 comments", "to": "topic_10", "width": 108}, {"from": "sentiment_neutral", "title": "2045 comments", "to": "topic_11", "width": 2045}, {"from": "sentiment_neutral", "title": "132 comments", "to": "topic_12", "width": 132}, {"from": "sentiment_neutral", "title": "99 comments", "to": "topic_13", "width": 99}, {"from": "sentiment_neutral", "title": "111 comments", "to": "topic_15", "width": 111}, {"from": "sentiment_neutral", "title": "1002 comments", "to": "topic_16", "width": 1002}, {"from": "sentiment_neutral", "title": "631 comments", "to": "topic_17", "width": 631}, {"from": "sentiment_negative", "title": "104 comments", "to": "topic_1", "width": 104}, {"from": "sentiment_negative", "title": "8 comments", "to": "topic_2", "width": 8}, {"from": "sentiment_negative", "title": "1 comments", "to": "topic_3", "width": 1}, {"from": "sentiment_negative", "title": "15 comments", "to": "topic_4", "width": 15}, {"from": "sentiment_negative", "title": "1 comments", "to": "topic_8", "width": 1}, {"from": "sentiment_negative", "title": "69 comments", "to": "topic_9", "width": 69}, {"from": "sentiment_negative", "title": "101 comments", "to": "topic_11", "width": 101}, {"from": "sentiment_negative", "title": "21 comments", "to": "topic_16", "width": 21}, {"from": "sentiment_negative", "title": "47 comments", "to": "topic_17", "width": 47}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_ngon", "width": 2}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_u\u1ed1ng", "width": 2}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_tu\u1ea7n", "width": 2}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_tr\u00e0", "width": 2}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_ly", "width": 2}, {"from": "topic_1", "title": "topic-keyword", "to": "keyword_c\u00e1i", "width": 2}, {"from": "keyword_tu\u1ea7n", "title": "topic-keyword", "to": "topic_3", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_ph\u1ea3n", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_ph\u1ea3n h\u1ed3i", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_h\u1ed3i", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_c\u1ea3 ph\u1ea3n", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_tu\u1ea7nxem", "width": 2}, {"from": "topic_2", "title": "topic-keyword", "to": "keyword_tu\u1ea7n1xem", "width": 2}, {"from": "topic_2", "title": "topic-platform", "to": "platform_facebook", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_3", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_4", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_6", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_8", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_9", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_10", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_12", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_13", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_14", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_15", "width": 3}, {"from": "platform_facebook", "title": "topic-platform", "to": "topic_16", "width": 3}, {"from": "topic_3", "title": "topic-keyword", "to": "keyword_nguy\u1ec5n", "width": 2}, {"from": "topic_3", "title": "topic-keyword", "to": "keyword_nguy\u1ec5n th\u1ecb", "width": 2}, {"from": "topic_3", "title": "topic-keyword", "to": "keyword_th\u1ecb", "width": 2}, {"from": "topic_3", "title": "topic-keyword", "to": "keyword_tu\u1ea7n1", "width": 2}, {"from": "topic_3", "title": "topic-keyword", "to": "keyword_ng\u1ecdc", "width": 2}, {"from": "keyword_tu\u1ea7n1", "title": "topic-keyword", "to": "topic_16", "width": 2}, {"from": "keyword_ng\u1ecdc", "title": "topic-keyword", "to": "topic_16", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_mai", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_fan", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_ph\u1ea3i", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_lu\u00f4n", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_ch\u00e2u", "width": 2}, {"from": "topic_4", "title": "topic-keyword", "to": "keyword_tr\u00e2n", "width": 2}, {"from": "keyword_lu\u00f4n", "title": "topic-keyword", "to": "topic_5", "width": 2}, {"from": "keyword_lu\u00f4n", "title": "topic-keyword", "to": "topic_7", "width": 2}, {"from": "topic_5", "title": "topic-keyword", "to": "keyword_tuy\u1ec7t", "width": 2}, {"from": "topic_5", "title": "topic-keyword", "to": "keyword_tuy\u1ec7t v\u1eddi", "width": 2}, {"from": "topic_5", "title": "topic-keyword", "to": "keyword_v\u1eddi", "width": 2}, {"from": "topic_5", "title": "topic-keyword", "to": "keyword_\u0111\u1eb9p", "width": 2}, {"from": "topic_5", "title": "topic-keyword", "to": "keyword_th\u1eadt", "width": 2}, {"from": "topic_5", "title": "topic-brand", "to": "brand_katinat", "width": 3}, {"from": "keyword_\u0111\u1eb9p", "title": "topic-keyword", "to": "topic_7", "width": 2}, {"from": "keyword_\u0111\u1eb9p", "title": "topic-keyword", "to": "topic_9", "width": 2}, {"from": "brand_katinat", "title": "topic-brand", "to": "topic_8", "width": 3}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_chia s\u1ebb", "width": 2}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_s\u1ebb", "width": 2}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_l\u01b0\u1ee3t chia", "width": 2}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_l\u01b0\u1ee3t", "width": 2}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_chia", "width": 2}, {"from": "topic_6", "title": "topic-keyword", "to": "keyword_15", "width": 2}, {"from": "keyword_chia s\u1ebb", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "keyword_s\u1ebb", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "keyword_l\u01b0\u1ee3t chia", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "keyword_l\u01b0\u1ee3t", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "keyword_chia", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "topic_7", "title": "topic-keyword", "to": "keyword_trai", "width": 2}, {"from": "topic_7", "title": "topic-keyword", "to": "keyword_nh\u00e2n vi\u00ean", "width": 2}, {"from": "topic_7", "title": "topic-keyword", "to": "keyword_vi\u00ean", "width": 2}, {"from": "topic_7", "title": "topic-keyword", "to": "keyword_nh\u00e2n", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_s\u1ebb c\u00f4ng", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_\u0111\u00e3 chia", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_c\u00f4ng khai", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_khai", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_\u0111\u00e3", "width": 2}, {"from": "topic_8", "title": "topic-keyword", "to": "keyword_c\u00f4ng", "width": 2}, {"from": "topic_9", "title": "topic-keyword", "to": "keyword_highlands", "width": 2}, {"from": "topic_9", "title": "topic-keyword", "to": "keyword_gi\u00e1", "width": 2}, {"from": "topic_9", "title": "topic-keyword", "to": "keyword_d\u1ee5ng", "width": 2}, {"from": "topic_9", "title": "topic-keyword", "to": "keyword_h\u00e0ng", "width": 2}, {"from": "topic_9", "title": "topic-keyword", "to": "keyword_katinat", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_c\u1ea3 c\u1ea3m", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_c\u1ea3m x\u00fac", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_x\u00fac", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_c\u1ea3m", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_t\u1ea5t", "width": 2}, {"from": "topic_10", "title": "topic-keyword", "to": "keyword_t\u1ea5t c\u1ea3", "width": 2}, {"from": "keyword_c\u1ea3 c\u1ea3m", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "keyword_c\u1ea3 c\u1ea3m", "title": "topic-keyword", "to": "topic_14", "width": 2}, {"from": "keyword_c\u1ea3m x\u00fac", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "keyword_c\u1ea3m x\u00fac", "title": "topic-keyword", "to": "topic_14", "width": 2}, {"from": "keyword_x\u00fac", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "keyword_c\u1ea3m", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "keyword_t\u1ea5t", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "keyword_t\u1ea5t c\u1ea3", "title": "topic-keyword", "to": "topic_12", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_th\u00edch", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_b\u1ea3o", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_h\u1ed3ng", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_tao", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_l\u1ea1i", "width": 2}, {"from": "topic_11", "title": "topic-keyword", "to": "keyword_fl", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_b\u00ecnh lu\u1eadn", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_lu\u1eadn", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_b\u00ecnh", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_xem", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_th\u00eam", "width": 2}, {"from": "topic_13", "title": "topic-keyword", "to": "keyword_25", "width": 2}, {"from": "keyword_lu\u1eadn", "title": "topic-keyword", "to": "topic_14", "width": 2}, {"from": "keyword_b\u00ecnh", "title": "topic-keyword", "to": "topic_15", "width": 2}, {"from": "topic_14", "title": "topic-keyword", "to": "keyword_s\u1ebbth\u00edchb\u00ecnh lu\u1eadn", "width": 2}, {"from": "topic_14", "title": "topic-keyword", "to": "keyword_s\u1ebbth\u00edchb\u00ecnh", "width": 2}, {"from": "topic_14", "title": "topic-keyword", "to": "keyword_chia s\u1ebbth\u00edchb\u00ecnh", "width": 2}, {"from": "topic_16", "title": "topic-keyword", "to": "keyword_nguyen", "width": 2}, {"from": "topic_16", "title": "topic-keyword", "to": "keyword_th\u00e1ng", "width": 2}, {"from": "topic_16", "title": "topic-keyword", "to": "keyword_ph\u01b0\u01a1ng", "width": 2}, {"from": "topic_16", "title": "topic-keyword", "to": "keyword_tr\u1ea7n", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_qu\u00e1n", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_\u0111\u00e2u", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_b\u00e1n", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_ng\u1ecdt", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_m\u1edf", "width": 2}, {"from": "topic_17", "title": "topic-keyword", "to": "keyword_xin", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "repulsion": {
+            "centralGravity": 0.18,
+            "damping": 0.9,
+            "nodeDistance": 180,
+            "springConstant": 0.05,
+            "springLength": 120
+        },
+        "solver": "repulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

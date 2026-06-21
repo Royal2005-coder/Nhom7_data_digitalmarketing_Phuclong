@@ -1,0 +1,113 @@
+﻿id,label,group,value,title
+topic_0,T0: minh / hay / ai / phạm,topic,768,Topic 0<br>Comments: 768<br>Positive: 141<br>Neutral: 602<br>Negative: 25<br>Risk: none
+keyword_minh,minh,keyword,4,Keyword: minh
+keyword_hay,hay,keyword,4,Keyword: hay
+keyword_ai,ai,keyword,4,Keyword: ai
+keyword_phạm,phạm,keyword,4,Keyword: phạm
+keyword_nhận,nhận,keyword,4,Keyword: nhận
+keyword_ủa,ủa,keyword,4,Keyword: ủa
+brand_highlands,highlands,brand,10,brand: highlands
+platform_tiktok,tiktok,platform,10,platform: tiktok
+risk_none,none,risk,10,risk: none
+sentiment_positive,positive,sentiment,12,Sentiment: positive
+sentiment_neutral,neutral,sentiment,12,Sentiment: neutral
+sentiment_negative,negative,sentiment,12,Sentiment: negative
+topic_1,T1: ngon / uống / tuần / trà,topic,2606,Topic 1<br>Comments: 2606<br>Positive: 1245<br>Neutral: 1257<br>Negative: 104<br>Risk: none
+keyword_ngon,ngon,keyword,4,Keyword: ngon
+keyword_uống,uống,keyword,4,Keyword: uống
+keyword_tuần,tuần,keyword,4,Keyword: tuần
+keyword_trà,trà,keyword,4,Keyword: trà
+keyword_ly,ly,keyword,4,Keyword: ly
+keyword_cái,cái,keyword,4,Keyword: cái
+topic_2,T2: phản / phản hồi / hồi / cả phản,topic,384,Topic 2<br>Comments: 384<br>Positive: 130<br>Neutral: 246<br>Negative: 8<br>Risk: none
+keyword_phản,phản,keyword,4,Keyword: phản
+keyword_phản hồi,phản hồi,keyword,4,Keyword: phản hồi
+keyword_hồi,hồi,keyword,4,Keyword: hồi
+keyword_cả phản,cả phản,keyword,4,Keyword: cả phản
+keyword_tuầnxem,tuầnxem,keyword,4,Keyword: tuầnxem
+keyword_tuần1xem,tuần1xem,keyword,4,Keyword: tuần1xem
+platform_facebook,facebook,platform,10,platform: facebook
+topic_3,T3: nguyễn / tuần / nguyễn thị / thị,topic,440,Topic 3<br>Comments: 440<br>Positive: 61<br>Neutral: 378<br>Negative: 1<br>Risk: none
+keyword_nguyễn,nguyễn,keyword,4,Keyword: nguyễn
+keyword_nguyễn thị,nguyễn thị,keyword,4,Keyword: nguyễn thị
+keyword_thị,thị,keyword,4,Keyword: thị
+keyword_tuần1,tuần1,keyword,4,Keyword: tuần1
+keyword_ngọc,ngọc,keyword,4,Keyword: ngọc
+topic_4,T4: mai / fan / phải / luôn,topic,511,Topic 4<br>Comments: 511<br>Positive: 94<br>Neutral: 402<br>Negative: 15<br>Risk: none
+keyword_mai,mai,keyword,4,Keyword: mai
+keyword_fan,fan,keyword,4,Keyword: fan
+keyword_phải,phải,keyword,4,Keyword: phải
+keyword_luôn,luôn,keyword,4,Keyword: luôn
+keyword_châu,châu,keyword,4,Keyword: châu
+keyword_trân,trân,keyword,4,Keyword: trân
+topic_5,T5: tuyệt / tuyệt vời / vời / đẹp,topic,45,Topic 5<br>Comments: 45<br>Positive: 45<br>Neutral: 0<br>Negative: 0<br>Risk: none
+keyword_tuyệt,tuyệt,keyword,4,Keyword: tuyệt
+keyword_tuyệt vời,tuyệt vời,keyword,4,Keyword: tuyệt vời
+keyword_vời,vời,keyword,4,Keyword: vời
+keyword_đẹp,đẹp,keyword,4,Keyword: đẹp
+keyword_thật,thật,keyword,4,Keyword: thật
+brand_katinat,katinat,brand,10,brand: katinat
+topic_6,T6: chia sẻ / sẻ / lượt chia / lượt,topic,60,Topic 6<br>Comments: 60<br>Positive: 0<br>Neutral: 60<br>Negative: 0<br>Risk: none
+keyword_chia sẻ,chia sẻ,keyword,4,Keyword: chia sẻ
+keyword_sẻ,sẻ,keyword,4,Keyword: sẻ
+keyword_lượt chia,lượt chia,keyword,4,Keyword: lượt chia
+keyword_lượt,lượt,keyword,4,Keyword: lượt
+keyword_chia,chia,keyword,4,Keyword: chia
+keyword_15,15,keyword,4,Keyword: 15
+topic_7,T7: trai / đẹp / nhân viên / viên,topic,34,Topic 7<br>Comments: 34<br>Positive: 33<br>Neutral: 1<br>Negative: 0<br>Risk: none
+keyword_trai,trai,keyword,4,Keyword: trai
+keyword_nhân viên,nhân viên,keyword,4,Keyword: nhân viên
+keyword_viên,viên,keyword,4,Keyword: viên
+keyword_nhân,nhân,keyword,4,Keyword: nhân
+topic_8,T8: sẻ công / đã chia / công khai / khai,topic,138,Topic 8<br>Comments: 138<br>Positive: 14<br>Neutral: 123<br>Negative: 1<br>Risk: none
+keyword_sẻ công,sẻ công,keyword,4,Keyword: sẻ công
+keyword_đã chia,đã chia,keyword,4,Keyword: đã chia
+keyword_công khai,công khai,keyword,4,Keyword: công khai
+keyword_khai,khai,keyword,4,Keyword: khai
+keyword_đã,đã,keyword,4,Keyword: đã
+keyword_công,công,keyword,4,Keyword: công
+topic_9,T9: đẹp / highlands / giá / dụng,topic,1573,Topic 9<br>Comments: 1573<br>Positive: 640<br>Neutral: 864<br>Negative: 69<br>Risk: none
+keyword_highlands,highlands,keyword,4,Keyword: highlands
+keyword_giá,giá,keyword,4,Keyword: giá
+keyword_dụng,dụng,keyword,4,Keyword: dụng
+keyword_hàng,hàng,keyword,4,Keyword: hàng
+keyword_katinat,katinat,keyword,4,Keyword: katinat
+topic_10,T10: cả cảm / cảm xúc / xúc / cảm,topic,108,Topic 10<br>Comments: 108<br>Positive: 0<br>Neutral: 108<br>Negative: 0<br>Risk: none
+keyword_cả cảm,cả cảm,keyword,4,Keyword: cả cảm
+keyword_cảm xúc,cảm xúc,keyword,4,Keyword: cảm xúc
+keyword_xúc,xúc,keyword,4,Keyword: xúc
+keyword_cảm,cảm,keyword,4,Keyword: cảm
+keyword_tất,tất,keyword,4,Keyword: tất
+keyword_tất cả,tất cả,keyword,4,Keyword: tất cả
+topic_11,T11: thích / bảo / hồng / tao,topic,2724,Topic 11<br>Comments: 2724<br>Positive: 578<br>Neutral: 2045<br>Negative: 101<br>Risk: none
+keyword_thích,thích,keyword,4,Keyword: thích
+keyword_bảo,bảo,keyword,4,Keyword: bảo
+keyword_hồng,hồng,keyword,4,Keyword: hồng
+keyword_tao,tao,keyword,4,Keyword: tao
+keyword_lại,lại,keyword,4,Keyword: lại
+keyword_fl,fl,keyword,4,Keyword: fl
+topic_12,T12: cả cảm / cảm xúc / xúc / cảm,topic,149,Topic 12<br>Comments: 149<br>Positive: 17<br>Neutral: 132<br>Negative: 0<br>Risk: none
+topic_13,T13: bình luận / luận / bình / xem,topic,101,Topic 13<br>Comments: 101<br>Positive: 2<br>Neutral: 99<br>Negative: 0<br>Risk: none
+keyword_bình luận,bình luận,keyword,4,Keyword: bình luận
+keyword_luận,luận,keyword,4,Keyword: luận
+keyword_bình,bình,keyword,4,Keyword: bình
+keyword_xem,xem,keyword,4,Keyword: xem
+keyword_thêm,thêm,keyword,4,Keyword: thêm
+keyword_25,25,keyword,4,Keyword: 25
+topic_14,T14: sẻthíchbình luận / sẻthíchbình / chia sẻthíchbình / luận,topic,124,Topic 14<br>Comments: 124<br>Positive: 124<br>Neutral: 0<br>Negative: 0<br>Risk: none
+keyword_sẻthíchbình luận,sẻthíchbình luận,keyword,4,Keyword: sẻthíchbình luận
+keyword_sẻthíchbình,sẻthíchbình,keyword,4,Keyword: sẻthíchbình
+keyword_chia sẻthíchbình,chia sẻthíchbình,keyword,4,Keyword: chia sẻthíchbình
+topic_15,T15: chia sẻ / sẻ / lượt chia / lượt,topic,111,Topic 15<br>Comments: 111<br>Positive: 0<br>Neutral: 111<br>Negative: 0<br>Risk: none
+topic_16,T16: tuần1 / nguyen / ngọc / tháng,topic,1204,Topic 16<br>Comments: 1204<br>Positive: 181<br>Neutral: 1002<br>Negative: 21<br>Risk: none
+keyword_nguyen,nguyen,keyword,4,Keyword: nguyen
+keyword_tháng,tháng,keyword,4,Keyword: tháng
+keyword_phương,phương,keyword,4,Keyword: phương
+keyword_trần,trần,keyword,4,Keyword: trần
+topic_17,T17: quán / đâu / bán / ngọt,topic,920,Topic 17<br>Comments: 920<br>Positive: 242<br>Neutral: 631<br>Negative: 47<br>Risk: none
+keyword_quán,quán,keyword,4,Keyword: quán
+keyword_đâu,đâu,keyword,4,Keyword: đâu
+keyword_bán,bán,keyword,4,Keyword: bán
+keyword_ngọt,ngọt,keyword,4,Keyword: ngọt
+keyword_mở,mở,keyword,4,Keyword: mở
+keyword_xin,xin,keyword,4,Keyword: xin

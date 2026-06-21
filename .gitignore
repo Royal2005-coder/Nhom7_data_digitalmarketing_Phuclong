@@ -1,10 +1,14 @@
-﻿*
-!.gitattributes
-!.gitignore
-!data_notebook/
-!data_notebook/*.csv
-
-# MVP local secrets
+# Local secrets
+.env
+*.env
 mvp_ai_bi_phuclong/config/.env
-__pycache__/
-*.pyc
+
+# Python/# Python cache
+.cache/
+hf-cache/
+
+# Temporary
+*.bak
+*.bak_*
+*corrupt*
+.DS_Store

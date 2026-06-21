@@ -1,0 +1,204 @@
+﻿source,target,weight,title
+topic_0,keyword_minh,2,topic-keyword
+topic_0,keyword_hay,2,topic-keyword
+topic_0,keyword_ai,2,topic-keyword
+topic_0,keyword_phạm,2,topic-keyword
+topic_0,keyword_nhận,2,topic-keyword
+topic_0,keyword_ủa,2,topic-keyword
+topic_0,brand_highlands,3,topic-brand
+topic_0,platform_tiktok,3,topic-platform
+topic_0,risk_none,3,topic-risk
+topic_0,sentiment_positive,141,141 comments
+topic_0,sentiment_neutral,602,602 comments
+topic_0,sentiment_negative,25,25 comments
+brand_highlands,topic_1,3,topic-brand
+brand_highlands,topic_2,3,topic-brand
+brand_highlands,topic_3,3,topic-brand
+brand_highlands,topic_4,3,topic-brand
+brand_highlands,topic_6,3,topic-brand
+brand_highlands,topic_7,3,topic-brand
+brand_highlands,topic_9,3,topic-brand
+brand_highlands,topic_10,3,topic-brand
+brand_highlands,topic_11,3,topic-brand
+brand_highlands,topic_12,3,topic-brand
+brand_highlands,topic_13,3,topic-brand
+brand_highlands,topic_14,3,topic-brand
+brand_highlands,topic_15,3,topic-brand
+brand_highlands,topic_16,3,topic-brand
+brand_highlands,topic_17,3,topic-brand
+platform_tiktok,topic_1,3,topic-platform
+platform_tiktok,topic_5,3,topic-platform
+platform_tiktok,topic_7,3,topic-platform
+platform_tiktok,topic_11,3,topic-platform
+platform_tiktok,topic_17,3,topic-platform
+risk_none,topic_1,3,topic-risk
+risk_none,topic_2,3,topic-risk
+risk_none,topic_3,3,topic-risk
+risk_none,topic_4,3,topic-risk
+risk_none,topic_5,3,topic-risk
+risk_none,topic_6,3,topic-risk
+risk_none,topic_7,3,topic-risk
+risk_none,topic_8,3,topic-risk
+risk_none,topic_9,3,topic-risk
+risk_none,topic_10,3,topic-risk
+risk_none,topic_11,3,topic-risk
+risk_none,topic_12,3,topic-risk
+risk_none,topic_13,3,topic-risk
+risk_none,topic_14,3,topic-risk
+risk_none,topic_15,3,topic-risk
+risk_none,topic_16,3,topic-risk
+risk_none,topic_17,3,topic-risk
+sentiment_positive,topic_1,1245,1245 comments
+sentiment_positive,topic_2,130,130 comments
+sentiment_positive,topic_3,61,61 comments
+sentiment_positive,topic_4,94,94 comments
+sentiment_positive,topic_5,45,45 comments
+sentiment_positive,topic_7,33,33 comments
+sentiment_positive,topic_8,14,14 comments
+sentiment_positive,topic_9,640,640 comments
+sentiment_positive,topic_11,578,578 comments
+sentiment_positive,topic_12,17,17 comments
+sentiment_positive,topic_13,2,2 comments
+sentiment_positive,topic_14,124,124 comments
+sentiment_positive,topic_16,181,181 comments
+sentiment_positive,topic_17,242,242 comments
+sentiment_neutral,topic_1,1257,1257 comments
+sentiment_neutral,topic_2,246,246 comments
+sentiment_neutral,topic_3,378,378 comments
+sentiment_neutral,topic_4,402,402 comments
+sentiment_neutral,topic_6,60,60 comments
+sentiment_neutral,topic_7,1,1 comments
+sentiment_neutral,topic_8,123,123 comments
+sentiment_neutral,topic_9,864,864 comments
+sentiment_neutral,topic_10,108,108 comments
+sentiment_neutral,topic_11,2045,2045 comments
+sentiment_neutral,topic_12,132,132 comments
+sentiment_neutral,topic_13,99,99 comments
+sentiment_neutral,topic_15,111,111 comments
+sentiment_neutral,topic_16,1002,1002 comments
+sentiment_neutral,topic_17,631,631 comments
+sentiment_negative,topic_1,104,104 comments
+sentiment_negative,topic_2,8,8 comments
+sentiment_negative,topic_3,1,1 comments
+sentiment_negative,topic_4,15,15 comments
+sentiment_negative,topic_8,1,1 comments
+sentiment_negative,topic_9,69,69 comments
+sentiment_negative,topic_11,101,101 comments
+sentiment_negative,topic_16,21,21 comments
+sentiment_negative,topic_17,47,47 comments
+topic_1,keyword_ngon,2,topic-keyword
+topic_1,keyword_uống,2,topic-keyword
+topic_1,keyword_tuần,2,topic-keyword
+topic_1,keyword_trà,2,topic-keyword
+topic_1,keyword_ly,2,topic-keyword
+topic_1,keyword_cái,2,topic-keyword
+keyword_tuần,topic_3,2,topic-keyword
+topic_2,keyword_phản,2,topic-keyword
+topic_2,keyword_phản hồi,2,topic-keyword
+topic_2,keyword_hồi,2,topic-keyword
+topic_2,keyword_cả phản,2,topic-keyword
+topic_2,keyword_tuầnxem,2,topic-keyword
+topic_2,keyword_tuần1xem,2,topic-keyword
+topic_2,platform_facebook,3,topic-platform
+platform_facebook,topic_3,3,topic-platform
+platform_facebook,topic_4,3,topic-platform
+platform_facebook,topic_6,3,topic-platform
+platform_facebook,topic_8,3,topic-platform
+platform_facebook,topic_9,3,topic-platform
+platform_facebook,topic_10,3,topic-platform
+platform_facebook,topic_12,3,topic-platform
+platform_facebook,topic_13,3,topic-platform
+platform_facebook,topic_14,3,topic-platform
+platform_facebook,topic_15,3,topic-platform
+platform_facebook,topic_16,3,topic-platform
+topic_3,keyword_nguyễn,2,topic-keyword
+topic_3,keyword_nguyễn thị,2,topic-keyword
+topic_3,keyword_thị,2,topic-keyword
+topic_3,keyword_tuần1,2,topic-keyword
+topic_3,keyword_ngọc,2,topic-keyword
+keyword_tuần1,topic_16,2,topic-keyword
+keyword_ngọc,topic_16,2,topic-keyword
+topic_4,keyword_mai,2,topic-keyword
+topic_4,keyword_fan,2,topic-keyword
+topic_4,keyword_phải,2,topic-keyword
+topic_4,keyword_luôn,2,topic-keyword
+topic_4,keyword_châu,2,topic-keyword
+topic_4,keyword_trân,2,topic-keyword
+keyword_luôn,topic_5,2,topic-keyword
+keyword_luôn,topic_7,2,topic-keyword
+topic_5,keyword_tuyệt,2,topic-keyword
+topic_5,keyword_tuyệt vời,2,topic-keyword
+topic_5,keyword_vời,2,topic-keyword
+topic_5,keyword_đẹp,2,topic-keyword
+topic_5,keyword_thật,2,topic-keyword
+topic_5,brand_katinat,3,topic-brand
+keyword_đẹp,topic_7,2,topic-keyword
+keyword_đẹp,topic_9,2,topic-keyword
+brand_katinat,topic_8,3,topic-brand
+topic_6,keyword_chia sẻ,2,topic-keyword
+topic_6,keyword_sẻ,2,topic-keyword
+topic_6,keyword_lượt chia,2,topic-keyword
+topic_6,keyword_lượt,2,topic-keyword
+topic_6,keyword_chia,2,topic-keyword
+topic_6,keyword_15,2,topic-keyword
+keyword_chia sẻ,topic_15,2,topic-keyword
+keyword_sẻ,topic_15,2,topic-keyword
+keyword_lượt chia,topic_15,2,topic-keyword
+keyword_lượt,topic_15,2,topic-keyword
+keyword_chia,topic_15,2,topic-keyword
+topic_7,keyword_trai,2,topic-keyword
+topic_7,keyword_nhân viên,2,topic-keyword
+topic_7,keyword_viên,2,topic-keyword
+topic_7,keyword_nhân,2,topic-keyword
+topic_8,keyword_sẻ công,2,topic-keyword
+topic_8,keyword_đã chia,2,topic-keyword
+topic_8,keyword_công khai,2,topic-keyword
+topic_8,keyword_khai,2,topic-keyword
+topic_8,keyword_đã,2,topic-keyword
+topic_8,keyword_công,2,topic-keyword
+topic_9,keyword_highlands,2,topic-keyword
+topic_9,keyword_giá,2,topic-keyword
+topic_9,keyword_dụng,2,topic-keyword
+topic_9,keyword_hàng,2,topic-keyword
+topic_9,keyword_katinat,2,topic-keyword
+topic_10,keyword_cả cảm,2,topic-keyword
+topic_10,keyword_cảm xúc,2,topic-keyword
+topic_10,keyword_xúc,2,topic-keyword
+topic_10,keyword_cảm,2,topic-keyword
+topic_10,keyword_tất,2,topic-keyword
+topic_10,keyword_tất cả,2,topic-keyword
+keyword_cả cảm,topic_12,2,topic-keyword
+keyword_cả cảm,topic_14,2,topic-keyword
+keyword_cảm xúc,topic_12,2,topic-keyword
+keyword_cảm xúc,topic_14,2,topic-keyword
+keyword_xúc,topic_12,2,topic-keyword
+keyword_cảm,topic_12,2,topic-keyword
+keyword_tất,topic_12,2,topic-keyword
+keyword_tất cả,topic_12,2,topic-keyword
+topic_11,keyword_thích,2,topic-keyword
+topic_11,keyword_bảo,2,topic-keyword
+topic_11,keyword_hồng,2,topic-keyword
+topic_11,keyword_tao,2,topic-keyword
+topic_11,keyword_lại,2,topic-keyword
+topic_11,keyword_fl,2,topic-keyword
+topic_13,keyword_bình luận,2,topic-keyword
+topic_13,keyword_luận,2,topic-keyword
+topic_13,keyword_bình,2,topic-keyword
+topic_13,keyword_xem,2,topic-keyword
+topic_13,keyword_thêm,2,topic-keyword
+topic_13,keyword_25,2,topic-keyword
+keyword_luận,topic_14,2,topic-keyword
+keyword_bình,topic_15,2,topic-keyword
+topic_14,keyword_sẻthíchbình luận,2,topic-keyword
+topic_14,keyword_sẻthíchbình,2,topic-keyword
+topic_14,keyword_chia sẻthíchbình,2,topic-keyword
+topic_16,keyword_nguyen,2,topic-keyword
+topic_16,keyword_tháng,2,topic-keyword
+topic_16,keyword_phương,2,topic-keyword
+topic_16,keyword_trần,2,topic-keyword
+topic_17,keyword_quán,2,topic-keyword
+topic_17,keyword_đâu,2,topic-keyword
+topic_17,keyword_bán,2,topic-keyword
+topic_17,keyword_ngọt,2,topic-keyword
+topic_17,keyword_mở,2,topic-keyword
+topic_17,keyword_xin,2,topic-keyword
