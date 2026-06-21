@@ -3,3 +3,8 @@
 !.gitignore
 !data_notebook/
 !data_notebook/*.csv
+
+# MVP local secrets
+mvp_ai_bi_phuclong/config/.env
+__pycache__/
+*.pyc

@@ -1,0 +1,21 @@
+{
+  "name": "phuclong-executive-decision-agent",
+  "description": "Synthesizes outputs from specialized agents into executive decision briefs.",
+  "role": "Decision Intelligence Lead",
+  "inputs": [
+    "insight_agent_output",
+    "risk_agent_output",
+    "content_strategy_agent_output"
+  ],
+  "outputs": [
+    "executive_brief",
+    "weekly_priorities",
+    "owner_matrix"
+  ],
+  "tools": [
+    "generate_decision_brief"
+  ],
+  "protocol_ready": [
+    "A2A"
+  ]
+}

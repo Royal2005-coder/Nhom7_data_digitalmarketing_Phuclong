@@ -202,16 +202,16 @@ def standardize_posts(df: pd.DataFrame, source_name: str, platform: str) -> pd.D
         "created_at", "create_time", "publish_time", "published_time", "time", "datetime", "date", "timestamp"
     ])
 
-    like_col = first_existing_col(df, ["like_count", "likes", "like", "digg_count", "reactions", "reaction_count"])
-    comment_col = first_existing_col(df, ["comment_count", "comments", "comment", "comment_total"])
-    share_col = first_existing_col(df, ["share_count", "shares", "share"])
-    view_col = first_existing_col(df, ["view_count", "views", "play_count", "plays"])
+    like_col = first_existing_col(df, ["like_count", "likes_count", "likes", "like", "digg_count", "diggcount", "likecount", "reactions", "reaction_count"])
+    comment_col = first_existing_col(df, ["comment_count", "comments_count", "commentcount", "comments", "comment", "comment_total", "reply_count"])
+    share_col = first_existing_col(df, ["share_count", "shares_count", "sharecount", "shares", "share"])
+    view_col = first_existing_col(df, ["view_count", "views_count", "viewcount", "views", "view", "play_count", "playcount", "play", "plays"])
 
-    out = pd.DataFrame()
+    out = pd.DataFrame(index=df.index)
+    out["source_row_id"] = range(1, len(df) + 1)
     out["source_name"] = source_name
     out["platform"] = platform
     out["record_type"] = "post"
-    out["source_row_id"] = range(1, len(df) + 1)
 
     if text_col:
         out["text"] = df[text_col].fillna("").astype(str)
@@ -279,11 +279,11 @@ def standardize_comments(df: pd.DataFrame, source_name: str, platform: str) -> p
         "created_at", "create_time", "publish_time", "time", "datetime", "date", "timestamp"
     ])
 
-    out = pd.DataFrame()
+    out = pd.DataFrame(index=df.index)
+    out["source_row_id"] = range(1, len(df) + 1)
     out["source_name"] = source_name
     out["platform"] = platform
     out["record_type"] = "comment"
-    out["source_row_id"] = range(1, len(df) + 1)
 
     if text_col:
         out["text"] = df[text_col].fillna("").astype(str)
@@ -352,7 +352,7 @@ def build_ai_recommendations(platform_perf, pillar_perf, risk_monitor, post_rank
         r = pl_tiktok.iloc[0]
         add(
             "TikTok của Phúc Long cần ưu tiên mở rộng độ phủ tự nhiên.",
-            f"median_views={r.get(median_views, 0)}, avg_engagement_rate={r.get(avg_engagement_rate, 0)}",
+            f"median_views={r.get('median_views', 0)}, avg_engagement_rate={r.get('avg_engagement_rate', 0)}",
             "Tạo video 20-30 giây, hook mạnh trong 3 giây đầu, dùng hashtag ba lớp và ưu tiên khung giờ sáng 8-11h.",
             "high",
             "Content/Media",
@@ -367,7 +367,7 @@ def build_ai_recommendations(platform_perf, pillar_perf, risk_monitor, post_rank
         r = pl_fb.iloc[0]
         add(
             "Facebook nên tiếp tục đóng vai trò kênh cộng đồng và kích hoạt thảo luận sâu.",
-            f"total_comments={r.get(total_comments, 0)}, total_shares={r.get(total_shares, 0)}",
+            f"total_comments={r.get('total_comments', 0)}, total_shares={r.get('total_shares', 0)}",
             "Chuẩn hóa caption 500-1000 ký tự cho ưu đãi/minigame, dùng CTA đối thoại thay vì CTA bán hàng trực tiếp.",
             "medium",
             "Content",

@@ -1,0 +1,23 @@
+{
+  "name": "phuclong-content-strategy-agent",
+  "description": "Turns data insights into content pillars, campaign formats, posting priorities and 7-day action plans.",
+  "role": "Content Strategist",
+  "inputs": [
+    "gold_content_pillar_performance",
+    "gold_post_ranking",
+    "semantic_layer"
+  ],
+  "outputs": [
+    "content_plan",
+    "creative_briefs",
+    "channel_actions"
+  ],
+  "tools": [
+    "get_top_posts",
+    "get_content_pillar_performance"
+  ],
+  "protocol_ready": [
+    "MCP",
+    "A2A"
+  ]
+}

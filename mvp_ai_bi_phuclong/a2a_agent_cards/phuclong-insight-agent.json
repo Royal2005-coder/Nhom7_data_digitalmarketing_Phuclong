@@ -1,0 +1,23 @@
+{
+  "name": "phuclong-insight-agent",
+  "description": "Analyzes Gold BI metrics, platform performance, benchmark gaps and decision signals for Phuc Long.",
+  "role": "Data Scientist / BI Analyst",
+  "inputs": [
+    "gold_competitor_benchmark",
+    "gold_platform_performance",
+    "gold_content_pillar_performance"
+  ],
+  "outputs": [
+    "key_insights",
+    "evidence",
+    "decision_implications"
+  ],
+  "tools": [
+    "query_gold_table",
+    "get_platform_performance"
+  ],
+  "protocol_ready": [
+    "MCP",
+    "A2A"
+  ]
+}

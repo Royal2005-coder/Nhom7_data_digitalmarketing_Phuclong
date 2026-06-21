@@ -1,4 +1,7 @@
 ﻿brand,platform,post_count,total_views,median_views,total_engagement,avg_engagement_rate,total_comments,total_shares,median_caption_length
-highlands,,1533,0.0,0.0,0.0,,0.0,0.0,341.0
-katinat,,1501,0.0,,0.0,,0.0,0.0,120.0
-phuc_long,,1304,0.0,0.0,0.0,,0.0,0.0,409.0
+highlands,facebook,1283,0.0,0.0,822977,,117671,23470,449.0
+highlands,tiktok,250,1108922383.0,19400.0,848176,0.007432941088543843,13034,72991,0.0
+katinat,facebook,1251,0.0,,1021218,,105928,32125,167.0
+katinat,tiktok,250,41822120.0,63800.0,392185,0.01298743676129345,5843,70813,0.0
+phuc_long,facebook,1064,0.0,,2978162,,146783,31150,506.0
+phuc_long,tiktok,240,48920436.0,3169.5,187119,0.017263364250847433,2708,8663,0.0

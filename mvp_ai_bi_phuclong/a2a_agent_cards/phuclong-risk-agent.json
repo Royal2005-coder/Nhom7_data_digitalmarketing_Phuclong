@@ -1,0 +1,22 @@
+{
+  "name": "phuclong-risk-agent",
+  "description": "Monitors sentiment, risk groups and early-warning signals for brand safety and operations.",
+  "role": "Brand Safety / Risk Analyst",
+  "inputs": [
+    "gold_sentiment_risk_monitoring",
+    "silver_social_comments"
+  ],
+  "outputs": [
+    "risk_alerts",
+    "priority",
+    "response_actions"
+  ],
+  "tools": [
+    "get_sentiment_risk",
+    "get_negative_comments"
+  ],
+  "protocol_ready": [
+    "MCP",
+    "A2A"
+  ]
+}
