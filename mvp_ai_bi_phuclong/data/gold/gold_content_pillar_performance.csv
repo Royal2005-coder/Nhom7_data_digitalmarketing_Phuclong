@@ -1,0 +1,16 @@
+﻿brand,platform,content_pillar,total_records,total_engagement,positive_count,negative_count,avg_sentiment_score
+highlands,,di_san_chat_luong,1307,1012.0,651,59,1.071920428462127
+highlands,,khuyen_mai_minigame,1206,806.0,563,44,0.9585406301824212
+highlands,,other,8484,7967.0,1932,367,0.2708628005657709
+highlands,,phong_cach_trai_nghiem,786,534.0,387,28,1.015267175572519
+highlands,,trai_nghiem_so_ket_noi,247,178.0,113,15,0.7773279352226721
+katinat,,di_san_chat_luong,624,418.0,328,6,1.1442307692307692
+katinat,,khuyen_mai_minigame,619,367.0,311,3,1.1179321486268174
+katinat,,other,6189,5402.0,1563,110,0.30521893682339635
+katinat,,phong_cach_trai_nghiem,463,324.0,250,6,0.9287257019438445
+katinat,,trai_nghiem_so_ket_noi,238,121.0,176,3,1.596638655462185
+phuc_long,,di_san_chat_luong,1020,626.0,725,19,1.803921568627451
+phuc_long,,khuyen_mai_minigame,1015,642.0,594,16,1.187192118226601
+phuc_long,,other,4606,4239.0,1289,86,0.34389926183239256
+phuc_long,,phong_cach_trai_nghiem,385,274.0,192,13,1.0337662337662337
+phuc_long,,trai_nghiem_so_ket_noi,181,122.0,93,8,1.0607734806629834
