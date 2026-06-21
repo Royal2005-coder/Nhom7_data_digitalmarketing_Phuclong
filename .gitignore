@@ -8,6 +8,9 @@ __pycache__/
 *.xlsx
 *.db
 
+# Large model files (>100MB) that exceed GitHub limit
+data/sentiment_data/visobert_fb_model/model.safetensors
+
 # Junk folders
 data/file_rac_cho_xoa/
 
