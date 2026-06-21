@@ -1,5 +1,13 @@
-﻿*
-!.gitattributes
+# Python virtual environments & cache
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore all data files by default to avoid adding draft/raw/intermediate files
+*.csv
+*.xlsx
+*.db
+
+# Except for git config files
 !.gitignore
-!data_notebook/
-!data_notebook/*.csv
+!.gitattributes
