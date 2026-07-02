@@ -10,6 +10,20 @@ __pycache__/
 
 # Large model files (>100MB) that exceed GitHub limit
 data/sentiment_data/visobert_fb_model/model.safetensors
+notebook/results/
+notebook/lora_finetune_output/
+notebook/visobert_fb_model/
+notebook/pre_audit_Model_A_Baseline_PreAudit/
+notebook/pre_audit_Model_B_Proposed_PreAudit/
+notebook/results_Model_A_Baseline/
+notebook/results_Model_B_Proposed/
+notebook/results_Proposed_ScaleUp/
+notebook/tmp_trainer/
+notebook/**/*.png
+notebook/**/*.pth
+notebook/**/*.bin
+notebook/**/*.pt
+notebook/**/*.json
 
 # Junk folders
 data/file_rac_cho_xoa/
